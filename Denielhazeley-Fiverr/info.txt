@@ -1,0 +1,17 @@
+Requirements:
+------------------
+Clean coding 
+HTML, Tailwind CSS, JS
+
+Website theme: Information portal for products (specifically collectible action figures)
+
+Note: The website will be turned into a marketplace eCommerce store (Note for layout), but not using any eCommerce properties. Like: cart, promotion, discount anything like that
+
+Samples:
+Data/content sample (idea for purpose and functionality): http://www.hottoysph.com/checklist/ 
+One different functionality: Need to present dynamic show data, for the aftermarket buying/selling prices: Something like this: https://stockx.com/
+
+Similar in style to https://stockx.com/ but without the eCommerce elements added in. 
+The data for our site will be the same as you can find here: http://www.hottoysph.com/checklist/
+
+
