@@ -288,14 +288,23 @@ section {
 	display: block;
 }
 
+.navbar-nav {
+	padding-right: 40px;
+}
+.navbar-nav li {
+	margin: 0px 2px;
+}
 .navbar-nav li a{
 	color: #000000;
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 500;
+	padding: 10px 20px!important;
+	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+
 }
 .navbar-nav li a:hover{
-	color: #727373;
+	background: #ffffff;
 }
 
 /*
@@ -420,7 +429,7 @@ section {
 }
 #category .single-category:hover .category-title,
 #category .single-category:hover i{
-	color: #000000;
+	color: #ffffff;
 }
 
 
@@ -429,12 +438,66 @@ section {
     Footer section STYLING HERE
 ==================================
 */
-footer{
-	background: #14B686;
-	padding: 40px 0px;
-	color: #ffffff;
-
+#footer{
+	border-top: 2px solid #dddddd;
 }
+#footer .footer-top{
+	padding: 50px 0px;
+}
+#footer .footer-logo{
+	width: 80px;
+	margin-bottom: 10px;
+}
+
+#footer .footer-top .social-list {
+	margin-top: 20px;
+	display: block;
+}
+#footer .footer-top .social-list li {
+	display: inline-block;
+	margin: 0px 2px;
+}
+#footer .footer-top .social-list li a i {
+	font-size: 13px;
+	color: #2e2e2e;
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 50%;
+	border: 1px solid #dddddd;
+}
+#footer .footer-top .social-list li a i:hover {
+	background: #0FA877;
+	color: #ffffff;
+}
+
+#footer .footer-title {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+#footer .footer-link li {
+	list-style: circle;
+	margin-left: 20px;
+}
+#footer .footer-link li a {
+	color: #727373;
+	padding: 3px 0px;
+	display: block;
+	font-size: 13px;
+}
+#footer .footer-link li a:hover{
+	color: #0FA877;
+}
+#footer .footer{
+	padding: 20px 0px;
+	border-top: 1px solid #dddddd;
+	font-size: 13px;
+}
+
 
 
 /*
@@ -464,7 +527,7 @@ input[type="text"] {
   padding-right: 60px;
   width: 0px;
   position: absolute;
-  top: 0;
+  top: 18px;
   right: 0;
   background: none;
   z-index: 3;
@@ -483,8 +546,8 @@ input[type="text"]:focus {
   cursor: text;
 }
 input[type="submit"] {
-  height: 67px;
-  width: 63px;
+  height: 40px;
+  width: 37px;
   display: inline-block;
   color:red;
   float: right;
@@ -492,11 +555,11 @@ input[type="submit"] {
   text-indent: -10000px;
   border: none;
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   z-index: 2;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.8;
   cursor: pointer;
   transition: opacity .4s ease;
 }
