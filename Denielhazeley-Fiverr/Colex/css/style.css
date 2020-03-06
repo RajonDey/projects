@@ -284,7 +284,7 @@ section {
 	text-align: center;
 	color: #ffffff;
 	text-decoration: none;
-	padding-top: 20%;
+	margin-top: 20%;
 	display: block;
 }
 
@@ -303,6 +303,7 @@ section {
 	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
 
 }
+.navbar-nav .active a,
 .navbar-nav li a:hover{
 	background: #ffffff;
 }
