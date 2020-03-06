@@ -57,8 +57,8 @@
 					<a href="index.html"><img src="img/logo-black.png" alt="Logo"></a>
 				</div>
 				<!-- Main Navbar -->
-				<div class="col-md-8 text-right head-navbar" id="main-navbar">
-					<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="col-md-7 text-right head-navbar" id="main-navbar">
+					<nav class="navbar navbar-expand-lg">
 					 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						    <span class="navbar-toggler-icon"></span>
 						</button>
@@ -72,13 +72,18 @@
 						</div>
 					</nav>
 				</div>
+				<div class="col-md-1">
+					<form action="" autocomplete="on">
+						<input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+					</form>
+				</div>
 			</div><!-- End row -->
 
 			<div class="row title-text">
 				<div class="col-md-12 text-center">
-					<p>OUR VISION</p>
-					<h2>Empower all people to experience the rewards of life.</h2>
-					<button class="btn">Explore US</button>
+					<p class="subtitle">OUR VISION</p>
+					<h2 class="main-title">Empower all people to experience the rewards of life.</h2>
+					<a class="btn-below" href="#">Explore US</a>
 				</div>
 			</div><!-- End row -->
 
@@ -96,31 +101,46 @@
 				</div>
 			</div><!-- End row -->
 			<div class="row featured-products">
-				<div class="col-md-4 single-product">
-					<img src="https://via.placeholder.com/450x450.png?text=450x450" alt="Featured Image">
-					<div class="product-desc">
-						<h4>Product Name</h4>
-						<span>$1000</span>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam odit veniam, eaque atque blanditiis dolor aperiam!</p>
-						<a href="#">Read More</a>
+				<div class="col-md-4">
+					<div class="single-product">
+						<figure>
+							<a href="#"><img src="img/demo.png" alt="Featured Image"></a>
+						</figure>
+						<div class="product-detail">
+							<h4 class="product-title small-title">Product Name</h4>
+							<p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a class="product-category" href="#">Category</a>
+							<span class="product-price">$1000</span>
+						</div>
+						<p><a class="post-link" href="#">The title of the story!</a></p>
 					</div>
 				</div>
-				<div class="col-md-4 single-product">
-					<img src="https://via.placeholder.com/450x450.png?text=450x450" alt="Featured Image">
-					<div class="product-desc">
-						<h4>Product Name</h4>
-						<span>$1000</span>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam odit veniam, eaque atque blanditiis dolor aperiam!</p>
-						<a href="#">Read More</a>
+				<div class="col-md-4">
+					<div class="single-product">
+						<figure>
+							<a href="#"><img src="img/demo.png" alt="Featured Image"></a>
+						</figure>
+						<div class="product-detail">
+							<h4 class="product-title small-title">Product Name</h4>
+							<p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a class="product-category" href="#">Category</a>
+							<span class="product-price">$1000</span>
+						</div>
+						<p><a class="post-link" href="#">The title of the story!</a></p>
 					</div>
 				</div>
-				<div class="col-md-4 single-product">
-					<img src="https://via.placeholder.com/450x450.png?text=450x450" alt="Featured Image">
-					<div class="product-desc">
-						<h4>Product Name</h4>
-						<span>$1000</span>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam odit veniam, eaque atque blanditiis dolor aperiam!</p>
-						<a href="#">Read More</a>
+				<div class="col-md-4">
+					<div class="single-product">
+						<figure>
+							<a href="#"><img src="img/demo.png" alt="Featured Image"></a>
+						</figure>
+						<div class="product-detail">
+							<h4 class="product-title small-title">Product Name</h4>
+							<p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a class="product-category" href="#">Category</a>
+							<span class="product-price">$1000</span>
+						</div>
+						<p><a class="post-link" href="#">The title of the story!</a></p>
 					</div>
 				</div>
 			</div><!-- End row -->
@@ -129,13 +149,17 @@
 	</section><!-- End intro -->
 
 
-		<section id="featured">
+	<section id="newsletter">
 		<div class="container clearfix">
 			
-			<div class="row section-title">
-				<div class="col-md-12 text-center">
-					<h3>Call to Action</h3>
-					<button class="btn btn-1 btn-1e">Take a Look!</button>
+			<div class="row section-title justify-content-center">
+				<div class="col-md-10 text-center">
+					<p>To get all the update</p>
+					<h3>Subscribe Our Newsletter</h3>
+					<form class="newsletter-form flex" action="" autocomplete="on">
+						<input type="email" name="" placeholder="Enter your email">
+						<a href="#" class="btn animated-button colex-btn">Submit</a>
+					</form>
 				</div>
 			</div><!-- End row -->
 
@@ -153,36 +177,48 @@
 				</div>
 			</div><!-- End row -->
 			<div class="row all-categories">
-				<div class="col-md-4 single-category">
-					<i class="fas fa-adjust"></i>
-					<h4>Category Name</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-				</div>
-				<div class="col-md-4 single-category">
-					<i class="fas fa-adjust"></i>
-					<h4>Category Name</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-				</div>
-				<div class="col-md-4 single-category">
-					<i class="fas fa-adjust"></i>
-					<h4>Category Name</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-				</div>
-				<div class="col-md-4 single-category">
-					<i class="fas fa-adjust"></i>
-					<h4>Category Name</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-				</div>
-				<div class="col-md-4 single-category">
-					<i class="fas fa-adjust"></i>
-					<h4>Category Name</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-				</div>
-				<div class="col-md-4 single-category">
-					<i class="fas fa-adjust"></i>
-					<h4>Category Name</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-				</div>
+				<div class="col-md-4">
+					<a href="#" class="single-category">
+						<i class="fas fa-adjust"></i>
+						<h4 class="category-title small-title">Category Name</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+					</a>
+				</div><!-- End col-4 -->
+				<div class="col-md-4">
+					<a href="#" class="single-category">
+						<i class="fas fa-adjust"></i>
+						<h4 class="category-title small-title">Category Name</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+					</a>
+				</div><!-- End col-4 -->
+				<div class="col-md-4">
+					<a href="#" class="single-category">
+						<i class="fas fa-adjust"></i>
+						<h4 class="category-title small-title">Category Name</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+					</a>
+				</div><!-- End col-4 -->
+				<div class="col-md-4">
+					<a href="#" class="single-category">
+						<i class="fas fa-adjust"></i>
+						<h4 class="category-title small-title">Category Name</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+					</a>
+				</div><!-- End col-4 -->
+				<div class="col-md-4">
+					<a href="#" class="single-category">
+						<i class="fas fa-adjust"></i>
+						<h4 class="category-title small-title">Category Name</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+					</a>
+				</div><!-- End col-4 -->
+				<div class="col-md-4">
+					<a href="#" class="single-category">
+						<i class="fas fa-adjust"></i>
+						<h4 class="category-title small-title">Category Name</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+					</a>
+				</div><!-- End col-4 -->
 			</div><!-- End row -->
 
 		</div><!-- End container -->
@@ -206,7 +242,7 @@
 					</ul>
 				</div>
 				<div class="col-md-2">
-					<h4>Category List</h4>
+					<h4>Footer Title</h4>
 					<ul>
 						<li><a href="#">Category Name</a></li>
 						<li><a href="#">Category Name</a></li>
@@ -216,7 +252,7 @@
 					</ul>
 				</div>
 				<div class="col-md-2">
-					<h4>Category List</h4>
+					<h4>Footer Title</h4>
 					<ul>
 						<li><a href="#">Category Name</a></li>
 						<li><a href="#">Category Name</a></li>
@@ -226,7 +262,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3">
-					<h4>Category List</h4>
+					<h4>Footer Title</h4>
 					<ul>
 						<li><a href="#">Category Name</a></li>
 						<li><a href="#">Category Name</a></li>
