@@ -239,12 +239,9 @@ section {
 ==================================
 */
 #header{
-	background-image: url('../img/wave-banner.svg');
-	background-attachment: scroll;
-	background-repeat: repeat;
+	position: fixed;
 	width: 100%;
-	height: 100vh;
-	background-position: center center;
+	z-index: 9999999999;
 }
 #header .top-bar{
 	padding-top: 10px;
@@ -255,6 +252,62 @@ section {
 	display: inline-block;
 	padding: 1.2rem 1rem;
 	padding-right: 0px;
+}
+
+.navbar-nav {
+	padding-right: 40px;
+}
+.navbar-nav li {
+	margin: 0px 2px;
+}
+.navbar-nav li a{
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 10px 20px!important;
+	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+
+}
+.navbar-nav .active a,
+.navbar-nav li a:hover{
+	background: #ffffff;
+}
+
+/*STICKY*/
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+	background: #ffffff;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+	border-bottom: 1px solid #ddd;
+}
+
+/*
+==================================
+    BANNER STYLING HERE
+==================================
+*/
+#banner{
+	background-image: url('../img/wave-banner.svg');
+	background-attachment: scroll;
+	background-repeat: repeat;
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+}
+#page-banner{
+	background-image: url('../img/page-banner.png');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 60vh;
+	background-position: center center;	
+	background-size: cover;
 }
 .title-text{
 	padding-top: 10%;
@@ -288,25 +341,6 @@ section {
 	display: block;
 }
 
-.navbar-nav {
-	padding-right: 40px;
-}
-.navbar-nav li {
-	margin: 0px 2px;
-}
-.navbar-nav li a{
-	color: #000000;
-	text-transform: uppercase;
-	font-size: 13px;
-	font-weight: 500;
-	padding: 10px 20px!important;
-	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
-
-}
-.navbar-nav .active a,
-.navbar-nav li a:hover{
-	background: #ffffff;
-}
 
 /*
 ==================================
@@ -516,36 +550,35 @@ SEARCH |
   position: relative;
 }
 
-input[type="text"] {
-  height: 40px;
-  font-size: 22px;
-  display: inline-block;
-  font-weight: 100;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  padding: 3px;
-  padding-right: 60px;
-  width: 0px;
-  position: absolute;
-  top: 18px;
-  right: 0;
-  background: none;
-  z-index: 3;
-  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-  cursor: pointer;
+.search-bar input[type="search"] {
+	height: 100%;
+	font-size: 24px;
+	display: inline-block;
+	font-family: "Lato";
+	font-weight: 100;
+	border: none;
+	outline: none;
+	color: #555;
+	padding: 3px;
+	padding-right: 60px;
+	width: 0px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: none;
+	z-index: 3;
+	transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+	cursor: pointer;
 }
 
-input[type="text"]:focus:hover {
-  border-bottom: 1px solid #BBB;
+.search-bar input[type="search"]:focus {
+	width: 700px;
+	z-index: 1;
+	border-bottom: 1px solid #BBB;
+	cursor: text;
+	background: #ffffff;
 }
 
-input[type="text"]:focus {
-  width: 700px;
-  z-index: 1;
-  border-bottom: 1px solid #BBB;
-  cursor: text;
-}
 input[type="submit"] {
   height: 40px;
   width: 37px;
