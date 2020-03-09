@@ -113,6 +113,9 @@ h1,h2,h3,h4,h5,h6{
 section {
 	padding: 60px 0px;
 }
+.page section{
+	padding: 40px 0px;	
+}
 .section-title {
 	background: none;
 	padding: 15px 0px;
@@ -227,7 +230,39 @@ section {
 	font-size: 18px;
 	padding-bottom: 8px;
 }
+.big-title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-size: 2.2em;
+	line-height: auto;
+	font-family: 'Orbitron', sans-serif;
+	padding-bottom: 20px;
+	display: block;
+}
+.big-title span{
+	color: #0FA877;
+}
 
+.box{
+	padding: 18px;
+	border-radius: 10px;
+	display: block;
+	color: inherit;
+	-webkit-box-shadow: -1px 0px 7px -1px rgba(221,221,221,0.9);
+	-moz-box-shadow: -1px 0px 7px -1px rgba(221,221,221,0.9);
+	box-shadow: -1px 0px 7px -1px rgba(221,221,221,0.9);
+}
+#box i{
+	font-size: 32px;
+	color: #14B686;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+#box:hover{
+	background: #14B686;
+	color: #ffffff;
+}
 
 
 
@@ -442,12 +477,14 @@ section {
 ==================================
 */
 #category .single-category {
-	border: 0.5px solid #dddddd;
 	padding: 18px;
-	border-radius: 20px;
+	border-radius: 10px;
 	display: block;
 	color: inherit;
 	margin-bottom: 30px;
+	-webkit-box-shadow: -1px 0px 7px -1px rgba(221,221,221,0.9);
+	-moz-box-shadow: -1px 0px 7px -1px rgba(221,221,221,0.9);
+	box-shadow: -1px 0px 7px -1px rgba(221,221,221,0.9);
 }
 #category .single-category i{
 	font-size: 32px;
@@ -460,7 +497,6 @@ section {
 #category .single-category:hover{
 	background: #14B686;
 	color: #ffffff;
-	border: 1px solid #14B686;
 }
 #category .single-category:hover .category-title,
 #category .single-category:hover i{
@@ -534,6 +570,59 @@ section {
 }
 
 
+
+
+/*
+=================================================================
+    				ABOUT PAGE | STYLING HERE
+=================================================================
+*/
+.mission-vision .text-area{
+	background: #14B686;
+	color: #ffffff;
+	height: 40vh;
+	text-align: center;	
+	padding: 0px 40px;
+}
+.mission-vision .text-area h4{
+	color: #000000;
+}
+.mission-vision .icon-area{
+	height: 40vh;
+	text-align: center;	
+}
+
+/*
+=================================================================
+    				PRODUCT PAGE | STYLING HERE
+=================================================================
+*/
+#product .all-categories .single-category{
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 40px 18px;
+}
+#product .all-categories .single-category i{
+	font-size: 3em;
+	padding-bottom: 20px;
+	color: #14B686;
+}
+#product .all-categories .single-category:hover{
+	background: #14B686;
+	color: #ffffff;
+}
+#product .all-categories .single-category:hover i{
+	color: #ffffff;	
+}
+
+/*
+=================================================================
+    				CONTACT PAGE | STYLING HERE
+=================================================================
+*/
+.contact-page .contact-form .btn{
+	margin: 30px auto 0px;
+}
 
 /*
 --------
@@ -609,7 +698,7 @@ BUTTON |
 --------
 */
 /* Global Button Styles */
-a.animated-button:link, a.animated-button:visited {
+.animated-button:link, .animated-button:visited {
 	position: relative;
 	display: block;
 	padding: 14px 15px;
@@ -630,7 +719,7 @@ a.animated-button:link, a.animated-button:visited {
 	width: 180px;
 	font-family: 'Orbitron', sans-serif;
 }
-a.animated-button:link:after, a.animated-button:visited:after {
+.animated-button:link:after, .animated-button:visited:after {
 	content: "";
 	position: absolute;
 	height: 0%;
@@ -643,14 +732,14 @@ a.animated-button:link:after, a.animated-button:visited:after {
 	-o-transition: all 0.75s ease 0s;
 	transition: all 0.75s ease 0s;
 }
-a.animated-button:link:hover, a.animated-button:visited:hover {
+.animated-button:link:hover, .animated-button:visited:hover {
 	color: #14B686;
 	text-shadow: none;
 }
-a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+.animated-button:link:hover:after, .animated-button:visited:hover:after {
 	height: 450%;
 }
-a.animated-button:link, a.animated-button:visited {
+.animated-button:link, .animated-button:visited {
 	position: relative;
 	display: block;
 	padding: 14px 15px;
@@ -670,11 +759,11 @@ a.animated-button:link, a.animated-button:visited {
 }
 
 /* Gibson Buttons */
-a.animated-button.colex-btn {
+.animated-button.colex-btn {
 	border: 3px solid #0FA877;
 	color: #0FA877;
 }
-a.animated-button.colex-btn:after {
+.animated-button.colex-btn:after {
 	opacity: 0;
 	background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
 	background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
@@ -684,7 +773,7 @@ a.animated-button.colex-btn:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
-a.animated-button.colex-btn:hover:after {
+.animated-button.colex-btn:hover:after {
 	height: 600% !important;
 	opacity: 1;
 	color: #FFF;
