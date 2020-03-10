@@ -548,7 +548,6 @@ section {
 	padding-bottom: 20px;
 }
 #footer .footer-link li {
-	list-style: circle;
 	margin-left: 20px;
 }
 #footer .footer-link li a {
@@ -765,7 +764,7 @@ SEARCH |
 }
 
 .search-bar input[type="search"]:focus {
-	width: 700px;
+	width: 100%;
 	z-index: 1;
 	border-bottom: 1px solid #BBB;
 	cursor: text;
