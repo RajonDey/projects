@@ -111,7 +111,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 section {
-	padding: 60px 0px;
+	padding: 50px 0px;
 }
 .page section{
 	padding: 40px 0px;	
@@ -130,7 +130,7 @@ section {
 	color: #0FA877;
 }
 .section-title h3 {
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 2px;
 	font-weight: 600;
 	font-size: 2.2em;
@@ -356,7 +356,7 @@ section {
 	display: block;	
 }
 .title-text .main-title{
-	font-size: 3.2em;
+	font-size: 2.8em;
 	color: #ffffff;
 	font-weight: bold;
 }
@@ -373,26 +373,27 @@ section {
 }
 .searchBar{
 	position: relative;
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 	display: block;
 }
 .title-text form input[type="search"] {
-	font-size: 24px;
+	font-size: 22px;
 	font-family: "Lato";
 	font-weight: 100;
 	border: none;
 	outline: none;
 	color: #555;
 	transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-	padding: 8px 20px;
-	margin-top: 30px;
+	padding: 18px 20px;
+	margin-top: 20px;
 	position: relative;
 	width: 100%;
 	-webkit-box-shadow: -1px 0px 7px -1px rgba(47, 181, 141,0.9);
 	-moz-box-shadow: -1px 0px 7px -1px rgba(47, 181, 141,0.9);
 	box-shadow: -1px 0px 7px -1px rgba(47, 181, 141,0.9);
 	border-radius: 5px;
+	text-align: center;
 }
 .title-text form input[type="submit"] {
 	background: url('../img/search-icon.png') center center no-repeat;
@@ -572,9 +573,6 @@ section {
 	font-weight: 600;
 	padding-bottom: 20px;
 }
-#footer .footer-link li {
-	margin-left: 20px;
-}
 #footer .footer-link li a {
 	color: #727373;
 	padding: 3px 0px;
@@ -658,6 +656,9 @@ section {
 .single-product .product-detail {
 	padding: 15px;
 	position: relative;
+}
+.single-product .product-detail a:hover{
+	color: #0FA877;
 }
 .single-product .product-detail .product-category {
 	color: #0FA877;
@@ -751,6 +752,24 @@ section {
 .contact-page .contact-form .btn{
 	margin: 30px auto 0px;
 }
+
+/*
+==================================
+   SINGLE PAGE STYLING HERE
+==================================
+*/
+.single-page .small-title {
+	color: #525454;
+	font-size: 18px;
+	padding-bottom: 12px;
+	display: block;
+}
+.single-page .single-product .product-detail p{
+	display: block;
+	padding-bottom: 10px;
+}
+
+
 
 /*
 --------
