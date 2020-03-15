@@ -1,0 +1,21 @@
+Info:
+------------------
+1. Current web: www.debtify.de
+
+2. Purpose: It is a marketplace for banks and servicers for non performing real estate loans
+3. Sample: www.revolut.com - here especially the business side: https://www.revolut.com/business-accounts-made-easy. we wanna focus 100% on this design, very flat, very modern, just white transparent background
+
+4. Description of work: we are the bridge between banks and servicers in non performing loans and banks can work together with servicers for working out the cancelled loans and mortgages
+
+5. please find the logo attached
+
+6. Client email: jo@debtify.de
+
+
+Requirement:
+--------------
+Telwind CSS
+4 Page
+Within 5 days
+Desine will provide through InVision
+

@@ -32,4 +32,14 @@ One different functionality: Need to present dynamic show data, for the aftermar
 Similar in style to https://stockx.com/ but without the eCommerce elements added in. 
 The data for our site will be the same as you can find here: http://www.hottoysph.com/checklist/
 
+New Request:
+============
+Hey, I have one more revision and this will probably be the last one.
+
+For the Navbar, I wanted the search icon to still be on the header, on the right side, opposite of the menu icon. 
+
+The single product page picture should be a gallery that you can swipe through. With thumbnails beneath it. Something like can be seen here:
+https://mdbootstrap.com/snippets/jquery/ascensus/135500
+
+After these two changes, I will happily write an amazing review for you. And we would love to work with you again in the future if the need arises.
 
