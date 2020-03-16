@@ -14,6 +14,14 @@ Info:
 
 Requirement:
 --------------
+1. Font: Roboto
+2. ICONS: https://material.io/resources/icons/?style=baseline
+3: Color:
+    Good - #2e7d32
+    Middle: #fdd835
+    If needed: #e65100
+    Not Good: #b71c1c
+-------------------------
 Telwind CSS
 4 Page
 Within 5 days
