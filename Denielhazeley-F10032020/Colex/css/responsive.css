@@ -97,6 +97,18 @@ section {
 .vision-text-area{
 	order: 2;
 }
+.mobile-search{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.mobile-search .nav-link{
+	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);	
+	padding: 4px 12px;
+}
+.mobile-search .nav-link:hover{
+	background-color: #ffffff!important;
+}
 
 }
 
@@ -159,6 +171,19 @@ section {
 
 .vision-text-area{
 	order: 2;
+}
+
+.mobile-search{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.mobile-search .nav-link{
+	clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);	
+	padding: 4px 12px;
+}
+.mobile-search .nav-link:hover{
+	background-color: #ffffff!important;
 }
 
 
