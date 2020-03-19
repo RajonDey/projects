@@ -328,6 +328,27 @@ section {
 #footer .footer-link li{
 	margin-top: 1rem;
 }
+#footer .social-list {
+	padding-top: 20px;
+	display: block;
+}
+#footer .social-list li {
+	margin-right: 0.5rem;
+}
+#footer .social-list li a i {
+	font-size: 13px;
+	color: #2e2e2e;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+}
+#footer .social-list li a i:hover{
+	background: #40A9FF;
+	color: #ffffff;
+}
 
 #footer .footer{
 	border-top: 1px solid #dddddd;
