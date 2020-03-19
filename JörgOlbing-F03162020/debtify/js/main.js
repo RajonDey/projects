@@ -13,30 +13,15 @@ $(window).scroll(function(){
 });
 
 function stickyHeaderHandler() {
-    if (!window.homePosition) window.homePosition = $('#header').offset().top;
+    if (!window.homePosition) window.homePosition = $('#navbar').offset().top;
 	var currentOffsetPosition = $(window).scrollTop();
     
 	if (currentOffsetPosition > window.homePosition) {
-		$('#header').addClass('sticky');
+		$('#navbar').addClass('sticky');
 	} else {
-		$('#header').removeClass('sticky');
+		$('#navbar').removeClass('sticky');
 	}
 }
 
-
-
-
-
-
-// SEARCH BUTTON
-const input = document.getElementById("search-input");
-const searchBtn = document.getElementById("search-btn");
-
-const expand = () => {
-  searchBtn.classList.toggle("close");
-  input.classList.toggle("square");
-};
-
-searchBtn.addEventListener("click", expand);
 
 

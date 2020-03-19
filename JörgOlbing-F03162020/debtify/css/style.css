@@ -74,9 +74,14 @@ i:hover{
 }
 a:focus{
 	outline:none !important;
+	transition: color 0.1s ease 0s, opacity 0.1s ease 0s;
+	color: rgb(25, 28, 31);
 }
+.active,
 a:active{
 	text-decoration:none !important;
+	transition: color 0.1s ease 0s, opacity 0.1s ease 0s;
+	color: rgb(25, 28, 31);
 }
 
 textarea:focus, input:focus{
@@ -129,11 +134,29 @@ h1,h2,h3,h4,h5,h6{
 
 /* 
 -----------------------
+	COLOR STYLES
+-----------------------
+*/
+.theme-color{
+	color: #40A9FF;
+}
+.theme-color:hover{
+	color: #005FAD;
+}
+.peragraph-color{
+	color: rgb(139, 149, 158);
+}
+.title-color{
+	color: rgb(25, 28, 31)!important;
+}
+
+/* 
+-----------------------
 	ALL SPACING STYLES
 -----------------------
 */
 section {
-	padding: 60px 0px;
+	padding: 50px 0px;
 }
 
 /* Margin Styling */
@@ -174,6 +197,11 @@ section {
 	margin-bottom: 1.2rem;
 }
 .big-title {
+	font-size: 3.2rem;
+	line-height: 3.8rem;
+	margin-bottom: 1.5rem;
+}
+.banner-title {
 	font-size: 3.8rem;
 	line-height: 4rem;
 	margin-bottom: 1.5rem;
@@ -205,14 +233,17 @@ section {
 	color: white;
 	cursor: pointer;
 	transition: all 0.2s ease 0s;
-	margin-bottom: 0.5em;
 	background-color: #40A9FF;
 	text-decoration: none;
 }
+.btn:focus,
 .btn:hover{
-	background-color: #005FAD;
+	background-color: #005FAD!important;
 }
 
+.small-btn{
+	padding: 0.5em 2em;	
+}
 
 
 
@@ -225,3 +256,80 @@ section {
     HEADER STYLING HERE
 ==================================
 */
+/* 
+--------------------
+	COOKIES STYLES
+-------------------- 
+*/
+.cookies{
+	background-color: #F3F4F5;
+}
+.cookies p{
+	padding-top: 6px;
+}
+.cookies .btn{
+	background: none;
+	border:1px solid #40A9FF;
+	color: #40A9FF;
+	padding: 6px 20px;
+}
+.cookies .btn:hover{
+	color: #ffffff;
+}
+
+/* 
+--------------------
+	STICKY STYLES
+-------------------- 
+*/
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+	background: #ffffff;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+	box-shadow: rgba(25, 28, 31, 0.04) 0px 8px 16px, rgba(25, 28, 31, 0.04) 0px -1px 0px;
+
+}
+
+/*
+==================================
+    COMMON STYLING HERE
+==================================
+*/
+.img-section img{
+	margin: 0 auto;
+}
+
+/*
+==================================
+    FOOTER STYLING HERE
+==================================
+*/
+#footer{
+	background: #F3F4F5;
+}
+#footer .footer-top{
+	padding: 40px 0px;
+}
+#footer .footer-logo{
+	width: 150px;
+	height: auto;
+	margin-bottom: 20px;
+} 
+#footer .footer-link li a{
+	line-height: 1.5rem;
+}
+#footer .footer-link li a:hover{
+	color: rgb(25, 28, 31);
+}
+#footer .footer-link li{
+	margin-top: 1rem;
+}
+
+#footer .footer{
+	border-top: 1px solid #dddddd;
+	padding: 20px;
+}
