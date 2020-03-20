@@ -158,6 +158,11 @@ h1,h2,h3,h4,h5,h6{
 section {
 	padding: 50px 0px;
 }
+.col,
+.service-section .col{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 
 /* Margin Styling */
 .MTop50 {margin-top: 50px;}
@@ -187,23 +192,23 @@ section {
 	box-sizing: border-box;
 	padding: 0px;
 	font-size: 1.75rem;
-	line-height: 2.25rem;
+	line-height: normal;
 	color: rgb(25, 28, 31);
 	margin-bottom: 1rem;
 }
 .medium-title {
 	font-size: 2.4rem;
-	line-height: 3rem;
+	line-height: normal;
 	margin-bottom: 1.2rem;
 }
 .big-title {
 	font-size: 3.2rem;
-	line-height: 3.8rem;
+	line-height: normal;
 	margin-bottom: 1.5rem;
 }
 .banner-title {
-	font-size: 3.8rem;
-	line-height: 4rem;
+	font-size: 3.4rem;
+	line-height: normal;
 	margin-bottom: 1.5rem;
 }
 .footer-title {
@@ -296,11 +301,51 @@ section {
 
 /*
 ==================================
+    BANNER STYLING HERE
+==================================
+*/
+#main-banner{
+	border-bottom: 1px solid #dddddd;
+}
+
+/*
+==================================
+    BANNER STYLING HERE
+==================================
+*/
+#newsletter{
+	background: #F3F3F5;
+}
+/*
+==================================
+    MAP STYLING HERE
+==================================
+*/
+#map .col{
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+#map .world-map img{
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+
+
+/*
+==================================
     COMMON STYLING HERE
 ==================================
 */
+.service-section{
+	height: auto;
+}
 .img-section img{
 	margin: 0 auto;
+	background: #FCFCFC;
+	border-radius: 20px;
 }
 
 /*
@@ -354,3 +399,102 @@ section {
 	border-top: 1px solid #dddddd;
 	padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+/*
+==================================
+    RESPONSIVE STYLING HERE
+==================================
+*/
+
+
+/*tablet*/
+@media (max-width: 768px) {
+	
+	.Navbar__Items {
+	    display:none;
+	}
+	.Navbar__ToggleShow {
+	    display: block;
+	}
+	.banner-title {
+		font-size: 2.3rem;
+		line-height: normal;
+	}
+	.big-title {
+		font-size: 2rem;
+		line-height: normal;
+	}
+	.medium-title {
+		font-size: 1.6rem;
+		line-height: normal;
+	}
+	section{
+		padding: 30px 0px;
+	}
+	.display-table-cell{
+		display: table;
+	}
+	.display-table{
+		display: block;
+	}
+	.service-section .container .grid{
+		border-bottom: 1px dotted #dddddd;
+		padding-bottom: 3rem;
+	}
+	.img-section {
+		order: -1;
+	}
+	.img-section img {
+		margin-bottom: 30px;
+	}
+	#map .col {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+}
+
+/*laptop*/
+@media (max-width: 1024px) {
+	.Navbar__Items {
+	    display:none;
+	}
+	.Navbar__ToggleShow {
+	    display: block;
+	}
+	.banner-title {
+		font-size: 2.8rem;
+		line-height: normal;
+	}
+	.big-title {
+		font-size: 2.5rem;
+		line-height: normal;
+	}
+	.medium-title {
+		font-size: 2rem;
+		line-height: normal;
+	}	
+	.display-table-cell{
+		display: table;
+	}
+	.display-table{
+		display: block;
+	}
+}
+
+/*desktop*/
+@media (min-width: 1280px) {
+
+}
+
+
+
+
+

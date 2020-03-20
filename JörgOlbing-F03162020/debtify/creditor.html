@@ -33,6 +33,10 @@
     <link rel="stylesheet" href="css/all.min.css">
 
     <!--tailwind-->
+    <link rel="stylesheet" href="css/wow-animate.css">
+    <!--end Font awesome-->
+
+    <!--tailwind-->
     <link rel="stylesheet" href="css/tailwind.css">
     <!--end Font awesome-->
     
@@ -63,16 +67,16 @@
         <!-- NAVBAR START -->
         <div id="navbar" class="bg-white-500">
           <div class="container mx-auto px-10">
-            <nav class="flex items-center justify-between flex-wrap py-6">
+            <nav class="Navbar flex items-center justify-between flex-wrap py-6">
 			  <div class="flex items-center flex-shrink-0 text-white mr-6">
 			    <img class="w-32" src="img/debtify.png">
 			  </div>
 			  <div class="block lg:hidden">
-			    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+			    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-black hover:border-black Navbar__Link-toggle">
 			      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
 			    </button>
 			  </div>
-			  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+			  <div class="Navbar__Items menu-bar w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 			    <div class="text-sm lg:flex-grow">
 			      <a href="creditor.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4 active">
 			        CREDITOR 
@@ -97,9 +101,9 @@
     	<div class="container mx-auto px-10">
     		<div class="banner-section grid grid-cols-12">
     			<div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-5">
-    				<h1 class="banner-title">Your npl real estate workout should be easy.</h1>
+    				<h1 class="banner-title mt-6">Your npl real estate workout should be easy.</h1>
     				<p>debtify´s powerful ai platform helps you to simplify your workout. and increase your net recoveries.</p>
-    				<button class="btn debtify-btn"><a href="">Start for free</a></button>
+    				<button class="btn debtify-btn mt-6"><a href="">Start for free</a></button>
     			</div>
     			<div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-7">
     				<div>
@@ -110,14 +114,14 @@
     	</div>
     </section><!-- END MAIN-BANNER SECTION -->
 
-    <section id="platform">
+    <section id="platform" class="service-section">
         <div class="container mx-auto px-10">
             <div class="platform-section">
                 <div class="grid grid-cols-12 ">
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 img-section">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 img-section wow bounceIn">
                         <img src="img/platform.png" alt="Platform Image">
                     </div>
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
                         <div class="display-table-cell">
                             <h4 class="medium-title">One platform to manage them all</h4>
                             <p>On our leading marketplace you find powerful servicer and products all around NPL real estate industry. Fully integrated into our platform and easy for you to start, work and manage them.</p>
@@ -128,17 +132,17 @@
         </div>
     </section><!-- END PLATFORM SECTION -->
 
-    <section id="internet">
+    <section id="internet" class="service-section">
     	<div class="container mx-auto px-10">
     		<div class="platform-section">
     			<div class="grid grid-cols-12 ">
-    				<div class="col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
+    				<div class="col col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
     					<div class="display-table-cell">
                             <h4 class="medium-title">A better workout means better net recoveries</h4>
                             <p>Our AI driven platform helps you to optimize your workout strategies and choose the right partners. The more you use it, the better it gets.</p>
                         </div>
     				</div>
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 img-section">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 img-section wow bounceIn">
                         <img src="img/net.png" alt="Internet Image">
                     </div>
     			</div>
@@ -146,14 +150,14 @@
     	</div>
     </section><!-- END INTERNET SECTION -->
 
-    <section id="track">
+    <section id="track" class="service-section">
     	<div class="container mx-auto px-10">
     		<div class="track-section">
     			<div class="grid grid-cols-12">
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 img-section">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 img-section wow bounceIn">
                         <img src="img/track.png" alt="Track Image">
                     </div>
-    				<div class="col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
+    				<div class="col col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
     					<div class="display-table-cell">
                             <h4 class="medium-title">Track your servicer in real timetter net recoveries</h4>
                             <p>See what your partners and servicer on site do in real time. This prevents any nasty surprises and help you change your strategies before it’s too late.</p>               
@@ -164,17 +168,17 @@
     	</div>
     </section><!-- END TRACK SECTION -->
 
-    <section id="security">
+    <section id="security" class="service-section">
     	<div class="container mx-auto px-10">
     		<div class="security-section">
     			<div class="grid grid-cols-12">
-    				<div class="col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
+    				<div class="col col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
     					<div class="display-table-cell">
                             <h4 class="medium-title">Security - the way you want it</h4>
                             <p>Our platform is highly secure and offers you banking grade security standards in full compliance to GDPR and DPA Data Protection Act.</p>               
                         </div>
     				</div>
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 img-section">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 img-section wow bounceIn">
                         <img src="img/security.png" alt="Security Image">
                     </div>
     			</div>
@@ -189,7 +193,7 @@
     				<div class="col-span-12 text-center">
     					<h2 class="big-title">Try debtify</h2>
     					<p>Sign up in minutes, cancel anytime.</p>
-    					<button class="btn debtify-btn"><a href="">Start for free</a></button>
+    					<button class="btn debtify-btn mt-6"><a href="">Start for free</a></button>
     				</div>
     			</div>
     		</div>
@@ -201,7 +205,7 @@
     	<div class="container mx-auto px-10">
     		<div class="map-section">
     			<div class="grid grid-cols-12">
-    				<div class="col-span-12 text-center">
+    				<div class="col col-span-12 text-center">
     					<h2 class="big-title">Join our community and get access to a better way to manage your workout</h2>
     					<div class="world-map">
     						<img src="img/map.png" alt="MAP">
@@ -285,9 +289,10 @@
 
     <!-- script here -->
     <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>');
     </script>
 	<script class="cssdeck" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/wow-animate.js"></script> 
     <script src="js/plugins.js"></script> 
     <script src="js/main.js"></script>
 
