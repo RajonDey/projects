@@ -31,6 +31,10 @@
     <!-- ICONS: Material and Fontawsome -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
+
+    <!--WOW Animate-->
+    <link rel="stylesheet" href="css/wow-animate.css">
+    <!--end WOW Animate-->
    
     <!--tailwind-->
     <link rel="stylesheet" href="css/tailwind.css">
@@ -47,7 +51,7 @@
 <body>
 
     <header>
-    	<!-- COOKIES START -->
+        <!-- COOKIES START -->
         <div class="cookies">
             <div class="container mx-auto px-10">
                 <div class="grid grid-cols-12 py-4">
@@ -63,34 +67,34 @@
         <!-- NAVBAR START -->
         <div id="navbar" class="bg-white-500">
           <div class="container mx-auto px-10">
-            <nav class="flex items-center justify-between flex-wrap py-6">
-			  <div class="flex items-center flex-shrink-0 text-white mr-6">
-			    <img class="w-32" src="img/debtify.png">
-			  </div>
-			  <div class="block lg:hidden">
-			    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-			      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-			    </button>
-			  </div>
-			  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-			    <div class="text-sm lg:flex-grow">
-			      <a href="creditor.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
-			        CREDITOR 
-			      </a>
-			      <a href="servicer.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4 active">
-			        SERVICER
-			      </a>
-			    </div>
-			    <div>
+            <nav class="Navbar flex items-center justify-between flex-wrap py-6">
+              <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <img class="w-32" src="img/debtify.png">
+              </div>
+              <div class="block lg:hidden">
+                <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-black hover:border-black Navbar__Link-toggle">
+                  <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+              </div>
+              <div class="Navbar__Items menu-bar w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                  <a href="creditor.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                    CREDITOR 
+                  </a>
+                  <a href="servicer.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4 active">
+                    SERVICER
+                  </a>
+                </div>
+                <div>
                   <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">About us</a>
                   <a href="referral.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">Referral</a>
                   <a href="" class="block mt-4 lg:inline-block lg:mt-0 mr-4 theme-color">Login</a>
                   <a href="" class="block mt-4 lg:inline-block lg:mt-0 btn debtify-btn small-btn">Start for free</a>
-			    </div>
-			  </div>
+                </div>
+              </div>
             </nav>  
           </div>  
-		</div>
+        </div>
     </header><!-- END HEADER SECTION -->
 
     <section id="main-banner">
@@ -99,7 +103,7 @@
     			<div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-5">
     				<h1 class="banner-title">Sell your services around real estate NPLs to any creditor worldwide</h1>
     				<p>debtify provides NPL real estate brokers, real estate appraiser companies and foreclosure servicers with ready-to-use solutions to sell their products online and simplify their exposure to creditors via Plug-ins and APIs.</p>
-    				<button class="btn debtify-btn"><a href="">Start for free</a></button>
+    				<button class="btn debtify-btn mt-6"><a href="">Start for free</a></button>
     			</div>
     			<div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-7">
     				<div>
@@ -110,14 +114,14 @@
     	</div>
     </section><!-- END MAIN-BANNER SECTION -->
 
-    <section id="npl">
+    <section id="npl" class="service-section">
         <div class="container mx-auto px-10">
             <div class="platform-section">
                 <div class="grid grid-cols-12 ">
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 img-section">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 img-section wow bounceIn">
                         <img src="img/npl.png" alt="NPL Image">
                     </div>
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
                         <div class="display-table-cell">
                             <h4 class="medium-title">NPL real estate broker</h4>
                             <p>Use our broker API to give banks and NPL servicers access to your broker power for appraisal and utilization of their real estate. Or use one of the many ready-to-go modules like Propertybase - one of the leading companies in real estate software - to get started. Our solution allows you to sell your services to creditors around the world and gives you access to our NPL broker community to develop your skills.</p>
@@ -128,17 +132,17 @@
         </div>
     </section><!-- END NPL SECTION -->
 
-    <section id="internet">
+    <section id="internet" class="service-section">
     	<div class="container mx-auto px-10">
     		<div class="platform-section">
     			<div class="grid grid-cols-12 ">
-    				<div class="col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
+    				<div class="col col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
     					<div class="display-table-cell">
                             <h4 class="medium-title">AVM companies and appraiser</h4>
                             <p>Our debtify ecosystem allows you to market your AVM (Automated Valuation Model), real estate appraisals or geo-data services directly to banks and servicers. Your data can then be automatically integrated into the debtify tools for a better workout.</p>
                         </div>
     				</div>
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 img-section">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 img-section wow bounceIn">
                         <img src="img/avm.png" alt="AVM Image">
                     </div>
     			</div>
@@ -146,14 +150,14 @@
     	</div>
     </section><!-- END AVM SECTION -->
 
-    <section id="track">
+    <section id="track" class="service-section">
     	<div class="container mx-auto px-10">
     		<div class="track-section">
     			<div class="grid grid-cols-12">
-                    <div class="col-span-12 md:col-span-6 lg:col-span-6 img-section">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-6 img-section wow bounceIn">
                         <img src="img/auction.png" alt="Auction Image">
                     </div>
-    				<div class="col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
+    				<div class="col col-span-12 md:col-span-6 lg:col-span-6 text-section display-table">
     					<div class="display-table-cell">
                             <h4 class="medium-title">foreclosure/auction servicer</h4>
                             <p>Our debtify foreclosure API gives secure access to creditors for your product offerings. debtify allows you to commercialize the sale of your services to creditors around the world and their workout partners.</p>     
@@ -174,20 +178,20 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-12">
-                    <div class="col-span-12 md:col-span-6 lg:col-span-4 single-platform">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-4 single-platform text-center">
                         <img src="img/solutions-1.png">
                         <p>Turnkey platforms to get started in a few days</p>
                         <p>Opt for the debtify solution to offer subscription to your products on our distribution channels to creditors around the world via a secure and customizable script.</p>
                     </div>
-                    <div class="col-span-12 md:col-span-6 lg:col-span-4 single-platform">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-4 single-platform text-center">
                         <img src="img/solutions-2.png">
                         <p>An integrated third-party service hub to enrich your subscription journey</p>
-                        <p>debtify provides third party partners with services that are already integrated into the subscription process, such as document verification, electronic signature or payment. The third-party services are enriched by our teams to offer the best possible subscription experience.</p>
+                        <p class="mt-4">debtify provides third party partners with services that are already integrated into the subscription process, such as document verification, electronic signature or payment. The third-party services are enriched by our teams to offer the best possible subscription experience.</p>
                     </div>
-                    <div class="col-span-12 md:col-span-6 lg:col-span-4 single-platform">
+                    <div class="col col-span-12 md:col-span-6 lg:col-span-4 single-platform text-center">
                         <img src="img/solutions-3.png">
                         <p>A secure Rest API that complies with banking standards to simplify data sharing</p>
-                        <p>debtify offers a Rest API consisting of NPL real estate industry standards. Interactive documentation is also available for developers to test our business services and our accounting with third-party systems in real time.</p>
+                        <p class="mt-4">debtify offers a Rest API consisting of NPL real estate industry standards. Interactive documentation is also available for developers to test our business services and our accounting with third-party systems in real time.</p>
                     </div>
                 </div>
             </div>
@@ -201,7 +205,7 @@
     				<div class="col-span-12 text-center">
     					<h2 class="big-title">Try debtify</h2>
     					<p>Sign up in minutes, cancel anytime.</p>
-    					<button class="btn debtify-btn"><a href="">Start for free</a></button>
+    					<button class="btn debtify-btn mt-6"><a href="">Start for free</a></button>
     				</div>
     			</div>
     		</div>

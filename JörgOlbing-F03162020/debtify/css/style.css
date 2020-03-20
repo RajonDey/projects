@@ -403,8 +403,23 @@ section {
 
 
 
+/*
+==================================
+    ABOUT PAGR CSS HERE
+==================================
+*/
+#referral .referral-section .section-title,
+#about .about-section .section-title{
+	width: 80%;
+	margin:0 auto;
+}
 
-
+#referral .referral-section .referral-img,
+#about .about-section .about-img{
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+}
 
 
 
@@ -424,17 +439,8 @@ section {
 	.Navbar__ToggleShow {
 	    display: block;
 	}
-	.banner-title {
-		font-size: 2.3rem;
-		line-height: normal;
-	}
-	.big-title {
-		font-size: 2rem;
-		line-height: normal;
-	}
-	.medium-title {
-		font-size: 1.6rem;
-		line-height: normal;
+	#main-banner .banner-section{
+		text-align: center;
 	}
 	section{
 		padding: 30px 0px;
@@ -459,6 +465,23 @@ section {
 		padding-left: 0rem;
 		padding-right: 0rem;
 	}
+
+	#referral .referral-section .section-title,
+	#about .about-section .section-title{
+		width: 100%;
+		margin:0 auto;
+	}
+
+	#referral .referral-section .referral-img,
+	#about .about-section .about-img{
+		width: 80%;
+	}
+
+	#footer .footer-widget{
+		padding-left: 0rem;
+		margin-top: 2rem;
+	}
+
 }
 
 /*laptop*/
@@ -469,23 +492,28 @@ section {
 	.Navbar__ToggleShow {
 	    display: block;
 	}
+	#main-banner .banner-section{
+		text-align: center;
+	}
 	.banner-title {
-		font-size: 2.8rem;
-		line-height: normal;
+		font-size: 2.2rem;
 	}
 	.big-title {
-		font-size: 2.5rem;
-		line-height: normal;
+		font-size: 2rem;
 	}
 	.medium-title {
-		font-size: 2rem;
-		line-height: normal;
+		font-size: 1.6rem;
 	}	
 	.display-table-cell{
 		display: table;
 	}
 	.display-table{
 		display: block;
+	}
+
+	#footer .footer-widget{
+		padding-left: 0rem;
+		margin-top: 2rem;
 	}
 }
 
