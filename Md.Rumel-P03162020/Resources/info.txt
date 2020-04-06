@@ -1,3 +1,44 @@
+ALL LINKS:
+==========
+Info: https://docs.google.com/document/d/1VpmgmEx5_7w3H-fwFCkosmzgOj_GTqAdWTlXebOn5CE/edit?ts=5e886db4
+
+Images drive: https://drive.google.com/drive/folders/1sZhx7LX5rz60xen5AsAbk4ZRQLHxLQgz
+
+WP Theme: https://themeforest.net/item/besocial-buddypress-social-network-community-wordpress-theme/19514161?gclid=CjwKCAjw4KD0BRBUEiwA7MFNTZIq72WVbLMeAipBn8OY_x0H7ylQZPHrewfw2oAcWJk1W8xSKOVNORoC2hAQAvD_BwE
+theme doc page: http://www.wp4life.com/online/besocial/index.html
+
+Credential:
+===========
+WP-Admin
+--------
+Log in here: http://bsak.org/wp-login.php
+Username: admin_bsak20
+Password: BSAK@ET-RT2020
+
+Cpanel Login Details
+================
+Username: bsakorg
+Password: s2L+!9tzn9VGR3
+
+Control Panel URL: http://204.93.169.72:2082/
+
+
+Your Task Of Customization: 
+Home Page
+Board (Advisor, ET-RT Team Members, Alumni)
+Activities  (Past events, gallery, BSAK publication)
+Forum
+Contact Us
+Registration form Page 
+
+# Changing Color in accordance with logo color.
+# Use Demo Image (I will do it)
+# Add BSAK Publications.
+
+==================================================================
+OLD INFO
+==================================================================
+
 Pages:
 =========
 Home
