@@ -1,0 +1,1143 @@
+/*
+Theme Name: SmashPotatoes theme
+Author: rajjohin
+Author URI: https://www.fiverr.com/rajjohin
+*/
+
+
+/*
+  ......................................................
+  	    Initiative CSS code for any standard theme     
+  ......................................................
+*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus{
+	outline:none !important;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8750em;
+	line-height:1.250em;
+	margin: auto !important;
+	overflow-x: hidden;
+	color: #333333;
+	-webkit-font-smoothing: antialiased;
+	width:100%;
+	background-color:#fdfdfd;
+	
+}
+
+img{
+	max-width:100%;
+	border:none;
+	height:auto;
+}
+
+.transition{
+	-webkit-transition: all 0.9s ease 0s;
+	-moz-transition: all 0.9s ease 0s;
+	-ms-transition: all 0.9s ease 0s;
+	-o-transition: all 0.9s ease 0s;
+	transition: all 0.9s ease 0s;
+}
+button,
+a,
+i{
+	text-decoration:none !important;
+    -webkit-transition: all 0.9s ease 0s;
+	-moz-transition: all 0.9s ease 0s;
+	-ms-transition: all 0.9s ease 0s;
+	-o-transition: all 0.9s ease 0s;
+	transition: all 0.9s ease 0s;
+	cursor: pointer;
+}
+button:hover,
+a:hover,
+i:hover{
+	text-decoration:none !important;
+	-webkit-transition: all 0.9s ease 0s;
+	-moz-transition: all 0.9s ease 0s;
+	-ms-transition: all 0.9s ease 0s;
+	-o-transition: all 0.9s ease 0s;
+	transition: all 0.9s ease 0s;
+}
+a:focus{
+	outline:none !important;
+}
+a:active{
+	text-decoration:none !important;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+select:focus{
+	outline:none !important;
+}
+
+ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+p{
+    margin-top:0px!important;
+    margin-bottom:0px!important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0px!important;
+}
+
+
+h1{
+    font-size: 2.250em;
+    line-height: 2.625em;
+}
+h2{
+    font-size: 1.750em;
+    line-height: 2.250em;
+}
+h3{
+    font-size: 1.500em;
+    line-height: 2em;
+}
+h4{
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+h5{
+    font-size: 1em;
+    line-height: 1.375em;
+}
+h6{
+    font-size: 0.750em;
+    line-height: 1em;
+}
+
+
+
+/*
+  .................................................
+  	    Global CSS code for any theme     
+  .................................................
+*/
+.globalButtonStyle{
+    
+}
+
+/* 
+  |	Margin Styling
+*/
+.MTop50{
+    margin-top: 50px;
+}
+.MTop30{
+    margin-top: 30px;
+}
+.MTop20{
+    margin-top: 20px;
+}
+.MTop10{
+    margin-top: 10px;
+}
+
+.MBottom50{
+    margin-bottom: 50px;
+}
+.MBottom30{
+    margin-bottom: 30px;
+}
+.MBottom20{
+    margin-bottom: 20px;
+}
+
+/* 
+  |	padding styling
+*/
+.padding80{
+    padding:80px 0px;
+}
+.padding50{
+    padding:50px 0px;
+}
+.padding30{
+    padding:30px 0px;
+}
+.padding20{
+    padding:20px 0px;
+}
+
+
+
+
+/*********************************************************************************/
+/*
+==================================
+    HEADER STYLING HERE
+==================================
+*/
+#header{
+	background: #232F3F;
+}
+#header-top{
+	background: #ffffff;
+	padding: 0px 15px;
+}
+#header-top button{
+	background: #EFFDE3;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+.help-select{
+	width: 15%;
+	border: none;
+}
+.shop-select{
+	width: 40%;
+	border: none;
+}
+
+
+.header-body{
+	background: #232F3F;
+	color: #fff;
+	padding-top: 15px;
+}
+.search-select {
+	border-radius: 6px 0px 0px 6px;
+}
+.search span button {
+	background: #FFBB67;
+	border-radius: 0px 6px 6px 0px;
+}
+.header-text {
+	color: #ddd;
+	font-size: 2.1em;
+	line-height: 1.4em;
+}
+.header-text strong{
+	color: #fff;
+}
+
+
+.main-nav .navbar-nav li a{
+	color: #ffffff;
+	font-weight: bold;
+}
+.collapse .navbar-nav li a{
+	color: #ffffff;
+	font-weight: normal;
+}
+
+/*
+==================================
+    Sidenav STYLING HERE
+==================================
+*/
+
+.sidenav .menu-head {
+	background: #232F3F;
+	padding: 6px;
+	color: #fff;
+	border-right: 1px solid #555555;
+}
+.sidenav .menu-head .title {
+	font-size: 1.1em;
+	border-bottom: 1px solid #555555;
+	padding-bottom: 10px;
+}
+.sidenav .menu-head .title i{
+	font-size: 1em;
+	margin-right: 6px;
+}
+.sidenav .menu-head ul {
+	display: inline-block;
+	display: flex;
+}
+.sidenav .menu-head ul li {
+	display: inline-block;
+	padding: 8px 10px;
+	background: #364759;
+	flex: auto;
+	text-align: center;
+}
+.sidenav .menu-head ul .mid-li{
+	margin: 0px 10px;
+}
+.sidenav .menu-head ul li a {
+	color: #fff!important;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav ul li{
+	padding: 6px 0px;
+}
+.sidenav ul .nav-head{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.sidenav ul .nav-head a{
+	color: #777!important;
+}
+.sidenav ul li:hover{
+	background-color: #ddd;
+}
+.sidenav ul li a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #333!important;
+	display: block;
+	transition: 0.3s;
+}
+.sidenav ul li a input{
+	padding: 4px;
+	border-radius: 4px;
+	border:1px solid #ddd;
+}
+
+.sidenav ul li a:hover {
+    color: #000;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-size: 32px;
+	margin-left: 50px;
+	color: #ddd;
+}
+
+/*
+==================================
+    Mega-Menu STYLING HERE
+==================================
+*/
+.navbar-nav .nav-item{
+	position: relative;
+}
+.navbar-nav .nav-item .mega-menu {
+	position: absolute;
+	min-width: 600px;
+	left: -460px;
+}
+.navbar-nav .nav-item .mega-menu .mega-menu-col {
+	width: 33%;
+	float: left;
+	border-right: 1px solid #ddd;
+	padding: 0px 10px;
+	min-height: 70vh;
+}
+.navbar-nav .nav-item .mega-menu .mega-menu-col .col-heading{
+	color: #333!important;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+.navbar-nav .nav-item .mega-menu .mega-menu-col a{
+	display: block;
+	color: #777!important;
+	font-weight: normal;
+	font-size: 14px;
+}
+.navbar-nav .nav-item .mega-menu .mega-menu-col a:hover{
+	color: #000!important;
+}
+
+/*
+==================================
+    Banner STYLING HERE
+==================================
+*/
+#banner .carousel-item img{
+	height: 55vh;
+}
+
+
+/*
+==================================
+    TOP STORE STYLING HERE
+==================================
+*/
+
+#topStore{
+	background: #EBECEE;
+}
+.customer-order .media i{
+	font-size: 3.5em
+}
+.m-customer-order,
+.customer-order{
+	background: #fff;
+	padding: 20px;
+}
+.m-customer-order p{
+	margin-bottom: 10px!important;
+	font-size: 1.2em;
+}
+.m-customer-order .sign-button{
+	background: #FAA419;
+	border: none;
+	width: 90%;
+	color: #fff;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 12px 0px;
+	border-radius: 6px;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+.m-customer-order .sign-button:hover{
+	background: #DA8400;
+}
+.m-customer-order .create-acc{
+	color: #00AEE7;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+
+
+.customer-order .media .media-body {
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.customer-order .media .media-body h5{
+	font-size: 1.2em;
+}
+.customer-order .media .media-body span{
+	color: #A8B8B8;
+}
+.customer-order p{
+	line-height: 1.5em;
+}
+
+#topStore .single-product{
+	background: #ffffff;
+	padding: 15px;
+}
+.single-product .store-heading{
+	color: #172125;
+	text-transform: uppercase;
+	font-size: 1.6em;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.store-heading-one{
+	border-bottom: 5px solid #92D2DD;
+}
+.store-heading-two{
+	border-bottom: 5px solid #B3D559;
+}
+.store-heading-three{
+	border-bottom: 5px solid #EBA945;
+}
+.store-heading-four{
+	border-bottom: 5px solid #D06767;
+}
+.single-product .store-image img{
+	width:150px;
+	height:150px;
+	display: block;
+	margin: 0 auto;
+}
+.owl-theme .owl-nav [class*="owl-prev"] {
+	display: none;
+}
+.owl-theme .owl-dots {
+	display: none;
+}
+.owl-next{
+	position: absolute;
+	top: 50%;
+	right: 0%;
+}
+
+/*
+==================================
+    Todays-deal STYLING HERE
+==================================
+*/
+#todays-deal .firstDeal-row{
+	padding: 15px 0px;
+}
+#todays-deal .firstDeal-row .sec-head .sub-title p a {
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+#todays-deal .firstDeal-row .owl-deal{}
+#todays-deal .firstDeal-row .owl-deal .single-product{}
+#todays-deal .firstDeal-row .owl-deal .single-product .prod-image {
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+#todays-deal .firstDeal-row .owl-deal .single-product .prod-image img {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+#todays-deal .firstDeal-row .owl-deal .single-product .prod-new-price {
+	color: #893724;
+	font-weight: 600;
+}
+#todays-deal .firstDeal-row .owl-deal .single-product .prod-old-price {
+	font-size: 12px;
+	color: #999;
+}
+#todays-deal .firstDeal-row .owl-deal .single-product .prod-deadline{
+	font-size: 12px;
+	color: #999;
+	color: green;	
+}
+
+
+#todays-deal .secondDeal-row{
+	padding: 15px 0px;	
+}
+#todays-deal .secondDeal-row .sec-head .sub-title p a{
+	margin-left: 10px;
+	font-size: 12px;	
+}
+
+#todays-deal .secondDeal-row .recomended-product .sec-head{
+	margin-bottom: 10px;
+}
+#todays-deal .secondDeal-row .recomended-product .single-product {
+	border: 1px solid #ddd;
+	width: 20%;
+	float: left;
+	padding: 15px 20px;
+	min-height: 350px;
+	border-left: none;
+}
+#todays-deal .secondDeal-row .recomended-product .first-S-product{
+	border-left: 1px solid #ddd;	
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .prod-image {
+	margin-bottom: 15px;
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .prod-image img {
+	width: 170px;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .prod-new-price{
+	color: #893724;
+	font-weight: 600;	
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .prod-old-price{
+	font-size: 12px;
+	color: #999;	
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .prod-comnt{
+	font-size: 14px;
+	color: #999;
+	margin-top: 6px;	
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .prod-deadline{
+	font-size: 12px;
+	color: #999;
+	color: green;
+	margin-top: 6px;	
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .prod-review span i{
+	color: #FF9800;
+}
+#todays-deal .secondDeal-row .recomended-product .single-product .cart-btn button {
+	background: linear-gradient(#F5D78B, #F0C24D);
+	width: 100%;
+	padding: 6px;
+	border: 1px solid #666;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+
+/*
+==================================
+    discountProd STYLING HERE
+==================================
+*/
+#brandsProd,
+#discountProd {
+	margin: 20px 0px;
+	background: #fff;
+	box-shadow: 1px 0px 3px #ddd;
+	padding: 20px 10px;
+}
+#brandsProd .section-head ,
+#discountProd .section-head {
+	text-align: center;
+	padding-top: 50px;
+}
+#brandsProd .section-head h4, #discountProd .section-head h4 {
+	font-size: 1.8em;
+	color: #333;
+	font-weight: 600;
+	line-height: 1.2em;
+}
+#brandsProd .section-head button,
+#discountProd .section-head button {
+	background: #2874F0;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px 15px;
+	font-weight: 600;
+	border-radius: 4px;
+	box-shadow: 1px 3px 7px #ddd;
+	margin-top: 30px;
+}
+
+#brandsProd .brand-products .single-product .prod-image,
+#discountProd .discount-products .single-product .prod-image {
+	width: 100%;
+	margin-bottom: 10px;
+}
+#brandsProd .brand-products .single-product .prod-image img,
+#discountProd .discount-products .single-product .prod-image img {
+	width: 180px;
+	height: 190px;
+}
+#brandsProd .brand-products .single-product .prod-desc .prod-price,
+#discountProd .discount-products .single-product .prod-desc .prod-price {
+	font-size: 1.3em;
+}
+#brandsProd .brand-products .single-product .prod-desc .prod-comnt,
+#discountProd .discount-products .single-product .prod-desc .prod-comnt {
+	font-size: 12px;
+	line-height: 22px;
+}
+#brandsProd .brand-products .single-product .prod-desc .prod-review i,
+#discountProd .discount-products .single-product .prod-desc .prod-review i {
+	color: #FF9800;
+}
+
+/*
+==================================
+    ABOUT STYLING HERE
+==================================
+*/
+#about{
+	background: #F9FAF5;
+}
+#about h2{
+	font-size: 2em;
+}
+#about p{
+	font-size: 1em;
+}
+#about button{
+	margin-top: 20px;
+	background: #509401;
+	border-radius: 6px;
+	padding: 10px 20px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/*
+==================================
+    categories STYLING HERE
+==================================
+*/
+#categories .categories-title{
+	margin-bottom: 50px;
+}
+#categories .categories-title h4{
+	font-weight: bold;
+}
+#categories .category-image{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#categories .category-name{
+	text-align: center;
+	margin-bottom: 10px;
+}
+#categories .categories-Button{
+	display: block;
+	margin: 30px auto;
+	background: none;
+	border: 1px solid #041E43;
+	padding: 12px 24px;
+	color: #041E43;
+	cursor: pointer;
+	font-weight: bold;
+}
+#categories .categories-Button:hover{
+	background: #041E43;
+	color: #ffffff;
+}
+#categories .show{
+		display: none;
+}
+/*
+==================================
+    advertise STYLING HERE
+==================================
+*/
+#advertise .first-advertise img,
+#advertise .second-advertise img{
+	width: 100%;
+	height: 200px;
+}
+.second-advertise img{
+	border: 1px solid #ddd;
+}
+
+/*
+==================================
+    quote STYLING HERE
+==================================
+*/
+#quote{
+	background: #3E4F59;
+	color: #fff;
+}
+#quote p{
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+#quote p a{
+	color: #fff;
+	font-weight: bold;
+}
+
+/*
+==================================
+    fashion-focus STYLING HERE
+==================================
+*/
+#fashion-focus .item-img img{
+	width: 200px;
+	min-height: 200px;
+	margin: 10px;
+}
+#fashion-focus{
+	position: ;
+}
+#fashion-focus .load{
+	display: none;
+}
+
+#fashion-focus .load-button{
+	display: block;
+	margin: 30px auto;
+	background: none;
+	border: 1px solid #041E43;
+	padding: 12px 24px;
+	color: #041E43;
+	cursor: pointer;
+	font-weight: bold;
+}
+#fashion-focus .load-button:hover{
+	background: #041E43;
+	color: #ffffff;
+}
+
+/*
+==================================
+    second-banner STYLING HERE
+==================================
+*/
+#second-banner{
+	position: relative;
+}
+.carousel-indicators{
+	top:30px;
+}
+.carousel-indicators button{
+	border: 1px solid #333;
+	background: #fff;
+	border-radius: 20px;
+	padding: 8px 16px;
+	color: #333;
+	font-weight: bold;	
+	margin: 0px 10px;
+}
+
+#second-banner .carousel-item img{
+
+}
+#second-banner .banner-content {
+	position: absolute;
+	background: rgba(0,0,0,0.6);
+	padding: 20px;
+	width: 30%;
+	top: 40%;
+	color: #fff;
+	left: 12%;
+}
+#second-banner .banner-content h2{
+	font-weight: bold;
+}
+
+
+/*
+==================================
+    sponsored-product STYLING HERE
+==================================
+*/
+#sponsored-product .row{
+	padding: 20px 0px;
+	border-bottom: 1px solid #ddd;
+}
+.sponsored-product-head{
+	margin-bottom:30px;
+}
+.sponsored-product-head p{
+	color: #7F6A4B;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.sponsored-product-head p a{
+	color: #7F6A4B;
+	text-decoration: underline!important;	
+}
+.sponsored-product-head p span{
+	color: #009ADC;
+}
+#sponsored-product .product-description {
+	padding: 10px 0px;
+}
+#sponsored-product .product-description p{
+	color: #009ADC;
+}
+#sponsored-product .product-review i{
+	color: #FF9900;	
+}
+.product-price{
+	color: #C23504;
+}
+.product-price span {
+	color: #009ADC;
+}
+.product-price span i{
+	color: #FF9900;
+}
+
+
+/*
+==================================
+    footer-top STYLING HERE
+==================================
+*/
+#footer-top{
+	background: #364759;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#footer-top a{
+	color: #ffffff;
+}
+
+/*
+==================================
+    footer STYLING HERE
+==================================
+*/
+#footer{
+	background: #232F3F;
+}
+.footer-heading p{
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #ffffff;
+	padding-bottom: 10px;
+}
+.footer-desc ul li{
+	color: #ddd;
+}
+
+
+/*
+================================================================
+                   EXTRA
+================================================================
+*/
+.main-nav{
+	position: relative;
+}
+.navbar-toggler {
+	padding: .25rem .75rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: transparent;
+	border-radius: 0px;
+	position: absolute;
+}
+
+
+/*
+================================================================
+                   EXTRA for Mobile Section
+================================================================
+*/
+
+#mobile-sections .section-title{
+	font-size: 16px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	width: 100%;
+	display: block;
+}
+#mobile-sections .row{
+	padding: 15px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 5px #ddd;
+}
+#mobile-sections .row button{
+	width: 100%;
+	border:none;
+	border-top: 1px solid #ddd;
+	color: #36C6FA;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: transparent;
+	position: relative;
+	padding: 10px 0px; 
+	text-align: left;
+}
+#mobile-sections .row button i{
+	position: absolute;
+	right: 5px;
+}
+#mobile-sections .single-sec{
+	width: 49%;
+	float: left;
+	padding: 0px;
+	margin-bottom: 10px;
+	margin-right: 2px;
+}
+#mobile-sections .single-sec img{
+	width: 100%;
+	margin-bottom: 6px;
+	height: 140px;
+}
+#mobile-sections .col-md-12{
+	width: 100%;
+	text-align: center;
+}
+#mobile-sections .single-sec p{
+	text-align: center;
+}
+#mobile-sections .section-title{}
+#mobile-sections .section-title{}
+
+
+
+
+
+
+
+/*
+================================================================
+
+                   RESPONSIVE STYLING HERE
+
+================================================================
+*/
+
+
+/*
+||	For iPhone
+*/
+@media (max-width: 767px) {
+
+	.login-button, .header-text, .navbar-right, .hide-sm{display: none}h2 {line-height: 1.25em;}
+  	.help-select {width: 32%;}
+   	.title-nav{ display: inline-block; }
+	.title-nav li{ display: inline-block; margin: 0px 12px;}
+	
+	.carousel-indicators button{font-size: 10px;}
+	#second-banner .banner-content{width:75%;top: 40%;}
+
+	.navbar-toggler {right: 4%;top: 10%;}
+	.navbar-collapse {background: #ffffff; position: absolute;z-index: 999999;right: 0;top: 48px;min-width: 250px;}
+	.navbar-collapse .navbar-nav li {padding: 10px;}
+	.collapse .navbar-nav li a{	padding: 8px 8px 8px 20px;font-size: 14px;color: #333 !important;transition: 0.3s;}
+	.collapse .navbar-nav li:hover{background-color: #DDDDDD}
+
+	.logo-left{width: 60%; }
+	.logo-right {width: 34%;float: right;display: block;text-align: right;margin-right: 20px;font-size: 2.2em;margin-top: 2px;}
+	.logo-right span{margin-left: 15px;}
+	.logo-right span a{position: relative;}
+	.logo-right span a i{color: #FDFEFC;}
+	.logo-right .user-sign {font-size: 12px;position: absolute;display: inline-table;left: -20px;bottom: -12px;}
+
+	.search {border-top: 1px solid #413F40;border-bottom: 1px solid #413F40;padding: 15px;}
+	.search .input-group .form-control{border-radius: 5px 0px 0px 5px;}
+	#header .container-fluid,
+	#header .row
+	#header .col-md-2, #header .col-md-12{padding: 0px;}
+	#banner .carousel-item img{height: 30vh;}
+	#about button {width: 70%;padding: 14px 0px;}
+	.col-xs-6{width: 49%;float: left;}
+	.footer-div{margin-bottom: 25px; margin-left: 15px;}
+
+	#todays-deal .firstDeal-row .owl-deal .single-product .prod-image {float: left;margin-right: 10px;}
+	#todays-deal .firstDeal-row .owl-deal .single-product .prod-image img {width: 130px;height: 150px;}
+	#todays-deal .firstDeal-row .owl-deal .single-product .prod-desc{padding: 30px 0px;}
+
+	.nav-button {position: absolute;top: 13px;right: 22px;}
+	#brandsProd .section-head, #discountProd .section-head {padding-top: 0;}
+	#brandsProd .section-head h4, #discountProd .section-head h4 {font-size: 1.4em;}
+	#brandsProd .section-head button, #discountProd .section-head button {margin-top: 10px;padding: 8px 15px;}
+
+	#todays-deal .firstDeal-row .sec-head .sub-title p{font-weight: bold;color: #000;}
+	#todays-deal .secondDeal-row .sec-head .sub-title p{font-weight: bold;color: #000;}
+	#todays-deal .firstDeal-row .sec-head .sub-title p span{color: #666;font-size: 11px;font-weight: normal;}
+	#todays-deal .secondDeal-row .sec-head .sub-title p span{color: #666;font-size: 11px;font-weight: normal;}
+
+    
+}
+
+/*
+||	For iPhone (small mobile)
+*/
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+
+   	.login-button, .header-text, .navbar-right, .side-banner, .sec-ban-indi, .banner-content, .hide-sm{display: none}h2 {line-height: 1.25em;}
+   	#header-top button {padding: 2px; font-size: 9px}
+   	.help-select {width: 34%;padding: 1px;height: 30px; font-size: 9px}
+   	.shop-select {width: 45%;padding: 1px;height: 30px; font-size: 9px}
+  
+   	.title-nav{ display: inline-block; }
+	.title-nav li{ display: inline-block; }
+
+	.logo-left{width: 58%; }
+	.logo-right {margin-top: 2px;}
+	.title-nav li a{font-size:14px;}
+	#banner .carousel-item img{height: 28vh;}
+
+	#todays-deal .secondDeal-row .recomended-product .single-product {width: 50%;padding: 6px;min-height: 310px;}
+	#todays-deal .secondDeal-row .recomended-product .single-product .prod-image img {width: 120px;height: 140px;}
+	#todays-deal .secondDeal-row .recomended-product .single-product .prod-review{display: none}
+
+    
+}
+
+/*
+||	Mini SmartPhone
+*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	.login-button, .header-text, .navbar-right, .side-banner, .sec-ban-indi, .hide-sm{display: none}h2 {line-height: 1.25em;}
+	#header-top button {padding: 6px; font-size: 10px}
+	.help-select {width: 34%;padding: 1px;height: 30px; font-size: 10px}
+	.shop-select {width: 45%;padding: 1px;height: 30px; font-size: 10px}
+   	.title-nav{ display: inline-block; }
+	.title-nav li{ display: inline-block; }
+	#second-banner .banner-content {top: 8%;}
+	.banner-content h2{font-size: 16px;}
+	.banner-content h4{font-size: 12px;}
+
+	#todays-deal .secondDeal-row .recomended-product .single-product {width: 50%;padding: 8px;min-height: 310px;}
+	#todays-deal .secondDeal-row .recomended-product .single-product .prod-image img {width: 120px;height: 140px;}
+	#todays-deal .secondDeal-row .recomended-product .single-product .prod-review{display: none}
+
+
+}
+
+/*
+||	For iPhone (small tablet)
+*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	
+   	.login-button, .header-text, .navbar-right, .hide-sm{display: none}h2 {line-height: 1.25em;}
+   	.help-select {width: 32%;}
+   	.title-nav{ display: inline-block; }
+	.title-nav li{ display: inline-block; }
+	.carousel-indicators button{font-size: 10px;}
+	#second-banner .banner-content{width:75%;top: 40%;}
+	.logo img{width: 50%;}
+
+	#todays-deal .secondDeal-row .recomended-product .single-product {width: 50%;}
+
+
+
+}
+
+/*
+||	For Tablet
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.help-select {width: 20%;}
+	.header-text {font-size: 1.3em;line-height: 1.7em;}
+	.navbar-right, .hide-lg{display: none}
+
+	.title-nav{ display: inline-block; }
+	.title-nav li{ display: inline-block; margin: 0px 15px;}
+
+	.carousel-indicators button{font-size: 10px;}
+	#second-banner .banner-content{width:60%;}
+
+	#todays-deal .secondDeal-row .recomended-product .single-product {width: 33%;}
+
+  
+}
+
+/*
+||	For Desktop
+*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.header-text {font-size: 1.7em;line-height: 1.4em;}
+	#quote p {font-size: 1.1em;}
+
+	.hide-lg{display: none;}
+	.search{margin-top: 10px;}
+	.header-text {padding-top: 10px;}
+
+   
+}
+
+@media (min-width: 1199px) and (max-width: 1400px) {
+
+	.hide-lg{display: none;}
+	.search{margin-top: 15px;}
+	.header-text {padding-top: 15px;}
+
+}
