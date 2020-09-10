@@ -1,0 +1,66 @@
+/* FONTS */
+@font-face {
+  font-family: Aktiv;
+  src: url('../fonts/AktivGrotesk.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Aktiv;
+  src: url('../fonts/AktivGrotesk_Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url('../fonts/CircularXX-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url('../fonts/CircularStd-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/GraphikLight.otf');
+  font-weight: 300;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/Graphik-Regular.otf');
+  font-weight: 400;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/Graphik-Medium.otf');
+  font-weight: 400;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: basis-grotesque;
+  src: url('../fonts/basis-grotesque-off-white.woff2');
+  font-weight: 300;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: basis-grotesque;
+  src: url('../fonts/basis-grotesque-regular.woff2');
+  font-weight: 400;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: basis-grotesque;
+  src: url('../fonts/basis-grotesque-medium.woff2');
+  font-weight: 500;
+  font-display: auto;
+}
