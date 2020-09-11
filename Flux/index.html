@@ -4,57 +4,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flux | Your brand. Your style. Your voice.</title>
+    <title>Flux </title>
     <meta name="Description" content="Your brand. Your style. Your voice." />
 
-    <!-- Meta tags -->
-    <meta property="og:title" content="Flux" />
-    <meta property="og:site_name" content="Flux" />
-    <meta
-      property="og:description"
-      content="Your brand. Your style. Your voice."
-    />
-    <meta
-      property="og:image"
-      content="http://www.strmlined.com/flux/assets/m-tag.jpg"
-    />
-    <meta property="og:url" content="http://www.strmlined.com/flux/" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="format-detection" content="date=no" />
-    <meta name="format-detection" content="address=no" />
-    <meta name="format-detection" content="email=no" />
-
-    <meta name="twitter:title" content="Flux" />
-    <meta
-      name="twitter:description"
-      content="Your brand. Your style. Your voice."
-    />
-    <meta
-      name="twitter:image"
-      content="http://www.strmlined.com/flux/assets/m-tag.jpg"
-    />
-    <meta name="twitter:card" content="summary" />
-    <!-- End of meta tags -->
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/bfc3b648bd.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/bfc3b648bd.js" crossorigin="anonymous" ></script>
   </head>
   <body>
+
     <!-- Navbar -->
     <nav id="navbar" class="nopadding">
       <div class="container nopadding">
+        
+        <!-- Menu -->
         <div class="menu">
         	<ul>
         		<li><a id="header-description" href="#">Merchandise</a></li>
@@ -62,46 +31,50 @@
         		<li><a id="header-description" href="#">FAQ</a></li>
         	</ul>
         </div>
+        <!-- Logo -->
+        <!-- <div class="logo"><a href=""><img src="img/fluxlogo.png" alt="" class="img-fluid"></a></div> -->
         <div class="logo"><a href="">FLUX</a></div>
+        <!-- Media -->
         <div class="media">
-          <div class="media-button">
-            <a href="https://twitter.com/FluxTV_Official" target="_blank" rel="noreferrer">
+          <ul>
+            <li><a href="https://twitter.com/FluxTV_Official" target="_blank" rel="noreferrer">
               <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
-          <div class="media-button">
-            <a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+            </a></li>
+            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
               <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-          <div class="media-button">
-            <a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+            </a></li>
+            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
               <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-          <div class="media-button">
-            <a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+            </a></li>
+            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
               <i class="fab fa-snapchat-ghost"></i>
-            </a>
-          </div>
+            </a></li>
+          </ul>
           <div class="media-button cart">
-        	<a href="#">
-        		<i class="fas fa-shopping-cart"></i> <span>(0)</span>
-        	</a>
-        </div>
+            <ul>
+              <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+              <li><span> ( 0 )</span></li>
+            </ul>
+          </div>
         </div>
         
       </div>
     </nav>
 
+
     <!-- Header -->
     <header id="header">
+      <!-- Video -->
       <div id="header-video">
         <div id="header-video-gradient"></div>
-        <img id="video-element" src="http://www.strmlined.com/flux/assets/images/poster.jpg">
+        <!-- <img id="video-element" src="img/modehero.png" style="width:100%;"> -->
+        <video autoplay muted loop poster="img/modehero.png">
+          <!-- <source src="img/hero-funnel.mp4"> -->
+        </video>
         <canvas id="video-canvas"></canvas>
         <div id="header-video-gradient-bottom"></div>
       </div>
+      <!-- Banner -->
       <div id="header-content">
         <div id="header-text" class="container">
           <p id="header-description" class="font-weight-100">INTRODUCING</p>	
@@ -125,348 +98,477 @@
       </div>
     </header>
 
+    <!-- First Container -->
     <main class="container">
-      <!-- Video Popup -->
-      <!-- <div id="video-popup" class="hidden">
-        <div id="main-video-container">
-          <div id="video-popup-close"><i class="fas fa-times"></i></div>
-          <video id="main-video" loop playsinline>
-            <source src="http://www.strmlined.com/flux/assets/videos/flux-gen.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div> -->
-
-      <!-- What We Do section -->
-      <section id="what-we-do" class="">
-        <div class="effect-text">
-          <span class="letter">L</span>
-          <span class="letter">A</span>
-          <span class="letter">T</span>
-          <span class="letter">E</span>
-          <span class="letter">S</span>
-          <span class="letter">T</span>
-          <span class="spacing"></span>
-          <span class="effect">
-            <span class="letter">M</span>
-            <span class="letter">E</span>
-            <span class="letter">R</span>
-            <span class="letter">C</span>
-            <span class="letter">H</span>
-            <span class="letter">A</span>
-            <span class="letter">N</span>
-            <span class="letter">D</span>
-            <span class="letter">I</span>
-            <span class="letter">S</span>
-            <span class="letter">E</span>
-          </span>
-        </div>
-        <div id="main-topics" class="topics">
-          <div class="topic">
-            <div class="image">
-              <div id="image1" class="content"></div>
-            </div>
-            <p class="title">MEGAN 2020 CALENDAR</p>
-          </div>
-          <div class="topic">
-            <div class="image">
-              <div id="image2" class="content"></div>
-            </div>
-            <p class="title">MEGAN POOLSIDE POSTER</p>
-          </div>
-          <div class="topic">
-            <div class="image">
-              <div id="image3" class="content"></div>
-            </div>
-            <p class="title">MEGAN APARTMENT POSTER</p>
-          </div>
-          <div class="topic">
-            <div class="image">
-              <div id="image4" class="content"></div>
-            </div>
-            <p class="title">CONTENT PRODUCT TEAM</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Our Clients section -->
-      <section id="our-clients">
-        <div class="container">
-          <div id="hidden3" class="effect-text">OUR CLIENTS</div>
-          <p id="hidden4" class="text">
-            This is just a taste of some of the individuals we have worked with!
-            There is an ever-growing list. Be part of FLUX, get in touch now!
-          </p>
-        </div>
-        <div id="clients">
+      <!-- L A T E S T   M E R C H A N D I S E: section  -->
+      <section id="latest-merchandise" class="">
+          <div class="container">
           <div class="row">
-            <div id="client-1" class="client">
-              <div class="image">
-                <div id="image5" class="content"></div>
-              </div>
-              <div class="info">
-                <div class="name">Jenna Lee</div>
-                <div class="instagram">
-                  <a
-                    href="https://www.instagram.com/thejennalee/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i class="fab fa-instagram"></i> @thejennalee</a
-                  >
+            <div class="col-md-12">
+              <!-- Title Part -->  
+              <div class="title-part">
+                <div class="effect-text small-effect-text">
+                  <span class="letter">L</span>
+                  <span class="letter">A</span>
+                  <span class="letter">T</span>
+                  <span class="letter">E</span>
+                  <span class="letter">S</span>
+                  <span class="letter">T</span>
+                  <span class="spacing"></span>
+                  <span class="effect">
+                    <span class="letter">M</span>
+                    <span class="letter">E</span>
+                    <span class="letter">R</span>
+                    <span class="letter">C</span>
+                    <span class="letter">H</span>
+                    <span class="letter">A</span>
+                    <span class="letter">N</span>
+                    <span class="letter">D</span>
+                    <span class="letter">I</span>
+                    <span class="letter">S</span>
+                    <span class="letter">E</span>
+
+                  </span>
+                  <span class="title-bar"></span>
                 </div>
-                <div class="followers">Followers: 1.1M</div>
               </div>
-            </div>
-            <div id="client-2" class="client">
-              <div class="image">
-                <div id="image6" class="content"></div>
-              </div>
-              <div class="info">
-                <div class="name">Courtney Tailor</div>
-                <div class="instagram">
-                  <a
-                    href="https://www.instagram.com/courtneytailor/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i class="fab fa-instagram"></i> @courtneytailor</a
-                  >
-                </div>
-                <div class="followers">Followers: 1.8M</div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div id="client-3" class="client">
-              <div class="image">
-                <div id="image7" class="content"></div>
-              </div>
-              <div class="info">
-                <div class="name">Mia</div>
-                <div class="instagram">
-                  <a
-                    href="https://www.instagram.com/mia_malkova/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i class="fab fa-instagram"></i> @mia_malkova</a
-                  >
-                </div>
-                <div class="followers">Followers: 6.7M</div>
-              </div>
-            </div>
-            <div id="client-4" class="client">
-              <div id="special-client">
-                <div class="image">
-                  <div id="image8" class="content"></div>
-                </div>
-                <div class="info">
-                  <div class="name">AcPent</div>
-                  <div class="instagram">
-                    <a
-                      href="https://www.instagram.com/acpent/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i class="fab fa-instagram"></i> @acpent
-                    </a>
+              <!-- Carousel Part -->  
+              <div class="owl-carousel pt-4">
+                <div> 
+                  <img src="img/model1.png"> 
+                  <div class="content">
+                    <p class="title">Megan 2020<br> Calendar</p>
+                    <p class="bar"></p>
+                    <small>$20.00</small>
                   </div>
-                  <div class="followers">Followers: 54k</div>
+                </div>
+                <div> 
+                  <img src="img/model2.png"> 
+                  <div class="content">
+                    <p class="title">Megan Poolside<br> Poster</p>
+                    <p class="bar"></p>
+                    <small>$20.00</small>
+                  </div>
+                </div>
+                <div> 
+                  <img src="img/model3.png"> 
+                  <div class="content">
+                    <p class="title">Megan Apartment<br> Calendar</p>
+                    <p class="bar"></p>
+                    <small>$20.00</small>
+                  </div>
+                </div>
+                <div> 
+                  <img src="img/model1.png"> 
+                  <div class="content">
+                    <p class="title">Megan 2020<br> Calendar</p>
+                    <p class="bar"></p>
+                    <small>$20.00</small>
+                  </div>
+                </div>
+                <div> 
+                  <img src="img/model2.png"> 
+                  <div class="content">
+                    <p class="title">Megan Poolside<br> Poster</p>
+                    <p class="bar"></p>
+                    <small>$20.00</small>
+                  </div>
+                </div>
+                <div> 
+                  <img src="img/model3.png"> 
+                  <div class="content">
+                    <p class="title">Megan Apartment<br> Calendar</p>
+                    <p class="bar"></p>
+                    <small>$20.00</small>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div id="client-5" class="client">
-              <div class="image">
-                <div id="image9" class="content"></div>
-              </div>
-              <div class="info">
-                <div class="name">Novaruu</div>
-                <div class="instagram">
-                  <a
-                    href="https://www.instagram.com/novaruu/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i class="fab fa-instagram"></i> @novaruu</a
-                  >
-                </div>
-                <div class="followers">Followers: 117k</div>
-              </div>
-            </div>
-            <div id="client-6" class="client">
-              <div class="image">
-                <div id="image10" class="content"></div>
-              </div>
-              <div class="info">
-                <div class="name">Samantha Gangeware</div>
-                <div class="instagram">
-                  <a
-                    href="https://www.instagram.com/thatboostedchick/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i class="fab fa-instagram"></i> @thatboostedchick</a
-                  >
-                </div>
-                <div class="followers">Followers: 752k</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Get In Touch section -->
-      <section id="get-in-touch">
-        <div class="container">
-          <div class="row">
-            <div class="col" id="side-video-container">
-              <div id="hidden5" class="side-video">
-                <video autoplay loop muted playsinline>
-                  <source src="http://www.strmlined.com/flux/assets/videos/contact.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            <div class="col" id="form-container">
-              <div id="hidden6" class="title">GET IN TOUCH</div>
-              <div id="hidden7" class="text">
-                Do you want to get your own products launched and take your
-                social media further? Or maybe you have another question or want
-                to partner with us? Either way use the form to contact us.
-              </div>
-              <form
-                id="hidden8"
-                class="contact-form"
-                action="https://formspree.io/xeqryzzy"
-                method="POST"
-              >
-                <label for="email-input">Your email</label>
-                <input
-                  type="email"
-                  name="_replyto"
-                  id="email-input"
-                  placeholder="Your email"
-                />
-                <label for="textarea-input">Your email</label>
-                <textarea
-                  name="message"
-                  id="textarea-input"
-                  rows="12"
-                  placeholder="Your message..."
-                ></textarea>
-                <button id="form-button" type="submit">
-                  Send message <i class="fas fa-paper-plane"></i>
-                </button>
-              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer id="footer">
+    <!-- Mid Content section -->
+    <section id="mid-content" class="bg-cover">
+      <!-- First Part: E X C L U S I V E  C O N T E N T -->
+      <div class="container" id="exclusive-content">
+        <div class="row pb-5 pt-5">
+          <div class="col-md-6">
+            <div class="title-part">
+              <p class="small-title">Early access offer - only $19.99!</p>
+              <p id="bar"></p>
+              <div class="effect-text">
+                <span class="letter">E</span>
+                <span class="letter">X</span>
+                <span class="letter">C</span>
+                <span class="letter">L</span>
+                <span class="letter">U</span>
+                <span class="letter">S</span>
+                <span class="letter">I</span>
+                <span class="letter">V</span>
+                <span class="letter">E</span>
+
+                <p class="effect">
+                  <span class="letter">C</span>
+                  <span class="letter">O</span>
+                  <span class="letter">N</span>
+                  <span class="letter">T</span>
+                  <span class="letter">E</span>
+                  <span class="letter">N</span>
+                  <span class="letter">T</span>
+                </p>
+              </div>
+              <p class="pt-3 pb-5 pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+
+              <a href="#" class="small-title flux-btn text-white">Get Instand Access</a> 
+
+              <div class="mt-5">
+                <img src="img/excircleimg.png" alt="Image"> 
+                <img src="img/sign.png" alt="Sign">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <img src="img/exclusivemodel.png">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Second Part: M E G A N  X  F L U X -->
+      <div class="container" id="x-flux">
+        <div class="row pb-5 pt-5">
+          <div class="col-md-12 text-center">
+            <!-- Title Part -->
+            <div class="title-part">
+              <p class="small-title">Take a Sneak Park</p>
+              <p id="bar"></p>
+              <div class="effect-text pb-5">
+                <span class="letter">M</span>
+                <span class="letter">E</span>
+                <span class="letter">G</span>
+                <span class="letter">A</span>
+                <span class="letter">N</span>
+                <span class="spacing"></span>
+                <span class="letter">X</span>
+                <span class="spacing"></span>
+                <span class="letter">F</span>
+                <span class="letter">L</span>
+                <span class="letter">U</span>
+                <span class="letter">X</span>
+
+                <p class="effect">
+                  <span class="letter">2</span>
+                  <span class="letter">0</span>
+                  <span class="letter">2</span>
+                  <span class="letter">1</span>
+                  <span class="spacing"></span>
+                  <span class="letter">C</span>
+                  <span class="letter">A</span>
+                  <span class="letter">L</span>
+                  <span class="letter">E</span>
+                  <span class="letter">N</span>
+                  <span class="letter">D</span>
+                  <span class="letter">A</span>
+                  <span class="letter">R</span>
+                </p>
+              </div>
+              <div><a href="#" class="small-title flux-btn text-white">Buy yours now</a></div> 
+            </div>
+            <!-- Carousel Part -->
+            <div id="slider" class="owl-carousel owl-carousel-2 owl-theme">
+              <div> <img src="img/cmodel1.png"> </div>
+              <div> <img src="img/cmodel2.png"> </div>
+              <div> <img src="img/cmodel3.png"> </div>
+              <div> <img src="img/cmodel1.png"> </div>
+              <div> <img src="img/cmodel2.png"> </div>
+              <div> <img src="img/cmodel3.png"> </div>
+              <div> <img src="img/cmodel1.png"> </div>
+              <div> <img src="img/cmodel2.png"> </div>
+              <div> <img src="img/cmodel3.png"> </div>
+              <div> <img src="img/cmodel1.png"> </div>
+              <div> <img src="img/cmodel2.png"> </div>
+              <div> <img src="img/cmodel3.png"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video section -->
+    <section id="video-content" class="bg-cover mt-5 mb-5">
       <div class="container">
-        <div id="hidden9" class="text follow-us">
-          <span>Follow us</span>
-          <br />
-          <div class="flex">
-            <div class="media-button">
-              <a
-                href="https://www.instagram.com/fluxofficial/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <!-- Last Content section -->
+    <main class="container">
+      <!-- F A Q  A N S W E R E D: section -->
+      <section id="second-main-content">
+        <div class="container">
+          <div class="row pb-5 pt-5">
+            <!-- Title part -->
+            <div class="col-md-6" id="faq-title">
+              <div class="title-part">
+                <p class="small-title">frequently asked questions</p>
+                <p id="bar"></p>
+                <div class="effect-text">
+                  <span class="letter">A</span>
+                  <span class="letter">L</span>
+                  <span class="letter">L</span>
+                  <span class="spacing"></span>
+                  <span class="letter">Y</span>
+                  <span class="letter">O</span>
+                  <span class="letter">U</span>
+                  <span class="letter">R</span>
+                  <br>
+                  <span class="letter">Q</span>
+                  <span class="letter">U</span>
+                  <span class="letter">E</span>
+                  <span class="letter">S</span>
+                  <span class="letter">T</span>
+                  <span class="letter">I</span>
+                  <span class="letter">O</span>
+                  <span class="letter">N</span>
+                  <span class="letter">S</span>
+
+                  <p class="effect">
+                    <span class="letter">A</span>
+                    <span class="letter">N</span>
+                    <span class="letter">S</span>
+                    <span class="letter">W</span>
+                    <span class="letter">E</span>
+                    <span class="letter">R</span>
+                    <span class="letter">E</span>
+                    <span class="letter">D</span>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="media-button">
-              <a
-                href="https://twitter.com/FluxTV_Official"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
+            <!-- Questions part -->
+            <div id="faq" class="col-md-6">
+              <div class="faq-quesions">
+                <ul id="qa">
+                  <li class="p-2 mb-3">
+                    <div class="q pl-2 mb-0 expand-content collapsed">
+                      <i class="fa fa fa-angle-down" aria-hidden="true"></i>
+                      <h4>What kind of content can I expect?</h4>
+                    </div>
+                    <div class="a pl-2 pt-2 hidden-content">
+                      <p class="pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li class="p-2 mb-3">
+                    <div class="q pl-2 mb-0 moreless-button collapsed">
+                      <i class="fa fa fa-angle-down" aria-hidden="true"></i>
+                      <h4>What kind of content can I expect?</h4>
+                    </div>
+                    <div class="a pl-2 pt-2">
+                      <p class="pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                  </li>
+                  <li class="p-2 mb-3">
+                    <div class="q pl-2 mb-0 expand-content collapsed">
+                      <i class="fa fa fa-angle-down" aria-hidden="true"></i>
+                      <h4>What kind of content can I expect?</h4>
+                    </div>
+                    <div class="a pl-2 pt-2 hidden-content">
+                      <p class="pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li class="p-2 mb-3">
+                    <div class="q pl-2 mb-0 moreless-button collapsed">
+                      <i class="fa fa fa-angle-down" aria-hidden="true"></i>
+                      <h4>What kind of content can I expect?</h4>
+                    </div>
+                    <div class="a pl-2 pt-2">
+                      <p class="pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                  </li>
+                  <li class="p-2 mb-3">
+                    <div class="q pl-2 mb-0 expand-content collapsed">
+                      <i class="fa fa fa-angle-down" aria-hidden="true"></i>
+                      <h4>What kind of content can I expect?</h4>
+                    </div>
+                    <div class="a pl-2 pt-2 hidden-content">
+                      <p class="pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </li>
+                  <li class="p-2 mb-3">
+                    <div class="q pl-2 mb-0 moreless-button collapsed">
+                      <i class="fa fa fa-angle-down" aria-hidden="true"></i>
+                      <h4>What kind of content can I expect?</h4>
+                    </div>
+                    <div class="a pl-2 pt-2">
+                      <p class="pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div id="main-link">
-          <a
-            href="https://www.instagram.com/fluxofficial/"
-            target="_blank"
-            rel="noreferrer"
-            ><span id="hidden10"><span class="at">@</span>FLUXOFFICIAL</span></a
-          >
+      </section>
+
+      <!-- M O R E  F R O M  F L U X: section -->
+      <section id="more-content" class="bg-cover">
+        <div class="container" id="more-explore">
+          <!-- Title part -->
+          <div class="row pb-5 pt-5">
+            <div class="col-md-12 text-center">
+              <div class="title-part">
+                <p class="small-title">Discover More</p>
+                <p id="bar"></p>
+                <div class="effect-text pb-5">
+                  <span class="letter">M</span>
+                  <span class="letter">O</span>
+                  <span class="letter">R</span>
+                  <span class="letter">E</span>
+                  <span class="spacing"></span>
+                  <span class="letter">F</span>
+                  <span class="letter">R</span>
+                  <span class="letter">O</span>
+                  <span class="letter">M</span>
+                  <span class="spacing"></span>
+                  <span class="effect">
+                    <span class="letter">F</span>
+                    <span class="letter">L</span>
+                    <span class="letter">U</span>
+                    <span class="letter">X</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Body part -->
+          <div class="row pt-3">
+            <div class="col-md-6 pr-0">
+              <img class="w-100" src="img/jenna.png" align="Image">
+              <div id="m-content-1">
+                <p class="small-title">Discover More</p>
+                <p id="bar"></p>
+                <div class="effect-text pb-5">
+                  <span class="letter">J</span>
+                  <span class="letter">E</span>
+                  <span class="letter">N</span>
+                  <span class="letter">N</span>
+                  <span class="letter">A</span>
+                  <span class="spacing"></span>
+                  <p class="effect">
+                    <span class="letter">L</span>
+                    <span class="letter">E</span>
+                    <span class="letter">E</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 pl-0 pt-5">
+              <img src="img/gina.png" align="Image">
+              <div id="m-content-2">
+                <p class="small-title">Discover More</p>
+                <p id="bar"></p>
+                <div class="effect-text pb-5">
+                  <span class="letter">G</span>
+                  <span class="letter">I</span>
+                  <span class="letter">N</span>
+                  <span class="letter">A</span>
+                  <p class="effect">
+                    <span class="letter">S</span>
+                    <span class="letter">C</span>
+                    <span class="letter">R</span>
+                    <span class="letter">O</span>
+                    <span class="letter">C</span>
+                    <span class="letter">C</span>
+                    <span class="letter">A</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="desc" class="text">
-          <span id="hidden11">
-            We update our social media daily. Follow us to see what we get upto,
-            where we go and the content we are producing just for you.
-          </span>
-        </div>
-        <div id="footer-topics" class="topics">
-          <div class="topic">
-            <div class="image">
-              <div id="image11" class="content"></div>
-            </div>
+      </section>
+    </main>
+
+    <!-- Footer content section -->
+    <footer class="pt-3">
+      <div class="container pt-3 pb-4 pl-5 pr-5">
+        <div class="row">
+          <!-- Menu -->
+          <div class="col-md-5">
+            <ul>
+              <li><a class="small-title" href="#">Privacy policy</a></li>
+              <li><a class="small-title" href="#">Terms and condition</a></li>
+              <li><a class="small-title" href="#">Contact</a></li>
+            </ul>
           </div>
-          <div class="topic">
-            <div class="image">
-              <div id="image12" class="content"></div>
-            </div>
+          <!-- Logo -->
+          <div class="col-md-2 text-center">
+            <a href=""><img src="img/fluxlogo.png" alt="" class="img-fluid"></a>
           </div>
-          <div class="topic">
-            <div class="image">
-              <div id="image13" class="content"></div>
-            </div>
-          </div>
-          <div class="topic">
-            <div class="image">
-              <div id="image14" class="content"></div>
-            </div>
-          </div>
-        </div>
-        <div id="hidden12" class="bottom-nav">
-          <div class="bottom-nav-links">
-            <span>© 2020 Flux.</span>
-            <a href="https://fluxtv.com/policies/terms-of-service"
-              >Terms Of Service</a
-            >
-            <a href="https://fluxtv.com/policies/privacy-policy"
-              >Privacy Policy</a
-            >
-            <a href="mailto:umar@strmlined.com">Contact Us</a>
-            <a href="https://fluxtv.com/pages/faq">FAQ</a>
-          </div>
-          <div class="logo"><a href="">FLUX</a></div>
-          <div class="media">
-            <div class="media-button">
-              <a
-                href="https://twitter.com/FluxTV_Official"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-            <div class="media-button">
-              <a
-                href="https://www.instagram.com/fluxofficial/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
+          <!-- Copyright -->
+          <div class="col-md-5 text-lg-right text-center copyright">
+            <span class="small-title">&copy; 2020 Flux</span>
           </div>
         </div>
       </div>
     </footer>
 
+
+
     <!-- Scripts -->
-    <script src="http://www.strmlined.com/flux/canvas-video-player.js"></script>
-    <script src="http://www.strmlined.com/flux/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/canvas-video-player.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+          stagePadding: 50,
+          loop:true,
+          margin:0,
+          nav:true,
+          
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+      $('.owl-carousel-2').owlCarousel({
+          stagePadding: 50,
+          loop:true,
+          margin:10,
+          nav:true,
+          dots:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:3
+              }
+          }
+      })
+      });
+    </script>
+
   </body>
 </html>

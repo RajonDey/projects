@@ -1,14 +1,38 @@
 var windowWidth = window.innerWidth;
 
+/*
+  FAQ JS 
+  ....................................
+*/
+$(function() {
+"use strict";
+    
+    $('#faq div.a').hide();
+    $('#team .moretext').hide();
+
+    // -- QAs
+    $(document).on('click', '.q', function(e) {
+        let x = $(this);
+      x.next('div.a').slideToggle(300);
+      x.find('i').toggleClass('fa-angle-down fa-angle-up');
+      e.preventDefault();
+    });
+
+});
+
 // Elements
 var navbar = document.querySelector('#navbar');
 var mainTitleLetters = document.querySelectorAll('#header-main-text .letter');
-var secondTitleLetters = document.querySelectorAll(
-  '#what-we-do .effect-text .letter'
-);
-var client3 = document.querySelector('#client-3');
-var client3Info = document.querySelector('#client-3 .info');
-var client4 = document.querySelector('#client-4');
+var secondTitleLetters = document.querySelectorAll('#latest-merchandise .effect-text .letter');
+var thirdTitleLetters = document.querySelectorAll('#exclusive-content .effect-text .letter');
+var fourthTitleLetters = document.querySelectorAll('#x-flux .effect-text .letter');
+var fifthTitleLetters = document.querySelectorAll('#faq-title .effect-text .letter');
+var sixthTitleLetters = document.querySelectorAll('#more-explore .effect-text .letter');
+
+
+// var client3 = document.querySelector('#client-3');
+// var client3Info = document.querySelector('#client-3 .info');
+// var client4 = document.querySelector('#client-4');
 var hidden3 = document.querySelector('#hidden3');
 var hidden4 = document.querySelector('#hidden4');
 var hidden5 = document.querySelector('#hidden5');
@@ -77,136 +101,136 @@ function changeNavbarColor() {
 }
 changeNavbarColor();
 
-// window.onscroll = function () {
-//   changeNavbarColor();
+window.onscroll = function () {
+  changeNavbarColor();
 
-//   // Show topics
-//   if (windowWidth >= 1348) {
-//     if (checkVisible(mainTopicsContainer)) {
-//       mainTopics.forEach(function (topic, i) {
-//         setTimeout(function () {
-//           topic.classList.add('visible');
-//         }, i * 75);
-//       });
-//     } else {
-//       mainTopics.forEach(function (topic, i) {
-//         setTimeout(function () {
-//           topic.classList.remove('visible');
-//         }, i * 75);
-//       });
-//     }
+  // Show topics
+  if (windowWidth >= 1348) {
+    if (checkVisible(mainTopicsContainer)) {
+      mainTopics.forEach(function (topic, i) {
+        setTimeout(function () {
+          topic.classList.add('visible');
+        }, i * 75);
+      });
+    } else {
+      mainTopics.forEach(function (topic, i) {
+        setTimeout(function () {
+          topic.classList.remove('visible');
+        }, i * 75);
+      });
+    }
 
-//     if (checkVisible(footerTopicsContainer)) {
-//       footerTopics.forEach(function (topic, i) {
-//         setTimeout(function () {
-//           topic.classList.add('visible');
-//         }, i * 75);
-//       });
-//     } else {
-//       footerTopics.forEach(function (topic, i) {
-//         setTimeout(function () {
-//           topic.classList.remove('visible');
-//         }, i * 75);
-//       });
-//     }
-//   } else {
-//     mainTopics.forEach(function (topic) {
-//       if (checkVisible(topic)) {
-//         topic.classList.add('visible');
-//       } else {
-//         topic.classList.remove('visible');
-//       }
-//     });
+    if (checkVisible(footerTopicsContainer)) {
+      footerTopics.forEach(function (topic, i) {
+        setTimeout(function () {
+          topic.classList.add('visible');
+        }, i * 75);
+      });
+    } else {
+      footerTopics.forEach(function (topic, i) {
+        setTimeout(function () {
+          topic.classList.remove('visible');
+        }, i * 75);
+      });
+    }
+  } else {
+    mainTopics.forEach(function (topic) {
+      if (checkVisible(topic)) {
+        topic.classList.add('visible');
+      } else {
+        topic.classList.remove('visible');
+      }
+    });
 
-//     footerTopics.forEach(function (topic) {
-//       if (checkVisible(topic)) {
-//         topic.classList.add('visible');
-//       } else {
-//         topic.classList.remove('visible');
-//       }
-//     });
-//   }
-
-//   clients.forEach(function (client) {
-//     if (checkVisible(client)) {
-//       client.classList.add('visible');
-//     } else {
-//       client.classList.remove('visible');
-//     }
-//   });
-
-//   // Hidden elements
-//   if (checkVisible(hidden3)) {
-//     hidden3.classList.add('visible');
-//   } else {
-//     hidden3.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden4)) {
-//     hidden4.classList.add('visible');
-//   } else {
-//     hidden4.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden5)) {
-//     hidden5.classList.add('visible');
-//   } else {
-//     hidden5.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden6)) {
-//     hidden6.classList.add('visible');
-//   } else {
-//     hidden6.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden7)) {
-//     hidden7.classList.add('visible');
-//   } else {
-//     hidden7.classList.remove('visible');
-//   }
-
-//   if (checkVisible(contactForm)) {
-//     contactForm.classList.add('visible');
-//   } else {
-//     contactForm.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden9)) {
-//     hidden9.classList.add('visible');
-//   } else {
-//     hidden9.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden10)) {
-//     hidden10.classList.add('visible');
-//   } else {
-//     hidden10.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden11)) {
-//     hidden11.classList.add('visible');
-//   } else {
-//     hidden11.classList.remove('visible');
-//   }
-
-//   if (checkVisible(hidden12)) {
-//     hidden12.classList.add('visible');
-//   } else {
-//     hidden12.classList.remove('visible');
-//   }
-// };
-
-function moveClient3Info() {
-  if (windowWidth >= 768) {
-    client3Info.classList.add('special-info');
-    client4.prepend(client3Info);
-  } else if (windowWidth <= 768) {
-    client3Info.classList.remove('special-info');
-    client3.append(client3Info);
+    footerTopics.forEach(function (topic) {
+      if (checkVisible(topic)) {
+        topic.classList.add('visible');
+      } else {
+        topic.classList.remove('visible');
+      }
+    });
   }
-}
-moveClient3Info();
+
+  clients.forEach(function (client) {
+    if (checkVisible(client)) {
+      client.classList.add('visible');
+    } else {
+      client.classList.remove('visible');
+    }
+  });
+
+  // Hidden elements
+  if (checkVisible(hidden3)) {
+    hidden3.classList.add('visible');
+  } else {
+    hidden3.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden4)) {
+    hidden4.classList.add('visible');
+  } else {
+    hidden4.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden5)) {
+    hidden5.classList.add('visible');
+  } else {
+    hidden5.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden6)) {
+    hidden6.classList.add('visible');
+  } else {
+    hidden6.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden7)) {
+    hidden7.classList.add('visible');
+  } else {
+    hidden7.classList.remove('visible');
+  }
+
+  if (checkVisible(contactForm)) {
+    contactForm.classList.add('visible');
+  } else {
+    contactForm.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden9)) {
+    hidden9.classList.add('visible');
+  } else {
+    hidden9.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden10)) {
+    hidden10.classList.add('visible');
+  } else {
+    hidden10.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden11)) {
+    hidden11.classList.add('visible');
+  } else {
+    hidden11.classList.remove('visible');
+  }
+
+  if (checkVisible(hidden12)) {
+    hidden12.classList.add('visible');
+  } else {
+    hidden12.classList.remove('visible');
+  }
+};
+
+// function moveClient3Info() {
+//   if (windowWidth >= 768) {
+//     client3Info.classList.add('special-info');
+//     client4.prepend(client3Info);
+//   } else if (windowWidth <= 768) {
+//     client3Info.classList.remove('special-info');
+//     client3.append(client3Info);
+//   }
+// }
+// moveClient3Info();
 
 window.onresize = function () {
   windowWidth = window.innerWidth;
@@ -227,6 +251,40 @@ setTimeout(function () {
     }, i * 120);
   });
 }, 4500);
+
+
+setTimeout(function () {
+  thirdTitleLetters.forEach(function (letter, i) {
+    setTimeout(function () {
+      letter.classList.add('visible');
+    }, i * 120);
+  });
+}, 4500);
+
+setTimeout(function () {
+  fourthTitleLetters.forEach(function (letter, i) {
+    setTimeout(function () {
+      letter.classList.add('visible');
+    }, i * 120);
+  });
+}, 4500);
+
+setTimeout(function () {
+  fifthTitleLetters.forEach(function (letter, i) {
+    setTimeout(function () {
+      letter.classList.add('visible');
+    }, i * 120);
+  });
+}, 4500);
+
+setTimeout(function () {
+  sixthTitleLetters.forEach(function (letter, i) {
+    setTimeout(function () {
+      letter.classList.add('visible');
+    }, i * 120);
+  });
+}, 4500);
+
 
 // Watch video popup
 watchVideo.addEventListener('click', function () {
@@ -296,3 +354,7 @@ formButton.addEventListener('click', function (e) {
     xhr.send(data);
   }
 });
+
+
+
+
