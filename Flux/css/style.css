@@ -1,25 +1,3 @@
-#video-content{
-  background-image: url('../img/bottommodel.png');
-  height: 80vh;
-}
-#mid-content{
-  background-image: url('../img/imgpsh_fullsize_anim.png');
-  position: relative;
-}
-.bg-cover{
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-#exclusive-content, #x-flux{
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;  
-}
 
 
 /* Main */
@@ -39,7 +17,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: subpixel-antialiased;
   position: relative;
-
+  overflow-x: hidden;
   color: #c3c3c3;
 
 }
@@ -269,6 +247,11 @@ ul {
 .menu ul li #header-description{
   font-weight: 100;
   text-transform: uppercase;
+
+}
+.menu ul li #header-description:hover{
+  text-decoration: none;
+  color:#fff;
 }
 
 .logo {
@@ -289,6 +272,7 @@ ul {
 
 .logo a:hover {
   color: #d3bf7a;
+  text-decoration: none;
 }
 
 .media {
@@ -318,6 +302,10 @@ ul {
   backface-visibility: hidden;
   font-size: 14px;
   cursor: pointer;
+}
+
+.media ul li a:hover{
+  color:#fff;
 }
 
 .media-button {
@@ -807,11 +795,11 @@ OWL carousel style
   width: 10%;
 }
 
-.owl-carousel-2 .owl-dots{
-  width: 90%;
+.owl-carousel-2 .owl-dots {
+  width: 85%;
   position: absolute;
-  right: 0px;
-  text-align: left!important;
+  left: 10%;
+  text-align: left !important;
 }
 .owl-theme .owl-dots .owl-dot span{
   display: none!important;
@@ -924,6 +912,134 @@ More Explore style
   left: 15%;
 }
 
+/*#video-content{
+  background-image: url('../img/bottommodel.png');
+  height: 80vh;
+}*/
+#mid-content{
+  background-image: url('../img/imgpsh_fullsize_anim.png');
+  position: relative;
+}
+/*.bg-cover{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}*/
+
+/*#exclusive-content, */
+#x-flux{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;  
+}
+
+
+
+/* footer video area*/
+
+
+
+
+#video-content {
+  background-image: url('../img/bottommodel.png');
+  /* height: 80vh; */
+  padding: 20px;
+  margin-bottom: 200px;
+  margin-top:50px;
+}
+.bg-cover{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.borderaround {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #979797;
+  margin: 0px auto;
+  padding: 0;
+}
+
+.foexcontentarea{
+  background:#fff;
+  
+  position: relative;
+  bottom:-140px;
+}
+
+.foexcontentarea .title-part{
+  padding: 70px;
+  margin-bottom: 0px;
+}
+
+.foexcontentarea .small-title,
+.foexcontentarea .effect-text .letter {
+  color:black!important;
+}
+
+
+.fexcontenvideo{
+  display: flex;
+  align-items: center;
+  margin-left: -100px;
+
+}
+.flexvidimage{}
+.flexvidimage img{}
+.flexvideteaser{
+  margin-left: -25px;
+}
+.flexvideteaser ul{}
+.flexvideteaser ul li {
+  display: inline;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #9b9b9b;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.flexvideteaser ul li img{
+  display: inline-block;
+}
+.flexvideteaser ul li span {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #c3c3c3;
+}
+
+
+
+.paddingLessRight{
+  padding-right:0px!important;
+  margin-right:0px;
+}
+
+.PaddingLesLeft{
+  padding-left:0px!important;
+}
+
+
+.owl-carousel .owl-nav{
+  padding-right:25px;
+  margin-right:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*
 --------------
 Footer style
@@ -945,7 +1061,13 @@ footer .copyright .small-title {
 }
 
 
-/*************/
+/*******
+
+====================================================
+
+  RESPONSIVE CSS 
+====================================================
+******/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
