@@ -20,6 +20,44 @@ $(function() {
 
 });
 
+
+/*
+    SIDE BAR MENU
+  ....................................
+*/
+$(function() {
+    "use strict";
+    addEventListener("touchstart", function() {}, !0);
+    for (var t = document.querySelectorAll(".c-hamburger"), e = t.length - 1; e >= 0; e--) {
+        i(t[e])
+    }
+
+    function i(t) {
+        t.addEventListener("click", function(t) {
+            t.preventDefault(), !0 === this.classList.contains("is-active") ? (this.classList.remove("is-active"), $(".open").removeClass("oppenned")) : (this.classList.add("is-active"), $(".open").addClass("oppenned"))
+        })
+    }
+    $(".sub-menu li a").click(function(t) {
+        $(".open").removeClass("oppenned"), $(".c-hamburger").removeClass("is-active")
+    }), $(".openImageDialog").click(function(t) {
+        var e = $(this).data("id"),
+            i = $(this).data("title");
+        $("#videoAmbassadorTitle").text(i), $("#videoAmbassador .modal-body iframe").attr("src", e)
+    }), $(".openPromoDialog").click(function(t) {
+        var e = $(this).data("id"),
+            i = $(this).data("title");
+        $("#videoPromoTitle").text(i), $("#videoPromo .modal-body iframe").attr("src", e)
+    }), $(".openCopyDialog").click(function(t) {
+        var e = $(this).data("title"),
+            i = $(this).data("copy");
+        $("#dtCopyTitle").text(e), $("#dtCopy .modal-body").html(i)
+    }), $(".close").click(function(t) {
+        t.preventDefault(), $(".embed-responsive").children("iframe").attr("src", "")
+    })
+});
+
+
+
 // Elements
 var navbar = document.querySelector('#navbar');
 var mainTitleLetters = document.querySelectorAll('#header-main-text .letter');

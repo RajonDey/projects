@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="nopadding">
       <div class="container nopadding">
-        
+
         <!-- Menu -->
         <div class="menu">
         	<ul>
@@ -60,6 +60,46 @@
         
       </div>
     </nav>
+    <!-- Mobile Menu -->
+    <div class="mob-menu d-none">
+  		<button class="c-hamburger c-hamburger--htx">
+	      <span>toggle menu</span>
+	    </button>
+	    
+	    
+	    <nav id="nav" class="sub-menu open">
+	    	<div class="toogle-menu-wrapper"></div>
+	      <div class="menu-overlay"></div>
+
+	      <div class="side-bar">
+	      	<p class="mob-logo">FLUX</p>
+		    <div class="mob-media">
+		       <ul>
+	            <li><a href="https://twitter.com/FluxTV_Official" target="_blank" rel="noreferrer">
+	              <i class="fab fa-facebook-f"></i>
+	            </a></li>
+	            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+	              <i class="fab fa-twitter"></i>
+	            </a></li>
+	            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+	              <i class="fab fa-instagram"></i>
+	            </a></li>
+	            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+	              <i class="fab fa-snapchat-ghost"></i>
+	            </a></li>
+	          </ul>
+		    </div>
+	      </div>
+	      <div class="side-menu-content">
+	      	<ul>
+	      		<li><a href="#"><sup>01.</sup> Merch</a></li>
+	      		<li><a href="#"><sup>02.</sup> Content</a></li>
+	      		<li><a href="#"><sup>03.</sup> FAQs</a></li>
+	      		<li><a href="#"><sup>04.</sup> Contact</a></li>
+	      	</ul>
+	      </div>
+	    </nav>
+  	  </div>
 
 
     <!-- Header -->
@@ -99,48 +139,46 @@
     </header>
 
     <!-- First Container -->
-    <main class="container paddingLessRight PaddingLesLeft">
+    <main class="container pl-0 pr-0 mob-lr-pad">
       <!-- L A T E S T   M E R C H A N D I S E: section  -->
       <section id="latest-merchandise" class="">
-          <div class="">
-            <div class="row">
-              <div class="col-md-12">
-                <!-- Title Part -->  
-                <div class="title-part">
-                  <div class="effect-text small-effect-text">
-                    <span class="letter">L</span>
-                    <span class="letter">A</span>
-                    <span class="letter">T</span>
-                    <span class="letter">E</span>
-                    <span class="letter">S</span>
-                    <span class="letter">T</span>
-                    <span class="spacing"></span>
-                    <span class="effect">
-                      <span class="letter">M</span>
-                      <span class="letter">E</span>
-                      <span class="letter">R</span>
-                      <span class="letter">C</span>
-                      <span class="letter">H</span>
-                      <span class="letter">A</span>
-                      <span class="letter">N</span>
-                      <span class="letter">D</span>
-                      <span class="letter">I</span>
-                      <span class="letter">S</span>
-                      <span class="letter">E</span>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Title Part -->  
+            <div class="title-part">
+              <div class="effect-text small-effect-text">
+                <span class="letter">L</span>
+                <span class="letter">A</span>
+                <span class="letter">T</span>
+                <span class="letter">E</span>
+                <span class="letter">S</span>
+                <span class="letter">T</span>
+                <span class="spacing mobile-block"></span>
+                <span class="effect">
+                  <span class="letter">M</span>
+                  <span class="letter">E</span>
+                  <span class="letter">R</span>
+                  <span class="letter">C</span>
+                  <span class="letter">H</span>
+                  <span class="letter">A</span>
+                  <span class="letter">N</span>
+                  <span class="letter">D</span>
+                  <span class="letter">I</span>
+                  <span class="letter">S</span>
+                  <span class="letter">E</span>
 
-                    </span>
-                    <span class="title-bar"></span>
-                  </div>
-                </div>
-                
+                </span>
+                <span class="title-bar hide-mob"></span>
               </div>
-            </div><!--end row -->
-         </div><!--end containe r-->
-
+            </div>
+            
+          </div>
+        </div><!--end row -->
+        
          <div class="row">
            <div class="col-md-12">
              <!-- Carousel Part -->  
-              <div class="owl-carousel pt-4">
+              <div class="owl-carousel pt-4 mob-top-10">
                 <div> 
                   <img src="img/model1.png"> 
                   <div class="content">
@@ -238,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 offset-md-1">
+          <div class="col-md-5 offset-md-1 mob-top-10">
             <img src="img/exclusivemodel.png">
           </div>
 
@@ -246,9 +284,9 @@
       </div>
 
       <!-- Second Part: M E G A N  X  F L U X -->
-      <div class="container  PaddingLesLeft paddingLessRight" id="x-flux">
+      <div class="container pl-0 pr-0 mob-lr-pad" id="x-flux">
         <div class="row pb-5 pt-5">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center mob-text-left">
             <!-- Title Part -->
             <div class="title-part">
               <p class="small-title">Take a Sneak Park</p>
@@ -288,24 +326,25 @@
             <!-- Carousel Part -->
             <div id="slider" class="owl-carousel owl-carousel-2 owl-theme">
               <div> <img src="img/cmodel1.png"> </div>
-              <div> <img src="img/cmodel2.png"> </div>
+              <!-- <div> <img src="img/cmodel2.png"> </div> -->
               <div> <img src="img/cmodel3.png"> </div>
               <div> <img src="img/cmodel1.png"> </div>
-              <div> <img src="img/cmodel2.png"> </div>
+              <!-- <div> <img src="img/cmodel2.png"> </div> -->
               <div> <img src="img/cmodel3.png"> </div>
               <div> <img src="img/cmodel1.png"> </div>
-              <div> <img src="img/cmodel2.png"> </div>
+              <!-- <div> <img src="img/cmodel2.png"> </div> -->
               <div> <img src="img/cmodel3.png"> </div>
               <div> <img src="img/cmodel1.png"> </div>
-              <div> <img src="img/cmodel2.png"> </div>
+              <!-- <div> <img src="img/cmodel2.png"> </div> -->
+              <div> <img src="img/cmodel3.png"> </div>
+              <div> <img src="img/cmodel1.png"> </div>
+              <!-- <div> <img src="img/cmodel2.png"> </div> -->
               <div> <img src="img/cmodel3.png"> </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Video section -->
 
     <!-- Video section -->
     <section id="video-content" class="bg-cover">
@@ -367,7 +406,7 @@
     </section>
 
     <!-- Last Content section -->
-    <main class="">
+    <main class="last-content">
       <!-- F A Q  A N S W E R E D: section -->
       <section id="second-main-content">
         <div class="container">
@@ -480,11 +519,11 @@
         <div class="container" id="more-explore">
           <!-- Title part -->
           <div class="row pb-5 pt-5">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center mob-text-left">
               <div class="title-part">
                 <p class="small-title">Discover More</p>
                 <p id="bar"></p>
-                <div class="effect-text pb-5">
+                <div class="effect-text">
                   <span class="letter">M</span>
                   <span class="letter">O</span>
                   <span class="letter">R</span>
@@ -494,7 +533,7 @@
                   <span class="letter">R</span>
                   <span class="letter">O</span>
                   <span class="letter">M</span>
-                  <span class="spacing"></span>
+                  <span class="spacing mobile-block"></span>
                   <span class="effect">
                     <span class="letter">F</span>
                     <span class="letter">L</span>
@@ -507,7 +546,7 @@
           </div>
           <!-- Body part -->
           <div class="row pt-3">
-            <div class="col-md-6 pr-0">
+            <div class="col-md-6 pr-0 mob-lr-pad">
               <img class="w-100" src="img/jenna.png" align="Image">
               <div id="m-content-1">
                 <p class="small-title">Discover More</p>
@@ -527,7 +566,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 pl-0 pt-5">
+            <div class="col-md-6 pl-0 pt-5 mob-lr-pad mob-top-15">
               <img class="w-100" src="img/gina.png" align="Image">
               <div id="m-content-2">
                 <p class="small-title">Discover More</p>
@@ -556,10 +595,10 @@
 
     <!-- Footer content section -->
     <footer class="pt-3">
-      <div class="container pt-3 pb-4 pl-5 pr-5">
+      <div class="container pt-3 pb-5 pl-5 pr-5">
         <div class="row">
           <!-- Menu -->
-          <div class="col-md-5">
+          <div class="col-md-5 mob-text-center">
             <ul>
               <li><a class="small-title" href="#">Privacy policy</a></li>
               <li><a class="small-title" href="#">Terms and condition</a></li>
@@ -567,11 +606,11 @@
             </ul>
           </div>
           <!-- Logo -->
-          <div class="col-md-2 text-center">
+          <div class="col-md-2 text-center mob-order mob-bottom-10">
             <a href=""><img src="img/fluxlogo.png" alt="" class="img-fluid"></a>
           </div>
           <!-- Copyright -->
-          <div class="col-md-5 text-lg-right text-center copyright">
+          <div class="col-md-5 text-lg-right text-center copyright mob-top-10">
             <span class="small-title">&copy; 2020 Flux</span>
           </div>
         </div>
