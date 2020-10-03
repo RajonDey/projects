@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="reset.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+
+        <title>MixItUp MultiFilter Demo - Toggle Controls</title>
+
+        <style type="text/css">
+            .mix p{
+                font-size: 16px;
+                text-align: center;
+                position: absolute;
+                top: 40%;
+                left: 0;
+                right: 0;
+            }
+            fieldset{
+                margin: 10px 0px;
+                display: block;
+            }
+            fieldset button{
+                font-size: 12px!important;
+                border: 1px solid;
+                margin: 0px 2px;
+            }
+            .mixitup-control-active {
+                background: #ffffff;
+                color: #000000;
+                border: 1px solid #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="controls">
+            <button style="display: block;margin-bottom: 10px;" type="reset" class="control control-text">Reset</button>
+
+            <fieldset data-filter-group class="control-group">
+                <label class="control-group-label">Categories</label>
+
+                <button type="button" class="control control-text" data-filter="all">All</button>
+                <button type="button" class="control control-text" data-filter=".one">CAREER DEVELOPMENT</button>
+                <button type="button" class="control control-text" data-filter=".two">COMPUTER SKILLS</button>
+                <button type="button" class="control control-text" data-filter=".three">ENTREPRENEURIAL SKILLS</button>
+                <button type="button" class="control control-text" data-filter=".four">LANGUAGES</button>
+                <button type="button" class="control control-text" data-filter=".five">SALES SKILLS</button>
+                <button type="button" class="control control-text" data-filter=".six">WEB DEVELOPMENT</button>
+                <button type="button" class="control control-text" data-filter=".seven">WORKPLACE ESSENTIALS</button>
+            </fieldset>
+            
+            <fieldset data-filter-group class="control-group">
+                <label class="control-group-label">Laguages</label>
+
+                <button type="button" class="control control-text" data-toggle=".english">English</button>
+                <button type="button" class="control control-text" data-toggle=".russian">Russian</button>
+                <button type="button" class="control control-text" data-toggle=".bangla">Bangla</button>
+            </fieldset>
+
+        </form>
+
+        <div class="container">
+            <div class="mix one english"><p>CAREER DEVELOPMENT<br> (English)</p> </div>
+            <div class="mix two russian"><p>COMPUTER SKILLS<br> (Russian)</p></div>
+            <div class="mix three bangla"><p>ENTREPRENEURIAL SKILLS<br> (Bangla)</p></div>
+            <div class="mix four english"><p>LANGUAGES<br> (English)</p></div>
+            <div class="mix five russian"><p>SALES SKILLS<br> (Russian)</p></div>
+            <div class="mix six bangla"><p>WEB DEVELOPMENT<br> (Bangla)</p></div>
+            <div class="mix seven english"><p>WORKPLACE ESSENTIALS<br> (English)</p></div>
+
+            <div class="mix one russian"><p>CAREER DEVELOPMENT<br> (Russian)</p> </div>
+            <div class="mix two bangla"><p>COMPUTER SKILLS<br> (Bangla)</p></div>
+            <div class="mix three english"><p>ENTREPRENEURIAL SKILLS<br> (English)</p></div>
+            <div class="mix four bangla"><p>LANGUAGES<br> (Bangla)</p></div>
+            <div class="mix five russian"><p>SALES SKILLS<br> (Russian)</p></div>
+            <div class="mix six english"><p>WEB DEVELOPMENT<br> (English)</p></div>
+            <div class="mix seven russian"><p>WORKPLACE ESSENTIALS<br> (Russian)</p></div>
+
+
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+        </div>
+
+        <script src="mixitup.min.js"></script>
+        <script src="mixitup-multifilter.js"></script>
+
+        <script>
+            var containerEl = document.querySelector('.container');
+
+            var mixer = mixitup(containerEl, {
+                multifilter: {
+                    enable: true
+                },
+                animation: {
+                    effects: 'fade translateZ(-100px)'
+                }
+            });
+        </script>
+    </body>
+</html>
