@@ -1,0 +1,113 @@
+
+#header-video {
+  max-height: 100vh;
+}
+
+.carousel-indicators{
+  bottom: 23%;
+}
+.carousel-indicators li {
+    width: 33.333%;
+    height: 1px;
+    margin-right: 0.5px;
+    margin-left: 0.5px;
+    text-indent: -999px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #d3bf7a;
+}
+.carousel-indicators li p {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.owl-carousel-2{
+  margin-top: 40px;
+}
+.owl-content {
+  padding: 60px;
+}
+.owl-content #header-description{
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+.owl-content p{
+  font-weight: 200;
+  line-height: 32px;
+}
+.owl-carousel-2 .d-flex{
+  align-items: center;
+}
+.home-owl-carousel-1 .owl-nav {
+    bottom: 30%;
+    position: absolute;
+    top: auto;
+    left: -35%;
+}
+
+
+#header-main-text {
+  opacity: 0;
+  -webkit-animation: slideInFromTop 0.5s ease forwards;
+  animation: slideInFromTop 0.5s ease forwards;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+#section-header-text #header-description{
+  text-transform: uppercase;
+}
+#section-header-text #header-bar{
+  margin: 30px auto!important;
+}
+#section-header-text .small-effect-text{
+  font-size: 42px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#offer-content{
+  position: relative;
+}
+#text-background {
+  content: 'WHAT';
+  display: block;
+  width: 100%;
+  color: #242627;
+  /*font-size: 25em;*/
+  font-size: 30vw;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 0;
+  right: 0;
+}

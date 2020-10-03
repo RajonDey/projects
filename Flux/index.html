@@ -21,50 +21,67 @@
 
     <!-- Navbar -->
     <nav id="navbar" class="nopadding">
-      <div class="container nopadding">
-
-        <!-- Menu -->
-        <div class="menu">
-        	<ul>
-        		<li><a id="header-description" href="#">Merchandise</a></li>
-        		<li><a id="header-description" href="#">Content</a></li>
-        		<li><a id="header-description" href="#">FAQ</a></li>
-        	</ul>
-        </div>
-        <!-- Logo -->
-        <!-- <div class="logo"><a href=""><img src="img/fluxlogo.png" alt="" class="img-fluid"></a></div> -->
-        <div class="logo"><a href="">FLUX</a></div>
-        <!-- Media -->
-        <div class="media">
-          <ul>
-            <li><a href="https://twitter.com/FluxTV_Official" target="_blank" rel="noreferrer">
-              <i class="fab fa-facebook-f"></i>
-            </a></li>
-            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
-              <i class="fab fa-twitter"></i>
-            </a></li>
-            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
-              <i class="fab fa-instagram"></i>
-            </a></li>
-            <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
-              <i class="fab fa-snapchat-ghost"></i>
-            </a></li>
-          </ul>
-          <div class="media-button cart">
-            <ul>
-              <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-              <li><span> ( 0 )</span></li>
-            </ul>
+      <div class="container">
+          <div class="fluxnavinner">
+              <!-- Menu -->
+              <div class="menu">
+                <ul>
+                  <li><a id="header-description" href="#">Merchandise</a></li>
+                  <li><a id="header-description" href="#">Content</a></li>
+                  <li><a id="header-description" href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <!-- Logo -->
+              <!-- <div class="logo"><a href=""><img src="img/fluxlogo.png" alt="" class="img-fluid"></a></div> -->
+              <div class="logo"><a href="">FLUX</a></div>
+              <!-- Media -->
+              <div class="media">
+                <ul>
+                  <li><a href="https://twitter.com/FluxTV_Official" target="_blank" rel="noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                  </a></li>
+                  <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+                    <i class="fab fa-twitter"></i>
+                  </a></li>
+                  <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+                    <i class="fab fa-instagram"></i>
+                  </a></li>
+                  <li><a href="https://www.instagram.com/fluxofficial/" target="_blank" rel="noreferrer">
+                    <i class="fab fa-snapchat-ghost"></i>
+                  </a></li>
+                </ul>
+                <div class="media-button cart">
+                  <ul>
+                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><span> ( 0 )</span></li>
+                  </ul>
+                </div>
+              </div>
           </div>
-        </div>
-        
       </div>
     </nav>
+
+
+
     <!-- Mobile Menu -->
     <div class="mob-menu d-none">
-  		<button class="c-hamburger c-hamburger--htx">
-	      <span>toggle menu</span>
-	    </button>
+  		
+      <div class="mobileheader">
+           <div class="mobilemenuicon">
+             <button class="c-hamburger c-hamburger--htx">
+            <span>toggle menu</span>
+          </button>
+           </div>
+
+           <div class="logo mobilelogo"><a href="">FLUX</a></div>
+
+           <div class="media-button cart mobilemediabtncart">
+                  <ul>
+                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><span> ( 0 )</span></li>
+                  </ul>
+                </div>
+      </div>
 	    
 	    
 	    <nav id="nav" class="sub-menu open">
@@ -108,15 +125,17 @@
       <div id="header-video">
         <div id="header-video-gradient"></div>
         <!-- <img id="video-element" src="img/modehero.png" style="width:100%;"> -->
-        <video autoplay muted loop poster="img/modehero.png">
-          <!-- <source src="img/hero-funnel.mp4"> -->
+        <video autoplay muted loop playsinline poster="img/modehero.png">
+          <source src="img/hero-funnel.mp4" type="video/mp4">
+          <source src="img/hero-funnel.ogg" type="video/ogg">
+          <source src="img/hero-funnel.webm" type="video/webm">
         </video>
         <canvas id="video-canvas"></canvas>
         <div id="header-video-gradient-bottom"></div>
       </div>
       <!-- Banner -->
       <div id="header-content">
-        <div id="header-text" class="container">
+        <div id="header-text" class="">
           <p id="header-description" class="font-weight-100">INTRODUCING</p>	
           <p id="header-bar"></p>
           <div id="header-main-text" class="effect-text">
@@ -139,7 +158,7 @@
     </header>
 
     <!-- First Container -->
-    <main class="container pl-0 pr-0 mob-lr-pad">
+    <main class="container mob-lr-pad pl-0 pr-0">
       <!-- L A T E S T   M E R C H A N D I S E: section  -->
       <section id="latest-merchandise" class="">
         <div class="row">
@@ -263,16 +282,21 @@
                   <span class="letter">T</span>
                 </p>
               </div>
-              <p class="pt-3 pb-5 pera">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              <p class="pt-3 pb-5 pera" style="margin-bottom:0px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.</p>
 
-              <a href="#" class="small-title flux-btn text-white">Get Instand Access</a> 
+              <div class="mobilecenter">
+                <a href="#" class="small-title flux-btn text-white">Get Instand Access</a> 
+              </div>
 
-              <div class="mt-5">
-                <img src="img/excircleimg.png" alt="Image"> 
-                <img src="img/sign.png" alt="Sign">
+              <div class="mt-5 mt-6">
+               
+                 <div class="exclusivegetinse">
+                   <img src="img/meganpro.png" alt="Image"> 
+                     <span>Megan Deluca</span>
+                 </div>
               </div>
             </div>
           </div>
@@ -321,7 +345,7 @@
                   <span class="letter">R</span>
                 </p>
               </div>
-              <div><a href="#" class="small-title flux-btn text-white">Buy yours now</a></div> 
+              <div class="mobilecenter"><a href="#" class="small-title flux-btn text-white">Buy yours now</a></div> 
             </div>
             <!-- Carousel Part -->
             <div id="slider" class="owl-carousel owl-carousel-2 owl-theme">
@@ -349,10 +373,12 @@
     <!-- Video section -->
     <section id="video-content" class="bg-cover">
       <div class="borderaround">
-      <div class="container">
+   
+      <div class="container mobilepaddingless">
+        
         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
+            <div class="col-md-2 col-lg-6"></div>
+            <div class="col-md-10 col-lg-6">
                <div class="foexcontentarea"  id="exclusive-content">
                   <div class="title-part">
                     <p class="small-title">what you get</p>
@@ -392,9 +418,9 @@
                        </div>
                        <div class="flexvideteaser">
                            <ul>
-                             <li><img src="img/playicon.png" alt="" class="img-fluid"></li>
-                             <li><span></span></li>
-                             <li>play teaser</li>
+                             <li><img src="img/playicon.svg" alt="" class="img-fluid"></li>
+                             <li class="hiddenmobile"><span></span></li>
+                             <li class="hiddenmobile">play teaser</li>
                            </ul>
                        </div>
                   </div>
@@ -596,9 +622,9 @@
     <!-- Footer content section -->
     <footer class="pt-3">
       <div class="container pt-3 pb-5 pl-5 pr-5">
-        <div class="row">
+        <div class="row flogorow">
           <!-- Menu -->
-          <div class="col-md-5 mob-text-center">
+          <div class="col-lg-5 mob-text-center">
             <ul>
               <li><a class="small-title" href="#">Privacy policy</a></li>
               <li><a class="small-title" href="#">Terms and condition</a></li>
@@ -606,11 +632,12 @@
             </ul>
           </div>
           <!-- Logo -->
-          <div class="col-md-2 text-center mob-order mob-bottom-10">
-            <a href=""><img src="img/fluxlogo.png" alt="" class="img-fluid"></a>
+          <div class="col-lg-2 text-center mob-order mob-bottom-10">
+            <!-- <a href=""><img src="img/fluxlogo.png" alt="" class="img-fluid"></a> -->
+            <div class="flogo"><a href="">FLUX</a></div>
           </div>
           <!-- Copyright -->
-          <div class="col-md-5 text-lg-right text-center copyright mob-top-10">
+          <div class="col-lg-5 text-lg-right text-center copyright mob-top-10">
             <span class="small-title">&copy; 2020 Flux</span>
           </div>
         </div>
@@ -638,13 +665,13 @@
           
           responsive:{
               0:{
-                  items:1
+                  items:1.5
               },
               600:{
-                  items:2
+                  items:2.5
               },
               1000:{
-                  items:3
+                  items:3.5
               }
           }
       });

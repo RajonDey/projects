@@ -64,3 +64,43 @@
   font-weight: 500;
   font-display: auto;
 }
+
+
+
+@font-face {
+    font-family: 'Antro Vectra';
+    src: url('../fonts/AntroVectra.eot');
+    src: url('../fonts/AntroVectra.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AntroVectra.woff2') format('woff2'),
+        url('../fonts/AntroVectra.woff') format('woff'),
+        url('../fonts/AntroVectra.ttf') format('truetype'),
+        url('../fonts/AntroVectra.svg#AntroVectra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
+    font-family: 'Antro Vectra';
+    src: url('../fonts/AntroVectra-Bolder.eot');
+    src: url('../fonts/AntroVectra-Bolder.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AntroVectra-Bolder.woff2') format('woff2'),
+        url('../fonts/AntroVectra-Bolder.woff') format('woff'),
+        url('../fonts/AntroVectra-Bolder.ttf') format('truetype'),
+        url('../fonts/AntroVectra-Bolder.svg#AntroVectra-Bolder') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
