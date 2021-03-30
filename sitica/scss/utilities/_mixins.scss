@@ -1,0 +1,48 @@
+// bagkground-mixin
+@mixin background($position:center,$repeat: no-repeat, $size: contain) {
+    background: {
+        position: $position;
+        repeat: $repeat;
+        size: $size;
+    }
+}
+
+// Input type mixin
+@mixin focus($types) {
+	@each $type in $types {
+		&[type=#{$type}] {
+			@content;
+		}
+	}
+}
+
+// Transation
+@mixin transition($what: all, $time: 0.8s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+
+
+// border radious
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Rotate Div
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+// Rotate
+@mixin rotate ($deg) { 
+  @include transform(rotate(#{$deg}deg));
+}

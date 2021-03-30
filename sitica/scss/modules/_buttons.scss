@@ -1,0 +1,87 @@
+/*
+BUTTONS
+-------------
+*/
+.button-main{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px #fff solid;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    min-width: 180px;
+    text-align: center;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #EA0909;
+        background-image: linear-gradient(to right, #D50132 , #F22027);
+        border-radius: 4px;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+.button-main:hover:before, .button-main:focus:before, .button-main:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.button-main:hover, .button-main:focus, .button-main:active {
+    color: $color-white;
+}
+
+
+.button-fill{
+    border: none;
+    &:before{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    &:hover{
+        color: #1E1E1E!important;
+        &:before{
+            background-image: linear-gradient(to right, #F22027, #D50132);
+        }
+    }
+}
+
+.button-small{
+    padding: 8px!important;
+    min-width: 140px;
+    border: none;
+}
+
+.button-icon{
+    color: $color-dark;
+    font-weight: 600;
+    &:hover{
+        color: $color-link;
+        & i{
+            margin-left: 10px;
+            transition: all ease-in-out .3s;
+        }
+    }
+}

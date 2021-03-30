@@ -1,0 +1,5 @@
+@debug var(--main-bg-color); // var(--main-bg-color)
+
+$primary: #f2ece4;
+$accent: #e1d7d2;
+@debug radial-gradient($primary, $accent); // radial-gradient(#f2ece4, #e1d7d2)

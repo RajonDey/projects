@@ -1,0 +1,384 @@
+/*
+..................................................................
+    Homepage sections CSS code for RDC theme  
+    
+..................................................................
+*/
+
+/*
+Benefit Item
+------------------
+*/
+.benefit {
+  padding: 10px;
+  display: inline-block;
+  width: 23%;
+  margin: 0px 5px;
+  border-radius: 5px;
+  box-shadow: 0 40px 100px rgba(30, 189, 181, 0.15);
+  & img {
+    margin-right: 8px;
+    border-radius: 4px;
+    float: left;
+    width: 20%;
+  }
+  & .title {
+    float: right;
+    width: 75%;
+    font-weight: 600;
+    font-size: 14px;
+    color: #404040;
+    margin-bottom: 0px;
+    & span {
+      display: block;
+    }
+  }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: none;
+  }
+}
+
+/*
+Conversion services
+--------------------
+*/
+.conversions {
+  & .nav-tabs {
+    border-bottom: 0px solid transparent;
+    margin-bottom: 30px !important;
+    & .nav-item {
+      border-radius: 4px;
+      margin-right: 20px;
+      & .nav-link {
+        color: $color-light;
+        padding: 20px;
+        &:focus,
+        &:hover {
+          border: 1px solid !important;
+          border-radius: 4px;
+        }
+      }
+    }
+    & .nav-link.active,
+    .nav-item.show .nav-link {
+      color: $color-light;
+      background-color: transparent;
+      border: 1px solid !important;
+    }
+    & .html-nav {
+      background-color: $color-html;
+    }
+    & .cms-nav {
+      background-color: $color-cms;
+    }
+    & .ecommerce-nav {
+      background-color: $color-ecommerce;
+    }
+  }
+
+  & .tab-content {
+    .tab-pane {
+      & .box-main {
+        box-shadow: 0 40px 100px rgba(30, 189, 181, 0.06);
+        width: 31%;
+        display: inline-block;
+        margin-right: 12px;
+        position: relative;
+        border-radius: 0px;
+        & .box-icon {
+          position: absolute;
+          font-size: 32px;
+          top: 15px;
+          right: 15px;
+          color: $color-medium;
+          opacity: 0.5;
+        }
+      }
+      & .box-content {
+        &-title {
+          font-size: 1.4rem;
+          font-weight: 600;
+          height: 55px;
+          padding-bottom: 0px;
+        }
+      }
+      & .html {
+        box-shadow: 0 40px 100px rgba(255, 100, 129, 0.1);
+        border-top: 2px solid $color-html;
+      }
+      & .cms {
+        box-shadow: 0 40px 100px rgba(144, 133, 218, 0.1);
+        border-top: 2px solid $color-cms;
+      }
+      & .ecommerce {
+        box-shadow: 0 40px 100px rgba(56, 217, 150, 0.1);
+        border-top: 2px solid $color-ecommerce;
+      }
+    }
+  }
+}
+
+/*
+Features Item
+------------------
+*/
+.features {
+  & .single-feature {
+    padding: 50px 80px;
+    transition: all ease-in-out 0.3s;
+    & i {
+      font-size: 3em;
+      margin-bottom: 20px;
+      display: block;
+      color: $color-brand;
+    }
+    & h4 {
+      color: $color-dark;
+      font-size: 1.2rem;
+    }
+    &:nth-child(odd) {
+      background: $color-brand-secondary-lighter;
+    }
+    &:hover {
+      box-shadow: 0 40px 100px rgba(30, 189, 181, 0.15);
+      transform: translateY(-2px);
+      transition: all ease-in-out 0.3s;
+    }
+  }
+}
+
+/*
+Numbers
+------------------
+*/
+#numbers {
+  background-image: linear-gradient(to right, #ed64a6, #ed8936);
+  text-align: left;
+  & .number {
+    position: relative;
+    color: $color-light;
+    font-weight: 600;
+    & span {
+      display: block;
+      font-size: 3em;
+      line-height: initial;
+    }
+  }
+}
+
+/*
+Expresions Item
+------------------
+*/
+.all-expressions {
+  & .slick-arrow {
+    width: 50px;
+    background: #dddddd;
+  }
+  & .slick-prev:hover,
+  & .slick-prev:focus,
+  & .slick-next:hover,
+  & .slick-next:focus {
+    width: 50px;
+    background: #aaaaaa;
+  }
+  & .single-expression {
+    background-color: $color-light;
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 20px;
+    min-height: 260px;
+    & .project-info {
+      margin-top: 25px;
+      position: initial !important;
+      & img {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        border-radius: 6px;
+        width: 50px;
+      }
+      & .client-name {
+        color: $color-dark;
+        text-transform: capitalize;
+      }
+    }
+    & .project-name {
+      background: $color-brand;
+      color: #ffffff;
+      padding: 4px;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      bottom: 21px;
+    }
+  }
+  & .slick-slide .single-expression {
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: all 0.9s ease 0s;
+    & .project-name {
+      opacity: 0;
+    }
+  }
+  & .slick-center .single-expression {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    position: relative;
+    opacity: 1;
+    transition: all 0.9s ease 0s;
+    z-index: 9;
+    box-shadow: 0 40px 100px $color-brand-secondary;
+    padding-top: 40px;
+    & .project-name {
+      opacity: 1;
+    }
+  }
+}
+
+/*
+Projects
+------------------
+*/
+.projects {
+  background: rgba(30, 189, 181, 0.06);
+  padding: 50px;
+  & .project {
+    display: flex !important;
+    &-thumb {
+      width: 150px;
+      display: flex;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background: #ff9d1d;
+      box-shadow: 0 40px 400px rgba(30, 189, 181, 0.5);
+      & img {
+        width: 200px;
+        height: auto;
+      }
+    }
+    &-title {
+      color: #1e1e1e;
+      font-weight: 600;
+      padding: 0;
+      position: relative;
+      left: -42px;
+      padding-bottom: 20px;
+    }
+    &-type::after {
+      content: "";
+      width: 80px;
+      height: 2px;
+      background-color: #dddddd;
+      display: block;
+      margin: 16px 0px;
+    }
+    & .button-main {
+      border: 1px solid #1e1e1e;
+      color: #1e1e1e;
+    }
+  }
+  & .slick-prev {
+    left: 0px;
+    background: #dddddd;
+    width: 40px;
+    &:focus,
+    &:hover {
+      background: #aaaaaa;
+    }
+  }
+  & .slick-next {
+    right: 0px;
+    background: #dddddd;
+    width: 40px;
+    &:focus,
+    &:hover {
+      background: #aaaaaa;
+    }
+  }
+}
+
+/*
+FAQ SECTION
+------------------
+*/
+#faq {
+  & .accordion {
+    /*border-left: 1px solid #dddddd;*/
+    padding-left: 30px;
+    &-button {
+      background: transparent !important;
+      border: none;
+      color: #1e1e1e !important;
+      font-weight: 600;
+      padding-left: 2.5rem;
+      text-align: left;
+      &:focus {
+        box-shadow: none;
+        border: none;
+      }
+      &::after {
+        left: 0;
+        position: absolute;
+      }
+    }
+    &-body {
+      padding-left: 2.5rem;
+    }
+    &-collapse {
+      border: none;
+    }
+  }
+}
+
+/*
+ABOUT SECTION
+------------------
+*/
+.about {
+  position: relative;
+  z-index: 3;
+  &-content {
+    margin-bottom: 30px;
+    & .title-intro,
+    & .title-secondary {
+      color: $color-light;
+    }
+  }
+  & .about-social .social-list a {
+    color: #cecece;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+/*
+BLOG SECTION
+------------------
+*/
+#blog-latest {
+  background-color: #111b20;
+  color: #ffffff;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: -100px;
+    z-index: 9;
+    display: block;
+    width: 100%;
+    height: 101px;
+    content: "";
+    background: url(https://www.smartpassiveincome.com/wp-content/themes/SPI/assets/images/dark_wave.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,16 @@
+
+// Global form design 
+form {
+    & select,
+    & textarea,
+    & input{
+        border: 0px solid transparent!important;
+        background-image: linear-gradient(to right, rgba(213,1,50,0.06), rgba(242,32,39,0.06));
+        margin-bottom: 15px;
+        padding: 12px!important;
+    }
+}
+.form-control:focus{
+    border-color: rgba(213,1,50,0.06)!important;
+    box-shadow: 0 0 0 0.25rem rgba(213, 1, 50, 0.25)!important;
+}

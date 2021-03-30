@@ -1,0 +1,251 @@
+/*
+..................................................................
+        Navbar CSS code for RDC theme  
+        Sticky / Menu-item / Submenu / Griding / Hover 
+..................................................................
+*/
+#sticky-navbar {
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    @include transition; 
+}
+.nav-primary{
+    padding: 1rem 0rem;
+    & .menu>.menu-item{
+        &>a{
+            position: relative;
+            z-index: 2;
+            padding: 24px 20px;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        &:hover>a{
+            color: #FF9D1D;
+        }
+    }
+}
+// Submenu arrow style
+.nav-primary .menu>.menu-item:hover>.sub-menu::after, 
+.nav-primary .menu>.menu-item:hover>.sub-menu::before {
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    content: ' ';
+    border: solid transparent;
+}
+.nav-primary .menu>.menu-item:hover>.sub-menu::before {
+    margin-left: -11px;
+    border-color: transparent;
+    border-width: 11px;
+    border-bottom-color: #e3ebf1;
+    right: 48%;
+    left: auto!important;
+}
+
+// Submenu Style
+.nav-primary .sub-menu {
+    position: absolute;
+    z-index: 999999;
+    padding: 15px 10px;
+    background: #ffffff;
+    border: 1px solid #e3ebf1;
+    border-radius: 5px;
+    box-shadow: 0 20px 50px rgba(82, 109, 122, .1);
+    transform: scale(0);
+    top: 35px;
+    & .menu-item>a {
+        padding: 15px;
+        color: #404040;
+        display: block;
+        &:hover{
+            background-color: $color-brand-secondary-lighter;
+        }
+        & span {
+            display: block;
+        }
+        & .menu-title{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    & .menu-item-title{
+        padding: 15px;
+    }
+}
+.nav-primary .menu>.menu-item:hover>.sub-menu {
+    transform: scale(1);
+}
+.nav-primary .menu>.dropdown-expertise:hover>.sub-menu,
+.nav-primary .menu>.dropdown-about:hover>.sub-menu {
+    transform: translateX(-40%);
+}
+.nav-primary .sub-menu .menu-item:hover>a{
+    color: #202020;
+}
+
+
+/* Featured Item */
+.nav-primary .sub-menu .featured-item {
+    & .featured-item__img{
+        margin: 20px 0px;
+        overflow: hidden;
+        & img{
+            opacity: .8;
+            transition: all ease-in-out .3s;
+        }
+    }
+    & .rdc-icon-button{
+        position: absolute;
+        bottom: 0px;
+        transition: all ease-in-out .3s; 
+        color: $color-link;
+    }
+    &>a{
+        & h4{
+            padding-bottom: 10px;
+        }
+        &:hover{
+            & h4{
+                color: $color-link;
+                transition: all ease .3s;
+            }
+            & img{
+                opacity: 1;
+                transform: scale(1.03);    
+            }
+            & .rdc-icon-button i{
+                margin-left: 5px;
+                transition: all ease-in-out .3s;    
+            }
+        }
+    }
+}
+
+
+.dropdown-expertise .sub-menu .menu-item>a{
+    display: flex;
+    align-items: center;
+    &:hover i{
+        transform: scale(1.2); 
+    }
+    & i{
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 50px;
+        background: #ddd;
+        display: inline-table;
+        border-radius: 50%;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+
+
+/*
+GRIDING
+*/
+.nav-primary .menu .dropdown .sub-menu {
+    display: grid;
+    width: 550px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    & .about-featured-item {
+        background-color: $color-brand-secondary-lighter;
+        grid-column: 2/3;
+        grid-row: 1/span 4;
+    }
+    & .expertise-featured-item{
+        background-color: $color-brand-secondary-lighter;
+        grid-column: 2/4;
+        grid-row: 1/span 6;
+    }
+}
+
+
+
+.navbar-toggler {
+    display: flex;
+    background-color: rgba(255,0,0,0.4);
+    padding: 10px 15px;
+    margin-left: auto;
+    & .icon-text{
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 20px;
+        margin-right: 5px;
+    }
+    & .icon-bar {
+        width: 22px;
+        height: 2px;
+        background-color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        border-radius: 1px;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        margin-top: 4px;
+    }
+}
+
+
+
+/* ANIMATED X */
+.navbar-toggler.x {
+    & .icon-bar:nth-of-type(1) {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 10% 10%;
+        -ms-transform-origin: 10% 10%;
+        transform-origin: 10% 10%;
+    }
+    & .icon-bar:nth-of-type(2) {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    & .icon-bar:nth-of-type(3) {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 10% 90%;
+        -ms-transform-origin: 10% 90%;
+        transform-origin: 10% 90%;
+    }
+}
+    
+
+/* ANIMATED X COLLAPSED */
+.navbar-toggler.x.collapsed {
+
+    & .icon-bar:nth-of-type(1) {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+    & .icon-bar:nth-of-type(2) {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    & .icon-bar:nth-of-type(3) {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+}

@@ -1,0 +1,231 @@
+@import "../node_modules/bootstrap/scss/mixins";
+
+// All breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// @media (min-width: 0) { ... }
+// @include media-breakpoint-down(up) { ... }
+// @media (max-width: 0) { ... }
+// @include media-breakpoint-down(sm) { ... }
+
+@include media-breakpoint-up(sm) {
+  .hide-sm {
+    display: none;
+  }
+}
+@include media-breakpoint-up(md) {
+  .hide-lg {
+    display: none !important;
+  }
+  #main-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+@include media-breakpoint-between(md, lg) {
+  .nav-primary .menu > .menu-item > a {
+    padding: 24px 10px;
+  }
+  .nav-primary .menu .dropdown .sub-menu {
+    width: 400px;
+    & .about-featured-item {
+      display: none;
+    }
+  }
+
+  .all-expressions .single-expression {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.4em;
+    & .project-info {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .benefit {
+    text-align: center;
+    & .title,
+    & img {
+      margin-right: 0;
+      float: none;
+      width: auto;
+    }
+  }
+  .mid-box {
+    top: 0px;
+  }
+  .features .single-feature {
+    padding: 25px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .hide-sm {
+    display: none !important;
+  }
+  .benefit {
+    width: 47%;
+  }
+  #main-nav-bar {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #404040;
+  }
+  .logo {
+    display: none;
+  }
+  .menu .d-inline-flex a,
+  .menu .d-inline-flex {
+    display: block !important;
+  }
+  .nav-primary .menu > .menu-item:hover > .sub-menu {
+    left: 0;
+    transform: translateX(-0%) !important;
+  }
+  .nav-primary .menu .dropdown .sub-menu {
+    display: block;
+    width: 100%;
+  }
+  .nav-primary .menu .dropdown .sub-menu .process-featured-item,
+  .nav-primary .menu .dropdown .sub-menu .about-featured-item {
+    display: none;
+  }
+
+  .nav-primary .menu > .menu-item {
+    border-bottom: 1px solid;
+    & a {
+      padding: 10px 0px;
+      color: #404040;
+      & .fa-angle-down {
+        float: right;
+      }
+    }
+    & .search-link {
+      background: none;
+      &:hover i,
+      & i {
+        color: #404040;
+      }
+    }
+  }
+
+  .nav-primary .sub-menu .menu-item > a {
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+
+  .conversions .nav-tabs .nav-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .conversions .nav-tabs .nav-item .nav-link {
+    padding: 10px 8px;
+  }
+  .mob-logo {
+    width: 50%;
+    float: left;
+  }
+  .nav-primary .menu .dropdown .sub-menu .menu-item {
+    padding: 0px 20px;
+    & a i {
+      float: left;
+    }
+  }
+  .expertise-featured-item > ul > li > a::before {
+    display: inline-block;
+    content: ">";
+    margin-right: 10px;
+  }
+  .expertise-featured-item > ul > li.p-0 {
+    display: none;
+  }
+
+  .conversions .tab-content {
+    overflow-x: scroll;
+    white-space: nowrap;
+    & .box-main {
+      width: 300px !important;
+      & * {
+        white-space: break-spaces;
+        display: grid;
+      }
+    }
+    
+  }
+  .all-features {
+    white-space: nowrap;
+  }
+
+  .projects .project {
+    padding: 20px;
+    & .project-thumb {
+      margin-bottom: 20px;
+      height: 100%;
+      padding: 50px 0px;
+    }
+    & .project-title {
+      left: 0;
+    }
+  }
+  #faq .accordion {
+    padding-left: 0px;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .title-main {
+    font-size: 2rem;
+  }
+  .title-secondary {
+    font-size: 1.8rem;
+  }
+  .banner-main:after {
+    display: none;
+  }
+  .banner-main {
+    background-size: cover;
+  }
+  .nav-primary {
+    padding: 1rem;
+  }
+
+  .benefit-content {
+    overflow-x: scroll;
+    white-space: nowrap;
+    & .benefit {
+      width: 150px;
+    }
+  }
+  #numbers .number {
+    margin-bottom: 20px;
+  }
+
+  .projects .project .project-thumb {
+    padding: 50px 20px;
+  }
+
+  #blog-latest:before {
+    display: none;
+  }
+
+  #footer {
+    text-align: center;
+  }
+  .footer-title::after,
+  .footer-logo::after {
+    margin: 20px auto;
+  }
+}

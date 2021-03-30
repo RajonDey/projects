@@ -1,0 +1,100 @@
+// Brand
+$color-brand: #bd1e26 !default;
+$color-brand-gradient: linear-gradient(
+    to right,
+    rgb(213, 1, 50),
+    rgb(242, 32, 39)
+  )
+  rgb(234, 9, 9);
+$color-brand-secondary: #1ebdb5 !default;
+
+$color-shadow: 0 40px 100px rgba(30, 189, 181, 0.06);
+.shadow-color {
+  box-shadow: $color-shadow;
+}
+
+// Link color
+$color-link: #ff9d1d;
+
+// Product color
+$color-shopify: #91b946;
+$color-wordpress: #207196;
+$color-react: #5ed4f3;
+
+$color-html: #fc6481;
+$color-cms: #9085da;
+$color-ecommerce: #38d996;
+
+// Audience color
+$color-agencies: #faaf40;
+$color-business: #262261;
+$color-startups: #ee4036;
+
+.shopify-color {
+  color: $color-shopify !important;
+}
+.wordpress-color {
+  color: $color-wordpress !important;
+}
+.react-color {
+  color: $color-react !important;
+}
+
+.html-color {
+  color: $color-html !important;
+}
+.cms-color {
+  color: $color-cms !important;
+}
+.ecommerce-color {
+  color: $color-ecommerce !important;
+}
+
+// Background
+$color-brand-secondary-lighter: rgba(30, 189, 181, 0.06);
+.background-color-primary {
+  background-color: $color-brand-secondary-lighter;
+}
+
+// Neutral palette
+$color-dark: #1e1e1e !default;
+$color-medium: #cecece !default;
+$color-light: #ffffff !default;
+
+// Accents & states.
+
+$color-active: $color-brand !default;
+$color-complete: $color-brand !default;
+$color-disabled: $color-medium !default;
+$color-success: #7ab800 !default;
+$color-failure: #d3222a !default;
+
+$color-body: #4d4d4d !default;
+
+// Background
+
+$background-primary: $color-brand-secondary !default;
+$background-primary-light: lighten($color-brand, 50%) !default;
+
+$background-secondry: $color-brand !default;
+$background-secondry-light: lighten($color-brand-secondary, 50%) !default;
+
+// Components.
+
+$button-primary-bg: $color-brand !default;
+$button-primary-border-color: darken($button-primary-bg, 5%) !default;
+
+$button-secondary-bg: $color-dark !default;
+$button-secondary-border-color: darken($button-secondary-bg, 5%) !default;
+
+$button-action-positive-bg: $color-success !default;
+$button-action-positive-border-color: darken(
+  $button-action-positive-bg,
+  5%
+) !default;
+
+$button-action-negative-bg: $color-failure !default;
+$button-action-negative-border-color: darken(
+  $button-action-negative-bg,
+  5%
+) !default;

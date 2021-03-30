@@ -1,0 +1,89 @@
+.footer-top {
+  background-color: #111b20;
+  color: #ffffff;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: -100px;
+    z-index: 9;
+    display: block;
+    width: 100%;
+    height: 101px;
+    content: "";
+    background: url(https://www.smartpassiveincome.com/wp-content/themes/SPI/assets/images/dark_wave.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer {
+  &-title {
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: $color-dark;
+    margin-bottom: 0px;
+    &::after {
+      content: "";
+      width: 40px;
+      height: 1px;
+      background-color: #dddddd;
+      display: block;
+      margin: 20px 0px;
+    }
+  }
+  &-logo {
+    & a {
+      display: block;
+      color: $color-dark;
+    }
+    &::after {
+      content: "";
+      width: 40px;
+      height: 1px;
+      background-color: #dddddd;
+      display: block;
+      margin: 20px 0px;
+    }
+  }
+  & ul li {
+    & > a {
+      color: #767676;
+      font-size: 12px;
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+  & .copywright {
+    font-size: 0.8rem;
+    color: #767676;
+  }
+  & .contact-detail {
+    position: relative;
+    background: $color-brand-secondary-lighter;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 13px;
+    border-radius: 0px 20px;
+    & > li {
+      list-style: none;
+      & > a {
+        color: #767676;
+      }
+    }
+    & .social-list {
+      margin-top: 15px !important;
+      border-top: 1px solid #dddddd;
+      display: inline-block !important;
+      padding-top: 10px !important;
+      & li {
+        display: inline;
+        margin-right: 10px;
+      }
+    }
+  }
+}

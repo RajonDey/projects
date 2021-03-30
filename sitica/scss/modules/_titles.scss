@@ -1,0 +1,58 @@
+
+/*
+TITLE SIZE & FONTS
+-------------------
+*/
+.title-main{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 2.5rem;
+    color: #ffffff;
+    display: block;
+    padding: 20px 0px;
+    font-weight: 400; 
+}
+.title-sub{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: $color-brand;
+    margin-bottom: 0px;
+}
+.title-intro{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    color: $color-dark;
+    padding-bottom: 30px;
+}
+
+.title-secondary{
+    font-family: 'Oswald', sans-serif;
+    color: $color-dark;
+    font-size: 2.2rem;
+    padding: 12px 0px;
+    font-weight: 400;  
+}
+
+.title-tertiary{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 600;
+    color: $color-dark;
+}
+
+.title-forth{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: $color-dark;
+}
+
+.title-small{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #202020;
+    font-weight: 600;
+}
