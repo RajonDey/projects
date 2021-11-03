@@ -84,3 +84,197 @@ p{
 	transform: translate(-50%,-50%);
 	max-width: 100%;
 }
+
+
+
+.color-choose div {
+    display: inline-block;
+}
+.color-choose input[type="radio"] {
+    display: none;
+}
+
+.color-choose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+.color-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.product-color span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #86939E;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.color-choose #red + label span {
+    background-color: #FF0000;
+}
+.color-choose #orange + label span {
+    background-color: #FFA500;
+}
+.color-choose #blue + label span {
+    background-color: #4E88FD;
+}
+.color-choose input[type="radio"]#green:checked + label span {
+    background-image: url("https://www.issahybrid.com/css/check-icnW.svg") ,url("https://www.issahybrid.com/css/camoby.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.color-choose input[type="radio"]#green + label span {
+    background-image: url("https://www.issahybrid.com/css/camoby.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.color-choose input[type="radio"]#pink + label span {
+    background-image: url("https://www.issahybrid.com/css/camo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.sizes-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.sizes-wrap div {
+    padding-left: 17px;
+    display: inline-block;
+}
+.sizes-wrap div:first-child{
+	padding-left: 0px;
+}
+.size-choose input[type="radio"] {
+    display: none;
+}
+.size-choose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+.size-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    padding-top: 7px;
+}
+
+.product-choice-qty{
+	width: 140px;
+}
+.counter-out {
+    border: 1px solid #C0C4D1;
+    border-radius: 18px;
+}
+.counter-out .btn-default {
+    background: transparent;
+    outline: none;
+}
+.counter-out .input-number {
+    width: 50px;
+    border: none;
+    text-align: center;
+}
+
+
+
+
+.timeline {
+    margin: 37px 0 66px 20px;
+    padding: 0;
+    border-top: 1px solid #323232;
+    list-style: none;
+}
+.timeline__step {
+    float: left;
+    width: 25%;
+    padding-top: 30px;
+    position: relative;
+}
+.timeline__step:first-of-type:before, .timeline__step:last-of-type:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+.timeline__step-radio {
+    display: none;
+}
+.timeline__step-label {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    font-size: 0;
+    border-width: 0;
+    -webkit-transform: rotate(30deg);
+    width: 110px;
+    margin: 0 0 45px -55px;
+    border-style: solid;
+    border-color: #428bca;
+    background: #fff;
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: bottom 0.1s ease-in-out, opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+.timeline__step-title {
+    display: block;
+    width: 100%;
+    padding: 30px 0 0;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    padding-right: 21px;
+    top: 0;
+}
+.timeline__step-title2 {
+    display: block;
+    width: 100%;
+    padding: 46px 0 0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    padding-right: 21px;
+    padding-bottom: 5px;
+    top: 0;
+}
+.timeline__step-marker {
+    width: 27px;
+    height: 27px;
+    margin-left: -25px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px -10;
+    color: #428bca;
+    font-size: 2em;
+    font-style: normal;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+}
+.deliverProcess {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    bottom: 18px;
+}
