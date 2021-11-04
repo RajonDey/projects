@@ -215,8 +215,9 @@ a,
 .navbar-collapse {
     flex-grow: inherit!important;
 }
-.navbar-toggler {
-    background-color: red;
+
+.menu-bar{
+    border-bottom: 1px solid #ebeeee;border-top: 1px solid #ebeeee;
 }
 
 
@@ -284,6 +285,9 @@ a,
 .product-navigation {
     margin-bottom: 30px;
 }
+.product-navigation .d-lg-block{
+    display: inline-block!important;
+}
 .product-size-chart,
 .product-choice-size,
 .product-details,
@@ -329,8 +333,10 @@ h2.product-title {
     width: 60%;
 }
 
-.order-summary{
+.order-summary {
     margin: 50px 0px;
+    border-top: 1px dotted #ddd;
+    padding-top: 50px;
 }
 .order-summary b{
     color: #444444;
@@ -349,9 +355,7 @@ h2.product-title {
 }
 
 
-/**************/
-
-
+/* Color Plate CSS */
 .color-choose div {
     display: inline-block;
 }
@@ -405,7 +409,7 @@ h2.product-title {
     background-position: center;
 }
 
-
+/* Product Size CSS */
 .sizes-wrap {
     display: flex;
     align-items: center;
@@ -456,7 +460,7 @@ h2.product-title {
 
 
 
-
+/* Shipping timeline CSS */
 .timeline {
     margin: 37px 0 66px 20px;
     padding: 0;
@@ -471,7 +475,7 @@ h2.product-title {
 }
 .timeline__step:first-of-type:before, .timeline__step:last-of-type:before {
     content: "";
-    width: 50%;
+    width: 0%;
     height: 100%;
     background: #fff;
     position: absolute;
@@ -544,10 +548,20 @@ h2.product-title {
     bottom: 18px;
 }
 
-
-
-
-
+/* card */
+.card.text-center.bg-light{
+background-color: #fff!important;
+}
+.card {
+    background-color: #fff;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+    box-shadow: 0 8.9098px 36.6557px rgb(67 67 67 / 6%);
+}
+.card-header {
+    background-color: none;
+    border-bottom: 1px solid #f2f2f2;
+}
 
 /*
 ==================================
@@ -622,4 +636,80 @@ h2.product-title {
 ul.footer-links {
     width: 35%;
     float: left;
+}
+
+
+
+
+
+/*
+==================================
+    RESPONSIVE STYLING HERE
+==================================
+*/
+
+@media (max-width: 525px) {
+    ul.footer-links {
+        width: 49%;
+        float: left;
+        margin-bottom: 30px;
+    }
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    
+   
+}
+
+/*laptop*/
+@media (max-width: 1024px) {
+    .menu-bar .text-center{
+        text-align: left!important;
+    }
+    .navbar{
+        justify-content: start!important;
+        position: inherit;
+    }
+    .menu-bar-row{
+        position: relative;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        right: 0;
+        background: #ECEEEE;
+        padding: 10px 15px;
+        z-index: 9;
+    }
+    .navbar-toggler{
+        border: 1px solid #ddd;
+    }
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        outline: none!important;
+        border: none;
+        box-shadow: none;
+    }
+    .product-navigation {
+        margin-top: 20px;
+    }
+    .product-navigation .next{
+        float: right;
+    }
+    .order-summary .col-md-7{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .table td{
+        padding: 0px;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1440px) {
+.footer-left{padding-left: 14%}
+.footer-right{padding-right: 14%}
+
 }
