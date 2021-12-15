@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Offers</title>
+    <meta name="description" content="Responsive website">
+    <meta name="keywords" content="responsive website">
+    <meta name="author" content="site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<!-- Fonts -->
+	
+	<!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--End Bootstrap CSS-->
+    
+    <!--Other CSS-->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style type="text/css">
+		.fb-bg{
+			background: #4555B1;
+		}
+		.text-inherit{
+			text-transform: inherit;
+		}
+		.bar {
+		    position: relative;
+		    display: inline-block;
+		    margin-bottom: 10px;
+		}
+
+		.bar:before {
+		    display: block;
+		    content: '';
+		    width: 70px;
+		    height: 1px;
+		    background: #ddd;
+		    position: absolute;
+		    left: -80px;
+		    top: 10px;
+		}
+		.bar:after {
+		    display: block;
+		    content: '';
+		    width: 70px;
+		    height: 1px;
+		    background: #ddd;
+		    position: absolute;
+		    right: -80px;
+		    top: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Sidebar Section -->
+	<div class="sidebar sidebar-closed">
+		<div class="sidebar-container">
+			<a class="js-toggleSidebar sidebar-close">
+				<div class="sidebar-close-icon">
+					<i class="bi bi-x-lg"></i>
+				</div>
+			</a>
+		
+			<div class="sidebar-scroll">
+				<!-- This contents are comeing from JS -->
+				<div class="profile-head mb-4" id="profile"></div><!-- Profile Head -->
+	    		<nav class="sidemenu" id="nav"></nav><!-- Sidemenu end -->
+			</div>
+		</div>
+	</div>
+	<!-- Sidebar Overlay -->
+	<div class="sidebar-overlay js-toggleSidebar"></div>
+
+
+	<!-- HEADER Section -->
+	<header class="header" style="background-color: #2B2B2B;">
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-md-12 header-content">
+	            	
+	            	<a class="js-toggleSidebar sidebar-open">
+						<div class="sidebar-open-icon">
+							<i class="bi bi-list"></i>
+						</div>
+					</a>
+					<span class="site-title">Offers</span>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+
+	<section class="page-container">
+		<div class="container-fluid">
+	        <div class="row">
+	            <div class="col-12 head text-center">
+	            	<h3>Heading Text Here</h3>
+	        	</div>
+
+	        	<div class="col-12 delivery-page page transparent p-0">
+
+	        		<div class="event-box mb-4 px-5 p-4 rounded-10" style="background-color: #FFFFFF;">
+	        			<div class="mb-3">
+	        				<h3 class="text-muted">Event Title</h3>
+	        				<p>Sat, 19 Jan</p>
+	        			</div>
+	        			
+	        			<form class="">
+	        				<textarea class="w-100" cols="4" rows="6" style="height: auto;border-radius: 6px;"></textarea>
+	        				<a href="#" class="btn">Save</a>
+	        				<a href="#" class="btn">Save</a>
+	        			</form>
+	        		</div><!-- End Event Box -->
+
+	        		
+
+	        	</div>
+
+	        </div>
+	    </div>
+	</section>
+
+
+	<!-- Script -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>

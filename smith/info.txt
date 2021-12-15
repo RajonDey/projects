@@ -1,0 +1,39 @@
+
+angelsmith461
+Dec 13, 9:59 PM
+ReportSpam
+Instructions:
+
+File A:
+1: When an entry is clicked, a popup shall appear as seen in 2.
+1A: Explains the dropdown men as noted. 
+2A: Linked to 3
+2B: Linked to 4
+2C: Linked to 6
+2D: Shows popup noted in 2AA.
+2E: Shows popup noted in 2BB.
+2F: Shows popup noted in 2AA
+
+Note: The buttons in 2AA and 2BB are linked to #.
+ 
+4: "To Pack (3)" is linked to 4. "Packed (5)" is linked to 5. "< Back" is linked to #. Mark as fulfilled button is linked to #. X shows the "MainMenu". Y shows the dropdown menu as seen in 1A. "O" icons are linked to #. Package Order button is linked to #. (*) represents text that is linked to #.5: "To Pack (3)" is linked to 4. "Packed (5)" is linked to 5. "< Back" is linked to #. X shows the "MainMenu". "O" icons are linked to #. (*) represents text that is linked to #.
+6. "< Back" is linked to #. Mark as fulfilled button is linked to #. X shows the "MainMenu". (*) represents text that is linked to #. Print Shipping Label is linked to 7.
+7.  "< Back" is linked to # Print is linked to #
+
+File B:
+1: "Add Now" is linked to 2.
+2: A is linked to 3. B is linked to 4. "Add Now" is linked to 5. 
+3: "Add Now" is linked to 2.
+4: "Add Now" is linked to 2. Contents click boxes as noted.    
+5: "Add Now" is linked to 6. The gray field is unclickable.
+6: A is linked to 7. B is linked to 8. C is linked to 9. "Add Now-1" is linked to 1. "Add Now-2" is linked to #.
+7: "Add Now" is linked to 6.
+8: "Add Now" is linked to 6. (Icon--Change) The "Change" should be changed to "Upload" and that is an upload function that accesses the user upload feature. "Add More" would add another row of "Goal Title Fields and Icon Field) 
+9: "Add Now" is linked to 6. There are 3 dropdown list in this page as noted. All other buttons are normal text input fields or slide buttons.
+
+Note:
+Where "98" is seen in 2 and 6, should be "Go" and "Go" is a link button that is linked as noted in 2 (a, b) and 6 (a, b, c). 
+
+< month where is is seen, this is a link, that is linked to #
+
+  All other buttons are normal text input fields or slide buttons.

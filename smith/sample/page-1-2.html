@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Offers</title>
+    <meta name="description" content="Responsive website">
+    <meta name="keywords" content="responsive website">
+    <meta name="author" content="site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<!-- Fonts -->
+	
+	<!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--End Bootstrap CSS-->
+    
+    <!--Other CSS-->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style type="text/css">
+		.conversation {
+		    height: calc(100vh - 55px);
+		    position: relative;
+		}
+		.conversation .conversation-container {
+		    height: calc(100% - 0px);
+		    overflow-x: hidden;
+			position: relative;
+			background: #efe7dd url('assets/images/whats-app-bg.jpg') repeat;
+			z-index: 0;
+			padding: 0 16px 70px;
+		}
+
+
+		.message {
+		    color: #f1f1f1;
+		    clear: both;
+		    line-height: 18px;
+		    font-size: 15px;
+		    padding: 8px;
+		    position: relative;
+		    margin: 8px 0;
+		    max-width: 80%;
+		    word-wrap: break-word;
+		}
+		.message:first-child {
+		    margin: 16px 0 8px;
+		}
+		.message.sent {
+		    background: #2B4842;
+		    border-radius: 5px 0px 5px 5px;
+		    float: right;
+		}
+		.message.received {
+		    background: #2A3138;
+		    border-radius: 0px 5px 5px 5px;
+		    float: left;
+		}
+		.message:after {
+		    position: absolute;
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		}
+		.message.sent::after {
+		    border-width: 0px 0 10px 10px;
+		    border-color: transparent transparent transparent #2B4842;
+		    top: 0;
+		    right: -10px;
+		}
+		.message.received:after {
+		    border-width: 0px 10px 10px 0;
+		    border-color: transparent #2A3138 transparent transparent;
+		    top: 0;
+		    left: -10px;
+		}
+		.metadata {
+		    display: inline-block;
+		    float: right;
+		    padding: 0 0 0 7px;
+		    position: relative;
+		    bottom: -4px;
+		}
+		.metadata .time {
+		    color: rgba(255, 255, 255, .45);
+		    font-size: 11px;
+		    display: inline-block;
+		}
+		.metadata .tick {
+		    display: inline-block;
+		    margin-left: 2px;
+		    position: relative;
+		    top: 4px;
+		    height: 16px;
+		    width: 16px;
+		}
+
+		.conversation-compose {
+		    display: flex;
+		    flex-direction: row;
+		    align-items: flex-end;
+		    overflow: hidden;
+		    height: 50px;
+		    width: 100%;
+		    z-index: 2;
+		    position: absolute;
+		    bottom: 15px;
+		    right: 0;
+		}
+		.conversation-compose .emoji {
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    background: #33393F;
+		    border-radius: 5px 0 0 5px;
+		    flex: 0 0 auto;
+		    margin-left: 8px;
+		    width: 48px;
+		}
+		.conversation-compose .emoji i{
+			color: #A2A5AA;
+			font-size: 20px;
+		}
+		.conversation-compose .input-msg {
+		    border: 0;
+		    flex: 1 1 auto;
+		    font-size: 16px;
+		    margin: 0;
+		    outline: none;
+		    min-width: 50px;
+		}
+		.conversation-compose div, .conversation-compose input {
+		    background: #33393F;
+		    height: 100%;
+		}
+		.conversation-compose .photo {
+		    flex: 0 0 auto;
+		    border-radius: 0 0 5px 0;
+		    text-align: center;
+		    position: relative;
+		    width: 48px;
+		}
+		.conversation-compose .photo i {
+		    display: block;
+		    color: #7d8488;
+		    font-size: 24px;
+		    transform: translate(-50%, -50%);
+		    position: relative;
+		    top: 50%;
+		    left: 50%;
+		}
+		.conversation-compose .send {
+		    background: transparent;
+		    border: 0;
+		    cursor: pointer;
+		    flex: 0 0 auto;
+		    margin-left: 8px;
+		    margin-right: 8px;
+		    padding: 0;
+		    position: relative;
+		    outline: none;
+		}
+		.conversation-compose .send .circle {
+		    background: #008a7c;
+		    border-radius: 50%;
+		    color: #fff;
+		    position: relative;
+		    width: 48px;
+		    height: 48px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.conversation-compose .send .circle i {
+		    font-size: 24px;
+		    margin-left: 5px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Sidebar Section -->
+	<div class="sidebar sidebar-closed">
+		<div class="sidebar-container">
+			<a class="js-toggleSidebar sidebar-close">
+				<div class="sidebar-close-icon">
+					<i class="bi bi-x-lg"></i>
+				</div>
+			</a>
+		
+			<div class="sidebar-scroll">
+				<!-- This contents are comeing from JS -->
+				<div class="profile-head mb-4" id="profile"></div><!-- Profile Head -->
+	    		<nav class="sidemenu" id="nav"></nav><!-- Sidemenu end -->
+			</div>
+		</div>
+	</div>
+	<!-- Sidebar Overlay -->
+	<div class="sidebar-overlay js-toggleSidebar"></div>
+
+
+	<!-- HEADER Section -->
+	<header class="header" style="background-color: #2B2B2B;">
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-md-12 header-content">
+	            	
+	            	<a class="js-toggleSidebar sidebar-open">
+						<div class="sidebar-open-icon">
+							<i class="bi bi-list"></i>
+						</div>
+					</a>
+					<span class="site-title">Offers</span>
+
+					<a href="#" class="back-link text-white position-absolute" style="right: 10px;">Back</a>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+
+	<section class="page-container p-0">
+		<div class="container-fluid">
+	        <div class="row">
+	            
+	        	<div class="col-12 page chat-page conversation rounded-0 p-0">
+	        		
+					<div class="conversation-container">
+
+						<div class="message sent">
+							Hello
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message received">
+							Hello, How are you? 😊
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							I'm fine
+							<span class="metadata">
+								<span class="time">5:11 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							What you are doing
+							<span class="metadata">
+								<span class="time">5:12 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							Hello
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message received">
+							Hello, How are you? 😊
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							I'm fine
+							<span class="metadata">
+								<span class="time">5:11 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							What you are doing
+							<span class="metadata">
+								<span class="time">5:12 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							Hello
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message received">
+							Hi
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message received">
+							It is pleasure to meet you
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							Yes, same here
+							<span class="metadata">
+								<span class="time">5:11 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							What you are doing
+							<span class="metadata">
+								<span class="time">5:12 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message received">
+							Hi
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message received">
+							It is pleasure to meet you
+							<span class="metadata">
+								<span class="time">5:10 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							Yes, same here
+							<span class="metadata">
+								<span class="time">5:11 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+						<div class="message sent">
+							What you are doing
+							<span class="metadata">
+								<span class="time">5:12 pm</span>
+								<span class="tick"><i class="bi bi-check2-all"></i></span>
+							</span>
+						</div>
+
+					</div><!-- End Conversation Container -->
+
+					<form id="form" class="conversation-compose">
+		                <div class="emoji"><i class="bi bi-emoji-laughing-fill"></i></div>
+		                <input id="val" class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus="">
+		                <div class="photo">
+		                  <i class="bi bi-paperclip"></i>
+		                </div>
+		              <span id="speak"></span>
+	                  <span class="send">
+	                    <div class="circle">
+	                      <i class="bi bi-symmetry-horizontal"></i>
+	                    </div>
+	                  </span>
+              		</form>
+
+	        	</div>
+
+	        </div>
+	    </div>
+	</section>
+
+
+	<!-- Script -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Offers</title>
+    <meta name="description" content="Responsive website">
+    <meta name="keywords" content="responsive website">
+    <meta name="author" content="site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<!-- Fonts -->
+	
+	<!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--End Bootstrap CSS-->
+    
+    <!--Other CSS-->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style type="text/css">
+		
+		.chat-page .tab-content{
+			height: calc(100vh - 120px);
+			overflow-y: auto;
+		}
+		.chat-page .nav-tabs .nav-link{
+			color: #9CA0A6;
+			padding: 20px;
+			border-bottom: 4px solid transparent;
+			flex: auto;
+		}
+		.chat-page .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+			color: #65AD96;
+		    background-color: transparent;
+		    border:none;
+		    border-bottom: 4px solid;
+		}
+		.chat-page .nav-tabs .nav-link:focus, .chat-page .nav-tabs .nav-link:hover {
+		    border-color: transparent transparent transparent;
+		    isolation: isolate;
+		    border-bottom: 4px solid;
+		}
+
+		.chat-page .tab-content i{
+		    background: #707678;
+		    color: #D5D6D8;
+		    width: 50px;
+		    height: 50px;
+		    display: block;
+		    font-size: 24px;
+		    line-height: 50px;
+		    border-radius: 50%;
+		}
+		.chat-page .tab-content a{
+			color: #D5D6D8;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Sidebar Section -->
+	<div class="sidebar sidebar-closed">
+		<div class="sidebar-container">
+			<a class="js-toggleSidebar sidebar-close">
+				<div class="sidebar-close-icon">
+					<i class="bi bi-x-lg"></i>
+				</div>
+			</a>
+		
+			<div class="sidebar-scroll">
+				<!-- This contents are comeing from JS -->
+				<div class="profile-head mb-4" id="profile"></div><!-- Profile Head -->
+	    		<nav class="sidemenu" id="nav"></nav><!-- Sidemenu end -->
+			</div>
+		</div>
+	</div>
+	<!-- Sidebar Overlay -->
+	<div class="sidebar-overlay js-toggleSidebar"></div>
+
+
+	<!-- HEADER Section -->
+	<header class="header" style="background-color: #2B2B2B;">
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-md-12 header-content">
+	            	
+	            	<a class="js-toggleSidebar sidebar-open">
+						<div class="sidebar-open-icon">
+							<i class="bi bi-list"></i>
+						</div>
+					</a>
+					<span class="site-title">Offers</span>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+
+	<section class="page-container p-0">
+		<div class="container-fluid">
+	        <div class="row">
+	            
+	        	<div class="col-12 page chat-page rounded-0 p-0" style="background: #1C2229;color: #fff;">
+	        		
+					<nav style="background: #2B3038;">
+					  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+					  	<button class="nav-link"><i class="bi bi-camera-fill"></i></button>
+					    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-home">Chats</button>
+					    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-profile">Status</button>
+					    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact">Calls</button>
+					  </div>
+					</nav>
+					<div class="tab-content p-3" id="nav-tabContent">
+					  <div class="tab-pane fade show active" id="nav-home">
+					  	<table width="100%" >
+
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+					  		<tr>
+					  			<td align="center" valign="middle" width="70"><i class="bi bi-people-fill"></i></td>
+					  			<td class="border-bottom position-relative py-3 mb-2"><a href="page-1-2.html" class="d-block">
+					  				<b>Volunteers</b>
+					  				<p class="text-muted">Feeling wonderful!</p>
+					  				<div class="position-absolute end-0" style="top: 10px;"><small class="text-muted">8:17 AM</small></div>
+					  			</a></td>
+					  		</tr>
+
+					  	</table>
+					  </div>
+					  <div class="tab-pane fade" id="nav-profile">Status</div>
+					  <div class="tab-pane fade" id="nav-contact">Calls</div>
+					</div>
+
+	        	</div>
+
+	        </div>
+	    </div>
+	</section>
+
+
+	<!-- Script -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>
