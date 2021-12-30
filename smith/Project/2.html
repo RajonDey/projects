@@ -132,56 +132,7 @@
 					</div>
 				</div>
 
-				<!-- Right Menu Section -->
-				<div class="py-4 pb-5 position-relative">
-				    <div class="container-fluid p-0 m-0">
-				        <div class="row">
-
-				            <div class="col-md-12">
-				            	<div class="">
-				            		<a href="#" class="text-dark"><i class="bi bi-chevron-left"></i> Back</a>
-				            	</div>
-
-								
-								<div role='navigation'>
-								  <div id="menuToggle">
-								    <!--
-								    A fake / hidden checkbox is used as click reciever,
-								    so you can use the :checked selector on it.
-								    -->
-								    <input type="checkbox" />
-								    
-								    <!--
-								    Some spans to act as a hamburger.
-								    
-								    They are acting like a real hamburger,
-								    not that McDonalds stuff.
-								    -->
-								    <span></span>
-								    <span></span>
-								    <span></span>
-								    
-								    <!--
-								    Too bad the menu has to be inside of the button
-								    but hey, it's pure CSS magic.
-								    -->
-								    <ul id="menu">
-								      	<h4>OTHER ACTIONS</h4>
-							        	<li><a href="#"><i class="bi bi-box-arrow-in-left"></i> Refund Order</a></li>
-							        	<li class="pb-0"><a href="#"><i class="bi bi-pencil"></i> Add Note</a></li>
-							        	<hr>
-							        	<h4>OTHER ACTIONS</h4>
-							        	<li><a href="#"><i class="bi bi-journal-check"></i> Quick Picklist</a></li>
-								    </ul>
-								  </div>
-								</div>
-
-				            </div>
-
-
-				        </div>
-				    </div>
-				</div>
+			
 
 
 	        	<div class="col-12 balance-page page transparent p-0">
@@ -199,7 +150,7 @@
 						<form>
 							<div class="mb-3 text-center d-flex align-items-center justify-content-center" style="min-height: 150px;">
 								<div class="d-flex">
-									<sup style="line-height: 100%;font-size: 60%">$</sup> <input type="number" name="" placeholder="0">
+									<sup style="line-height: 100%;font-size: 60%">$</sup> <input type="number" pattern="[0-9]*" inputmode="numeric">
 								</div>
 							</div>
 							<div class="mb-2">
