@@ -189,6 +189,136 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   right: 15px;
 }
 
+.content-badge small {
+    background: #f8f8f8;
+    padding: 2px 13px;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/* The switch - the box around the slider */
+.custom-switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 18px;
+}
+
+/* Hide default HTML checkbox */
+.custom-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.custom-switch input:focus{
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* The slider */
+.custom-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #EDF0FD;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.custom-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 40px;
+  left: 0;
+  bottom: 0;
+  background-color: #5E64EA;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .custom-slider {
+  background-color: #EDF0FD;
+}
+
+input:focus + .custom-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .custom-slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.custom-slider.round {
+  border-radius: 34px;
+}
+
+.custom-slider.round:before {
+  border-radius: 10px;
+}
+
+/* Order page styles Here */
+    .styled-checkbox {
+      position: absolute;
+      opacity: 0;
+    }
+    .styled-checkbox + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .styled-checkbox + label:before {
+      content: "";
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 2px solid #66F737;
+      border-radius: 50%;
+    }
+    .styled-checkbox:hover + label:before {
+      background: #66F737;
+    }
+    .styled-checkbox:focus + label:before {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+    .styled-checkbox:checked + label:before {
+      background: #66F737;
+    }
+    .styled-checkbox:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+    .styled-checkbox:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+    .styled-checkbox:checked + label:after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 38px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg);
+    }
 
 /*
 ......................
@@ -200,8 +330,8 @@ body.no-scroll {
 }
 
 body.no-scroll .rdc-main-container,
-body.no-scroll header,
-body.no-scroll .footer {
+body.no-scroll header/*,
+body.no-scroll .footer*/ {
   -moz-transform: translate(80px);
   -webkit-transform: translate(80px);
   transform: translate(80px);
@@ -308,7 +438,6 @@ body.no-scroll .footer {
 }
 
 .header{
-  background-color: #2B2B2B;
   min-height: 60px;
   display: flex;
   align-items: center;
@@ -453,6 +582,8 @@ body.no-scroll .footer {
       transform: translate(100%, 0);
       
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+      opacity: 0;
     }
 
     #menu h4 {
@@ -481,6 +612,10 @@ body.no-scroll .footer {
 
         transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
       }
+    }
+
+    #menuToggle #menu li a {
+      color: #000000;
     }
 
 

@@ -1,0 +1,144 @@
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow: hidden;
+  position: relative;
+  background: url('https://i.ibb.co/C6BksR3/concrete-wall.png');
+}
+
+.light-black-bg{
+	background: #282730;
+}
+.header .light-black-bg{
+	display: inline-block;
+	min-height: 60px;
+	line-height: 60px;
+	padding: 0px 60px;
+}
+.exit-btn a{
+	background: #1D1B20;
+	padding: 8px 22px;
+	border-radius: 8px;
+	font-size: 13px;
+	color: #ffffff;
+}
+.exit-btn a i{
+	color: #5AA029;
+	font-weight: bold;
+	padding-right: 4px;
+}
+
+.mid-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.pin-box {
+	background-image: linear-gradient(#3C4FAC, #323D95);
+	background-color: #3F51B5;
+	max-width: 350px;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px;
+}
+.card-box{
+	max-width: 350px;
+	padding: 15px;
+}
+
+.pin-box button {
+    background: #272F74;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    min-width: 200px;
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 2px;
+    border: 1px solid #767676;
+}
+
+.footer {
+	background: #282630;
+	padding: 15px 60px;
+	color: #ffffff;
+}
+.green-btn{
+	background: #5AA129;
+	color: #ffffff;
+	display: inline-block;
+	max-width: 160px;
+	text-transform: capitalize;
+}
+.footer .text-end a{
+	background: #1D1B20;
+	padding: 7px 10px;
+	border-radius: 8px;
+}
+
+.color-green {
+	color: #5AA129;
+}
+
+.my-card-box{
+	font-size: 15px;
+	color: #000;
+	position: relative;
+}
+.my-card-box i {
+    position: absolute;
+    right: 5px;
+    top: 22px;
+}
+
+.mid-container .black-btn{
+	position: absolute;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -65px;
+    text-transform: capitalize;
+    background: #2B2830;
+    border: 1px solid #767676;
+}
+
+.footer-top a {
+    padding: 10px 25px;
+    background: #646367;
+    color: #ffffff;
+    max-width: 300px;
+    display: block;
+    text-align: center;
+}
+.footer-top a:hover{
+	background: #455AB2;
+}
+
+
+@media (max-width: 768px) {
+	body{
+		font-size: 14px;
+	}
+	.header .light-black-bg {
+	     padding: 0px 20px; 
+	}
+	.footer{
+		padding: 10px 20px; 
+	}
+	small{
+		font-size: 12px;
+	}
+	.px-5 {
+	    padding-right: 1rem!important;
+	    padding-left: 1rem!important;
+	}
+}
