@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <title> RDC </title>
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+
+  <style type="text/css">
+    /* Prevent WebKit and Windows mobile changing default text sizes */
+    body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+    /* RESET STYLES */
+    img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode:bicubic;}
+    body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+    table, td {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt !important;}
+    a{text-decoration: none;}
+
+    /* remove the download icon from gmail*/
+    img + div { display:none; }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+
+    #outlook a {
+      padding: 0;
+    }
+
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+  </style> 
+<!--[if mso]>
+  <noscript>
+  <xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml>
+  </noscript>
+  <![endif]-->
+<!--[if lte mso 11]>
+  <style type="text/css">
+    .mj-outlook-group-fix { width:100% !important; }
+  </style>
+<![endif]-->
+<style type="text/css">
+  @media only screen and (min-width:550px) {
+    .mj-column-per-35 {
+      width: 35% !important;
+      max-width: 35%;
+    }
+
+    .mj-column-per-65 {
+      width: 65% !important;
+      max-width: 65%;
+    }
+
+    .mj-column-per-60 {
+      width: 60% !important;
+      max-width: 60%;
+    }
+
+    .mj-column-per-40 {
+      width: 40% !important;
+      max-width: 40%;
+    }
+
+    .mj-column-per-100 {
+      width: 100% !important;
+      max-width: 100%;
+    }
+
+    .mj-column-per-55 {
+      width: 55% !important;
+      max-width: 55%;
+    }
+
+    .mj-column-per-45 {
+      width: 45% !important;
+      max-width: 45%;
+    }
+
+    .mj-column-per-49 {
+      width: 49% !important;
+      max-width: 49%;
+    }
+
+    .mj-column-per-2 {
+      width: 2% !important;
+      max-width: 2%;
+    }
+
+    .mj-column-per-50 {
+      width: 50% !important;
+      max-width: 50%;
+    }
+  }
+</style>
+<style media="screen and (min-width:550px)">
+  .moz-text-html .mj-column-per-35 {
+    width: 35% !important;
+    max-width: 35%;
+  }
+
+  .moz-text-html .mj-column-per-65 {
+    width: 65% !important;
+    max-width: 65%;
+  }
+
+  .moz-text-html .mj-column-per-60 {
+    width: 60% !important;
+    max-width: 60%;
+  }
+
+  .moz-text-html .mj-column-per-40 {
+    width: 40% !important;
+    max-width: 40%;
+  }
+
+  .moz-text-html .mj-column-per-100 {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .moz-text-html .mj-column-per-55 {
+    width: 55% !important;
+    max-width: 55%;
+  }
+
+  .moz-text-html .mj-column-per-45 {
+    width: 45% !important;
+    max-width: 45%;
+  }
+
+  .moz-text-html .mj-column-per-49 {
+    width: 49% !important;
+    max-width: 49%;
+  }
+
+  .moz-text-html .mj-column-per-2 {
+    width: 2% !important;
+    max-width: 2%;
+  }
+
+  .moz-text-html .mj-column-per-50 {
+    width: 50% !important;
+    max-width: 50%;
+  }
+</style>
+<style type="text/css">
+  @media only screen and (max-width:550px) {
+    table.mj-full-width-mobile {
+      width: 100% !important;
+    }
+
+    td.mj-full-width-mobile {
+      width: auto !important;
+    }
+    br{
+      display: none;
+    }
+  }
+</style>
+<style type="text/css">
+  /* desktop media queries */
+  @media only screen and (min-width:550px) {
+    .nodesk {
+      display: none !important;
+      mso-hide: all !important;
+    }
+  }
+
+  /* mobile media queries */
+  @media only screen and (max-width:550px) {
+    .mobile-image-center table {
+      margin: 0 auto !important;
+    }
+
+    .mobile-text-center div {
+      text-align: center !important;
+    }
+
+    .mobile-text-left div {
+      text-align: left !important;
+    }
+
+    .mobile-text-right div {
+      text-align: right !important;
+    }
+
+    .mobile-small-headline div {
+      font-size: 50px !important;
+      line-height: 56px !important;
+    }
+
+    .mobile-small-subheadline div {
+      font-size: 22px !important;
+      line-height: 30px !important;
+    }
+
+    .mobile-small-shipping div {
+      font-size: 18px !important;
+      line-height: 28px !important;
+    }
+
+    .mobile-small-nav div {
+      font-size: 14px !important;
+      line-height: 18px !important;
+    }
+
+    .nomob {
+      display: none !important;
+    }
+
+    .button-mobile-center table {
+      padding: 0 !important;
+      margin: auto !important;
+    }
+
+    .mobile-border>table {
+      border: 1px solid #000000;
+      border-radius: 10px;
+      border-collapse: separate;
+      padding: 10px;
+    }
+
+    .mob-left-right-padding{
+      padding: 0px 10px!important;
+    }
+
+    .pad-right-0{
+      padding-right: 0px!important;
+    }
+  }
+
+  .round>table {
+    border-radius: 10px;
+    background-color: #F8F5EF;
+    border-collapse: separate;
+  }
+
+  /* custom fonts */
+  @media screen {
+    @font-face {
+      font-family: 'FT Regola Neue BETA';
+      src: url('https://devlob20.github.io/typography/fonts/TTCommons/TTCommons-Regular/font.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'FT Regola Neue BETA';
+      src: url('https://devlob20.github.io/typography/fonts/TTCommons/TTCommons-Light/font.woff2') format('woff2');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'FT Regola Neue BETA';
+      src: url('https://devlob20.github.io/typography/fonts/TTCommons/TTCommons-Regular/font.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'FT Regola Neue BETA';
+      src: url('https://devlob20.github.io/typography/fonts/TTCommons/TTCommons-Bold/font.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Grenette Light Pro';
+      src: url('https://appboy-images.com/appboy/communication/assets/font_assets/files/611d5a9d239f39509738a3c1/original.woff2?1629313693');
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+</style>
+</head>
+
+<body style="word-spacing:normal;background-color:#ffffff;">
+  <div style="background-color:#ffffff;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0px 14px;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+             <!-- Start Top Banner -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" bgcolor="#e7e4dc" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="background:#e7e4dc;background-color:#e7e4dc;margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#e7e4dc;background-color:#e7e4dc;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:5px 0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:200.2px;" ><![endif]-->
+                        <div class="mj-column-per-35 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                            <tbody>
+                              <!-- Start Logo -->
+                              <tr>
+                                <td align="left" class="mobile-image-center" style="font-size:0px;padding:20px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width:133px;font-weight: bold;font-size: 32px;color: #000000;font-family:'Grenette Light Pro', Arial;">
+                                          LOGO
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- End Logo -->
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td><td class="" style="width:371.8px;" ><![endif]-->
+                        <div class="mj-column-per-65 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
+                          <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td style="vertical-align:middle;width:223px;" ><![endif]-->
+                          <div class="mj-column-per-60 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:60%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                              <tbody>
+                                
+                								<!-- Start Navbar Offer -->
+                								<tr>
+                                  <td align="center" class="mobile-small-nav mobile-text-left" style="font-size:0px;padding:20px 10px;word-break:break-word;">
+                                    <div style="font-family:'FT Regola Neue BETA', Arial;font-size:16px;line-height:28px;text-align:center;color:#000000;"><a style="color:#000000;text-decoration:none" href="http://rdcircles.com/">Shop 6 Beverages for $25</a></div>
+                                  </td>
+                                </tr>
+								                <!-- End Navbar Offer -->
+								
+								
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td><td style="vertical-align:middle;width:148px;" ><![endif]-->
+                          <div class="mj-column-per-40 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:40%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                              <tbody>
+                                
+                								<!-- Start Order Now -->
+                								<tr>
+                                  <td align="center" class="mobile-small-nav mobile-text-right" style="font-size:0px;padding:20px 10px;word-break:break-word;">
+                                    <div style="font-family:'FT Regola Neue BETA', Arial;font-size:16px;line-height:28px;text-align:center;color:#000000;"><a style="color:#000000;text-decoration:none" href="http://rdcircles.com/">Order Now →</a></div>
+                                  </td>
+                                </tr>
+								                <!-- End Order Now -->
+								
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td></tr></table><![endif]-->
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Top Banner -->
+			  
+			  
+			  
+              <!-- Hero/01 Start -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" bgcolor="#F8F5EF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="background:#F8F5EF;background-color:#F8F5EF;margin:0px auto;border-radius:0px 0px 10px 10px;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#F8F5EF;background-color:#F8F5EF;width:100%;border-radius:0px 0px 10px 10px;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:572px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tbody>
+                              <!-- Start Headline -->
+                              <tr>
+                                <td align="left" class="mobile-small-headline mobile-text-center" style="font-size:0px;padding:27px 25px 13px 25px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:64px;font-weight:400;line-height:78px;text-align:left;color:#000000;">Headline <br> Goes Here</div>
+                                </td>
+                              </tr>
+                              <!-- End Headline -->
+                              <!-- Start Subhead -->
+                              <tr>
+                                <td align="left" class="mobile-small-subheadline mobile-text-center" style="font-size:0px;padding:0px 25px 24px 25px;word-break:break-word;">
+                                  <div style="font-family:'Grenette Light Pro', Arial;font-size:22px;font-weight:300;line-height:36px;text-align:left;color:#000000;">Lorem ipsum dolor sit amet, consectetur elit. Praesent at imperdiet nibh, et egestas libero.</div>
+                                </td>
+                              </tr>
+                              <!-- End Subhead -->
+                              <!-- Start Image -->
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:0px 22px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width:528px;">
+                                          <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d9abe2431e6db9c2a8/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="528">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- End Image -->
+                              <!-- start Outlook button -->
+                              <!-- put new URL in both hrefs -->
+                              <!--[if mso]><div style="line-height:32px;height:32px;">&#8202;</div><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://rdcircles.com/" style="height:52px;v-text-anchor:left;width:191px;" arcsize="193%" fillcolor="#000000"><w:anchorlock/><center style="color:#ffffff;font-family: 'FT Regola Neue BETA', Arial;font-size: 18px;line-height:28px;">Order Now</center></v:roundrect><div style="line-height:16px;height:16px;">&#8202;</div><![endif]-->
+                              <!-- end Outlook button --><span style="mso-element:field-begin;"></span>
+                              <!--[if !mso]><!-->
+                              <!-- Start Regular Button - make sure to also udate Outlook button above -->
+                              <tr>
+                                <td align="left" vertical-align="middle" class="button-mobile-center hide" style="font-size: 0px; padding: 32px 25px; word-break: break-word; mso-hide: all;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;width:191px;line-height:100%;">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" bgcolor="#000000" role="presentation" style="border:none;border-radius:100px;cursor:auto;mso-padding-alt:15px 25px;background:#000000;" valign="middle"><a href="http://rdcircles.com/" style="display:inline-block;width:141px;background:#000000;color:#ffffff;font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:500;line-height:28px;margin:0;text-decoration:none;text-transform:none;padding:15px 25px;mso-padding-alt:0px;border-radius:100px;" target="_blank"> Order Now </a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+							               <!-- End Regular Button - make sure to also udate Outlook button above -->
+                              <!--<![endif]-->
+                              <span style="mso-element:field-end;"></span>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+               <!-- End Hero/01 -->
+			   
+			   
+              <!-- Start Spacer - put this between modules to create white space -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:572px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="font-size:0px;word-break:break-word;">
+                                  <div style="height:14px;line-height:14px;">&#8202;</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Spacer - put this between modules to create white space -->
+			  
+			  
+			  
+              <!-- Start Card/01 -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" bgcolor="#F8F5EF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="background:#F8F5EF;background-color:#F8F5EF;margin:0px auto;border-radius:10px 10px 10px 10px;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#F8F5EF;background-color:#F8F5EF;width:100%;border-radius:10px 10px 10px 10px;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:rtl;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:314.6px;" ><![endif]-->
+                        <div class="mj-column-per-55 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:20px 0px 0px 28px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width:286px;" class="mj-full-width-mobile">
+                                          <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106da60ec0a190e6a686b/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="286">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:257.4px;" ><![endif]-->
+                        <div class="mj-column-per-45 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                            <tbody>
+                              <!-- Start Eyebrow -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:28px 28px 3px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:22px;font-weight:500;line-height:32px;text-align:left;color:#000000;">Product Name</div>
+                                </td>
+                              </tr>
+                              <!-- End Eyebrow -->
+                              <!-- Start Description -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:3px 28px 18px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:400;line-height:28px;text-align:left;color:#000000;">Product description in two lines goes here</div>
+                                </td>
+                              </tr>
+                              <!-- End Description -->
+                              <!-- Start Outlook Button -->
+                              <!-- put new URL in both hrefs -->
+                              <!--[if mso]><div style="line-height:18px;height:18px;">&#8202;</div><table align="left"><div style="line-height:18px;height:18px;">&#8202;</div><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://rdcircles.com/" style="height:52px;v-text-anchor:left;width:126px;" arcsize="193%" strokecolor="#000000" fillcolor="#F8F5EF"><w:anchorlock/><center style="color:#000000;font-family: 'FT Regola Neue BETA', Arial;font-size: 18px;line-height:28px;">Order Now</center></v:roundrect><div style="line-height:9px;height:9px;">&#8202;</div></table><![endif]-->
+                              <!-- end Outlook button --><span style="mso-element:field-begin;"></span>
+                              <!--[if !mso]><!-->
+                               <!-- Start Regular Button - make sure to also udate Outlook button above -->
+                              <tr>
+                                <td align="left" vertical-align="middle" class="button-mobile-center" style="font-size:0px;padding:2px 28px 32px 28px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" bgcolor="#F8F5EF" role="presentation" style="border:1px solid #000000;border-radius:100px;cursor:auto;mso-padding-alt:10px 25px;background:#F8F5EF;" valign="middle"><a href="http://rdcircles.com/" style="display:inline-block;background:#F8F5EF;color:#000000;font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:normal;line-height:32px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:100px;" target="_blank"> Order Now </a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr> <!-- End Regular Button - make sure to also udate Outlook button above -->
+                              <!--<![endif]-->
+                              <span style="mso-element:field-end;"></span>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Card/01 -->
+			  
+			  
+			  
+              <!-- Start Spacer - put this between modules to create white space -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:572px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="font-size:0px;word-break:break-word;">
+                                  <div style="height:14px;line-height:14px;">&#8202;</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Spacer - put this between modules to create white space -->
+			  
+			  
+			  
+              <!-- Start Card /02 -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:280.28px;" ><![endif]-->
+                        <div class="mj-column-per-49 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#f8f5ef;border-radius:10px;vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:10px 0px 10px 65px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width:215px;" class="mj-full-width-mobile">
+                                          <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d988de3278cafd2e89/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="215">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- Start Eyebrow -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:28px 28px 3px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:22px;font-weight:500;line-height:32px;text-align:left;color:#000000;">Product Name</div>
+                                </td>
+                              </tr>
+                              <!-- End Eyebrow -->
+                              <!-- Start Description -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:3px 28px 2px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:400;line-height:28px;text-align:left;color:#000000;">Product description in two lines goes here</div>
+                                </td>
+                              </tr>
+                              <!-- End Description -->
+                              <!-- Start Outlook Button -->
+                              <!-- put new URL in both hrefs -->
+                              <!--[if mso]><div style="line-height:18px;height:18px;">&#8202;</div><table align="left"><div style="line-height:18px;height:18px;">&#8202;</div><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://rdcircles.com/" style="height:52px;v-text-anchor:left;width:126px;" arcsize="193%" strokecolor="#000000" fillcolor="#F8F5EF"><w:anchorlock/><center style="color:#000000;font-family: 'FT Regola Neue BETA', Arial;font-size: 18px;line-height:28px;">Order Now</center></v:roundrect><div style="line-height:18px;height:18px;">&#8202;</div></table><![endif]-->
+                              <!-- end Outlook button --><span style="mso-element:field-begin;"></span>
+                              <!--[if !mso]><!-->
+                               <!-- Start Regular Button - make sure to also udate Outlook button above -->
+                              <tr>
+                                <td align="left" vertical-align="middle" class="button-mobile-center" style="font-size:0px;padding:18px 28px 32px 28px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" bgcolor="#F8F5EF" role="presentation" style="border:1px solid #000000;border-radius:100px;cursor:auto;mso-padding-alt:10px 25px;background:#F8F5EF;" valign="middle"><a href="http://rdcircles.com/" style="display:inline-block;background:#F8F5EF;color:#000000;font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:normal;line-height:32px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:100px;" target="_blank"> Order Now </a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr> <!-- End Regular Button - make sure to also udate Outlook button above -->
+                              <!--<![endif]-->
+                              <span style="mso-element:field-end;"></span>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:11.44px;" ><![endif]-->
+                        <div class="mj-column-per-2 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="left" style="font-size:0px;padding:3px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:13px;line-height:1;text-align:left;color:#000000;">&nbsp;</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:280.28px;" ><![endif]-->
+                        <div class="mj-column-per-49 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#f8f5ef;border-radius:10px;vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:10px 0px 10px 65px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width:215px;" class="mj-full-width-mobile">
+                                          <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d988de327af9fd2e6b/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="215">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <!-- Start Eyebrow -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:28px 28px 3px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:22px;font-weight:500;line-height:32px;text-align:left;color:#000000;">Product Name</div>
+                                </td>
+                              </tr>
+                              <!-- End Eyebrow -->
+                              <!-- Start Description -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:3px 28px 2px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:400;line-height:28px;text-align:left;color:#000000;">Product description in two lines goes here</div>
+                                </td>
+                              </tr>
+                              <!-- End Description -->
+                              <!-- Start Outlook Button -->
+                              <!-- put new URL in both hrefs -->
+                              <!--[if mso]><div style="line-height:18px;height:18px;">&#8202;</div><table align="left"><div style="line-height:18px;height:18px;">&#8202;</div><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://rdcircles.com/" style="height:52px;v-text-anchor:left;width:126px;" arcsize="193%" strokecolor="#000000" fillcolor="#F8F5EF"><w:anchorlock/><center style="color:#000000;font-family: 'FT Regola Neue BETA', Arial;font-size: 18px;line-height:28px;">Order Now</center></v:roundrect><div style="line-height:18px;height:18px;">&#8202;</div></table><![endif]-->
+                              <!-- End Outlook Button --><span style="mso-element:field-begin;"></span>
+                              <!--[if !mso]><!-->
+                              <!-- Start Regular Button - make sure to also udate Outlook button above -->
+                              <tr>
+                                <td align="left" vertical-align="middle" class="button-mobile-center" style="font-size:0px;padding:18px 28px 32px 28px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" bgcolor="#F8F5EF" role="presentation" style="border:1px solid #000000;border-radius:100px;cursor:auto;mso-padding-alt:10px 25px;background:#F8F5EF;" valign="middle"><a href="http://rdcircles.com/" style="display:inline-block;background:#F8F5EF;color:#000000;font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:normal;line-height:32px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:100px;" target="_blank"> Order Now </a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr><!-- End Regular Button - make sure to also udate Outlook button above -->
+                              <!--<![endif]-->
+                              <span style="mso-element:field-end;"></span>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Card/02 -->
+			  
+			  
+			  
+			  
+			  
+              <!-- Start Spacer - put this between modules to create white space -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:572px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="font-size:0px;word-break:break-word;">
+                                  <div style="height:14px;line-height:14px;">&#8202;</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Spacer - put this between modules to create white space -->
+			  
+			  
+              <!-- Start Card/03 -->
+              <!--[if mso | IE]><tr><td class="nomob-outlook hide-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="nomob-outlook hide-outlook" role="presentation" style="width:572px;" width="572" bgcolor="#F8F5EF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div class="hide" style="background: #F8F5EF; background-color: #F8F5EF; margin: 0px auto; border-radius: 10px 10px 10px 10px; max-width: 572px; mso-hide: all;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#F8F5EF;background-color:#F8F5EF;width:100%;border-radius:10px 10px 10px 10px;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:314.6px;" ><![endif]-->
+                        <div class="mj-column-per-55 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:20px 60px 20px 0px;word-break:break-word;" class="pad-right-0">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" style="width:254px;">
+                                          <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d9abe2431cbab9c290/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="254">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:257.4px;" ><![endif]-->
+                        <div class="mj-column-per-45 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%">
+                            <tbody>
+                              <!-- Start Eyebrow -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:28px 28px 3px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:22px;font-weight:500;line-height:32px;text-align:left;color:#000000;">Product Name</div>
+                                </td>
+                              </tr>
+                              <!-- End Eyebrow -->
+                              <!-- Start Description -->
+                              <tr>
+                                <td align="left" class="mobile-text-center" style="font-size:0px;padding:3px 28px 2px 28px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:400;line-height:28px;text-align:left;color:#000000;">Product description in two lines goes here</div>
+                                </td>
+                              </tr>
+                              <!-- End Description -->
+                              <!-- Start Outlook Button -->
+                              <!-- put new URL in both hrefs -->
+                              <!--[if mso]><div style="line-height:18px;height:18px;">&#8202;</div><table align="left"><div style="line-height:18px;height:18px;">&#8202;</div><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://rdcircles.com/" style="height:52px;v-text-anchor:left;width:126px;" arcsize="193%" strokecolor="#000000" fillcolor="#F8F5EF"><w:anchorlock/><center style="color:#000000;font-family: 'FT Regola Neue BETA', Arial;font-size: 18px;line-height:28px;">Order Now</center></v:roundrect><div style="line-height:9px;height:9px;">&#8202;</div></table><![endif]-->
+                              <!-- End Outlook Button --><span style="mso-element:field-begin;"></span>
+                              <!--[if !mso]><!-->
+                              <!-- Start Regular Button - make sure to also udate Outlook button above -->
+                              <tr>
+                                <td align="left" vertical-align="middle" class="button-mobile-center" style="font-size:0px;padding:18px 28px 32px 28px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" bgcolor="#F8F5EF" role="presentation" style="border:1px solid #000000;border-radius:100px;cursor:auto;mso-padding-alt:10px 25px;background:#F8F5EF;" valign="middle"><a href="http://rdcircles.com/" style="display:inline-block;background:#F8F5EF;color:#000000;font-family:'FT Regola Neue BETA', Arial;font-size:18px;font-weight:normal;line-height:32px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:100px;" target="_blank"> Order Now </a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr><!-- End Regular Button - make sure to also udate Outlook button above -->
+                              <!--<![endif]-->
+                              <span style="mso-element:field-end;"></span>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Card/03 -->
+			  
+			  
+			  
+              <!-- Start Spacer - put this between modules to create white space -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:572px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="font-size:0px;word-break:break-word;">
+                                  <div style="height:14px;line-height:14px;">&#8202;</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- End Spacer - put this between modules to create white space -->
+			  
+			  
+			  
+			  
+              <!-- Start Card/04 -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px 0px 15px 0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:572px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#F8F5EF;border-radius:10px 10px 10px 10px;vertical-align:top;" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="mobile-small-shipping" style="font-size:0px;padding:27px 10px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:20px;font-weight:500;line-height:32px;text-align:center;color:#000000;">We offer local delivery, nationwide <br> shipping and in-store pick up. →</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+               <!-- End Card/04 -->
+			  
+			  
+			  <!-- Start Card/05 - includes desktop and mobile versions -->
+              <!-- start desktop icon table -->
+              <!--[if mso | IE]><tr><td class="nomob-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="nomob-outlook" role="presentation" style="width:572px;" width="572" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div class="nomob" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="width:286px;" ><![endif]-->
+                        <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
+                          <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d94eeab2380a867d82/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d9abe2432035b9c29b/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td></tr></table><![endif]-->
+                        </div>
+                        <!--[if mso | IE]></td><td class="" style="width:286px;" ><![endif]-->
+                        <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
+                          <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d960ec0a1bcd6a686f/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613106d9239f3951609febe8/original.png?1630602969" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td></tr></table><![endif]-->
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- end desktop icon table --><span style="mso-element:field-begin;"></span>
+              <!--[if !mso]><!-->
+              <!-- start mobile icon table -->
+              <!--[if mso | IE]><tr><td class="nodesk-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="nodesk-outlook" role="presentation" style="width:572px;" width="572" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div class="nodesk" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="width:286px;" ><![endif]-->
+                        <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
+                          <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613108b088de327a8efd2e71/original.png?1630603440" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613108b0abe2432035b9c2b1/original.png?1630603440" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td></tr></table><![endif]-->
+                        </div>
+                        <!--[if mso | IE]></td><td class="" style="width:286px;" ><![endif]-->
+                        <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
+                          <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613108b0a4158c3b788e656c/original.png?1630603440" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td><td style="vertical-align:top;width:143px;" ><![endif]-->
+                          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="font-size:0px;padding:4px 6px;word-break:break-word;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width:131px;" class="mj-full-width-mobile">
+                                            <a href="http://rdcircles.com/" target="_blank">
+                                              <img alt height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/613108b04eeab238f6867db8/original.png?1630603440" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="131">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--[if mso | IE]></td></tr></table><![endif]-->
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- end mobile icon table -->
+			  
+			  
+              <!--<![endif]-->
+              <span style="mso-element:field-end;"></span>
+			  <!-- End Card/05 - includes desktop and mobile versions -->
+			  
+			  
+			  
+			   <!-- Start Footer -->
+              <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:572px;" width="572" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:572px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:47px 0px 0px 0px;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:572px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                            <tbody>
+                              <!-- start text -->
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:10px 25px 20px 25px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:12px;line-height:18px;text-align:center;color:#000000;">**Delivery fee is waived on orders of $50+. While supplies last.<br> Pricing & participation may vary depending on location.<br> Other restrictions, taxes & fees may apply,<br> please see terms and conditions on website for details.<br> This email was sent to {{${email_address}}}.</div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:0px 25px 25px 25px;word-break:break-word;">
+                                  <div style="font-family:'FT Regola Neue BETA', Arial;font-size:12px;line-height:18px;text-align:center;color:#000000;">No longer want to receive these emails? Unsubscribe <a href="{{${set_user_to_unsubscribed_url}}}" style="text-decoration: underline;">here</a>.<br> This email may be considered an advertising or promotional message.<br> 4016 Wilshire Blvd. Los Angeles CA 90010</div>
+                                </td>
+                              </tr>
+                              <!-- end text -->
+                              <tr>
+                                <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:40px;word-break:break-word;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width:133px;font-weight: bold;font-size: 32px;color: #000000;font-family:'Grenette Light Pro', Arial;">
+                                          LOGO
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+                 <!-- End Footer -->
+             
+
+			   <!--[if mso | IE]></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+  </div>
+</body>
+
+</html>

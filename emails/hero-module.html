@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>RDC</title>
+
+  <link rel="icon" href="https://appboy-images.com/appboy/communication/assets/image_assets/images/616388577157d3322c5440ae/original.png?1633912919"/>
+
+  <!-- CUSTOM STYLES -->
+  <style>
+    /* Prevent WebKit and Windows mobile changing default text sizes */
+    body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+    /* RESET STYLES */
+    img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode:bicubic;}
+    table{border-collapse: collapse !important;}
+    body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+    table, td {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt !important;}
+    a{text-decoration: none;}
+
+    /* remove the download icon from gmail*/
+    img + div { display:none; }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+
+    /* FONTS FOR TITLE: H1 AND H2 */
+    @font-face {
+      font-family: 'SequelSans-title';
+      src:  url('https://assets.point.app/fonts/SequelSans-MediumHead/font.woff') format("woff");
+      font-weight: bold;
+      font-style: bold;
+    }
+
+    /* FONTS FOR SUBHEADING */
+    @font-face {
+      font-family: 'SequelSans-subheading';
+      src:  url('https://assets.point.app/fonts/SequelSans-SemiBoldHead/font.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    /* FONTS FOR BODY COPY */
+    @font-face {
+      font-family: 'SequelSans-bodycopy';
+      src:  url('https://assets.point.app/fonts/SequelSans-RomanHead/font.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* FONTS FOR TITLE 2: */
+    @font-face {
+      font-family: 'SequelSans-title-two';
+      src:  url('https://assets.point.app/fonts/SequelSans-BookHead/font.woff2') format("woff");
+      font-weight: bold;
+      font-style: bold;
+    }
+    
+  </style>
+
+    <!--[if mso]>
+    <style type="text/css">
+      .fallback-text {
+        font-family: "Arial", sans-serif;
+      }
+      span, td, table, div, a {
+        font-family: Arial, serif !important;
+      }
+    </style>
+  <![endif]-->
+
+  <style>
+    @media only screen and (max-width: 525px) {
+      /* ALLOWS FOR FLUID TABLES */
+      .wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      /* FULL-WIDTH TABLES */
+      .responsive-table {
+        width: 100% !important;
+      }
+      /* Mobile center */
+      .mobile-center {
+        text-align: center !important;
+      }
+      /* Display Block in mobile */
+      .d-block {
+          display: block !important;
+          width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 639px) {
+      /* Full width mobile container */
+      .container {
+        width: 100%!important;
+      }
+      /* Full width mobile wrapper */
+      .wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      /* Center align in mobile */
+      .mobile-center {
+        width: 100% !important;
+        max-width: 100%!important;
+        text-align: center !important;
+      }
+
+      /* Display block in mobile */
+      .d-block {
+          display: block !important;
+          width: 100% !important;
+      }
+      /* Display none in mobile */
+      .dn-mob {
+        display: none !important;
+      }
+
+      /* Padding bottom 20px in mobile */
+      .mobile-bottom-20{
+        padding-bottom: 20px!important;
+      }
+      /* Padding bottom 30px in mobile */
+      .mobile-bottom-30{
+        padding-bottom: 30px!important;
+      }
+      /* Padding bottom 50px in mobile */
+      .mobile-bottom-50{
+        margin-bottom: 50px!important;
+      }
+
+      /* Padding left & right 40px in mobile */
+      .mobile-left-right-40{
+        padding-left: 40px!important;
+        padding-right: 40px!important;
+      }
+      /* Padding left & right 30px in mobile */
+      .mobile-left-right-30{
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+      }
+      .padding-right-40{
+        padding-right: 40px!important;
+      }
+      .padding-left-40{
+        padding-left: 40px!important;
+      }
+
+      br{
+        display: none;
+      }
+
+    }
+
+    @media screen and (min-width: 640px) {
+      /* Email main container size */
+      .container {
+        width: 640px!important;
+        margin: 0 auto!important;
+      }
+      /* Mobile element hides in desktop */
+      .db-mob {
+        display: none !important;
+      }
+      .mobile-center {
+        width: 100% !important;
+      }
+    }
+
+  </style>
+
+  <!--[if gte mso 9]>
+    <style>
+      sup { font-size: 100% !important; }
+    </style>
+
+    <xml>
+     <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f4f4f4; width: 100% !important;">
+  <center style="width: 100% !important; background-color: #f4f4f4;">
+  
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f4f4f4" style="width:100% !important;">
+      <tr>
+        <td align="center" valign="top">
+            
+          <table class="container" cellpadding="0" cellspacing="0" border="0" width="640" bgcolor="#000000" style="margin: 0 auto;">
+
+            
+
+              <!-- =========================
+             Module 1: Primary Hero Start
+            =========================== --> 
+
+            <!--================== Module 1: Primary Hero ==================-->
+            <tr>
+              <td bgcolor="#000000">
+                <table class="wrapper" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  
+                  <tr>
+                    <td style="padding-left: 60px;padding-right: 60px;padding-top: 60px;" class="mobile-left-right-40">
+                      <table cellpadding="0" cellspacing="0" border="0">
+
+                        <!-- logo starts here -->
+                        <tr>
+                          <td style="text-align: left;">
+                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/616388577157d3322c5440ae/original.png?1633912919" alt="Logo" width="20" height="auto" style="display: inline-block;width:20px;">
+                          </td>
+                        </tr>
+                        <!-- logo ends here -->
+
+                        <!-- header starts here -->
+                        <tr>
+                          <td style="font-family: 'SequelSans-title', '-apple-system', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 40px;line-height: 42px;color:#ffffff;text-align: left;padding-top: 40px;padding-bottom: 29px;font-weight: bold; letter-spacing: 0px;">
+                            Lorem Ipsum Dolor
+                          </td>
+                        </tr>
+                        <!-- header ends here -->
+
+                        <!-- Body text starts here -->
+                        <tr>
+                          <td style="font-family: 'SequelSans-bodycopy', '-apple-system', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 16px;line-height: 24px;color: #ffffff;text-align: left;padding-bottom: 58px;letter-spacing: 0.25px;font-weight: normal;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span style="color: #999999;">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                          </td>
+                        </tr>
+                        <!-- Body text ends here -->
+
+                        <!-- CTA starts here -->
+                        <tr>
+                          <td>
+                            <div style="font-family: 'SequelSans-title', 'Arial', sans-serif;font-size: 100%;margin: 0;padding: 0;margin-top: 0">
+                              <!--[if mso]>
+                              <v:rect style="height:40px;width:0;" fill="f" stroke="f" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" />
+                                  
+                              <v:roundrect href="https://play.google.com/store/apps" style="width:164px;height:60px;position:relative;top:0;left:0;v-text-anchor:middle;" arcsize="10%" stroke="f" fillcolor="#F8FF54" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word">
+                                  <w:anchorlock/>
+                                  <v:textbox inset="0,0,0,0">
+                                  <center>
+                              <![endif]-->
+                              <a class="fallback-text" href="https://play.google.com/store/apps" style="font-family: 'SequelSans-title', '-apple-system', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 12px;margin: 0;padding: 10px 20px;color: #000000;margin-top: 0;font-weight: bold;line-height: 40px;text-transform: uppercase;background-color: #F8FF54;border-radius: 10px;display: inline-block;text-align: center;text-decoration: none;white-space: nowrap;-webkit-text-size-adjust: none;width: 124px;">DOWNLOAD NOW</a>
+                              <!--[if mso]>
+                                  </center>
+                                  </v:textbox>
+                              </v:roundrect>
+                              <![endif]-->
+                              </div>
+                          </td>
+                        </tr>
+                        <!-- CTA ends here -->
+
+
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Feature image start here -->
+                  <tr>
+                    <td align="center" style="padding-top: 0px;">
+                      <img class="wrapper" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/6163885864818145f1a6ff37/original.png?1633912919" alt="Header Image" width="640" height="auto" style="width: 640px;display: block;">
+                    </td>
+                  </tr>
+                <!-- Feature image ends here -->
+
+                </table>                
+              </td>
+            </tr>
+            <!-- ==================Module 1: Primary Hero ends================== -->
+
+
+          </table>
+
+        </td>     
+      </tr>
+
+    </table>
+  </center>
+</body>
+</html>
